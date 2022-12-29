@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  background-color: blue;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.625;
+  }
+
+  ol {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-right: 12px;
+
+      a {
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+  }
+}

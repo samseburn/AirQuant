@@ -1,17 +1,26 @@
 // import './App.css';
+import { Case, Company, Product, Service, Tech } from 'pages';
+import Root from 'pages/Root/Root';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/main.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          airquant App 화면 빨간 색으로 안 나오면 sass 설치 안 된 거니까
-          말씀해주세요
-        </h1>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      errorElement: <div>Page Not Found</div>,
+      children: [
+        { index: true, element: <Product /> },
+        { path: '/tech', element: <Tech /> },
+        { path: '/company', element: <Company /> },
+        { path: '/case', element: <Case /> },
+        { path: '/service', element: <Service /> },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
