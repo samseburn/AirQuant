@@ -1,2 +1,17 @@
-// import
+// constants
+@import './constants/colors';
+@import './constants/fonts';
+@import './constants/breakpoints';
+
+// base
+@import './base/reset';
+@import './base/normalize';
+@import './base/globals';
+
+// mixins
+@import './mixins/flexbox';
+@import './mixins/text-style';
+@import './mixins/responsive';
+
+// layout
 @import './Header';
