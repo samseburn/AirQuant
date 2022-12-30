@@ -1,4 +1,5 @@
 // import './App.css';
+import { Container } from 'components/common/Container';
 import { Case, Company, Product, Service, Tech } from 'pages';
 import Root from 'pages/Root/Root';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,11 +12,11 @@ function App() {
       element: <Root />,
       errorElement: <div>Page Not Found</div>,
       children: [
-        { index: true, element: <Product /> },
-        { path: '/tech', element: <Tech /> },
-        { path: '/company', element: <Company /> },
-        { path: '/case', element: <Case /> },
-        { path: '/service', element: <Service /> },
+        { index: true, element: <Container content={<Product />} /> },
+        { path: '/tech', element: <Container content={<Tech />} /> },
+        { path: '/company', element: <Container content={<Company />} /> },
+        { path: '/case', element: <Container content={<Case />} /> },
+        { path: '/service', element: <Container content={<Service />} /> },
       ],
     },
   ]);
