@@ -1,17 +1,20 @@
 import React from 'react';
+import {ProductMainImg , ProductAirTable} from 'components';
 
 const Product = () => {
   return (
     <div
       style={{
         display: 'flex',
+        flexDirection: 'column',
         width: '100%',
         height: '100vh',
         justifyContent: 'center',
         alignItems: 'center',
       }}
     >
-      제품소개 페이지 입니다.
+      <ProductMainImg/>
+      <ProductAirTable/>
     </div>
   );
 };
