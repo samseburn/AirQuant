@@ -1,3 +1,4 @@
+import { InformationBox } from 'components';
 import React from 'react';
 
 const Product = () => {
@@ -5,13 +6,16 @@ const Product = () => {
     <div
       style={{
         display: 'flex',
+        flexDirection: 'column',
         width: '100%',
         height: '100vh',
         justifyContent: 'center',
         alignItems: 'center',
       }}
     >
-      제품소개 페이지 입니다.
+      <p>제품소개 페이지 입니다.</p>
+
+      <InformationBox />
     </div>
   );
 };

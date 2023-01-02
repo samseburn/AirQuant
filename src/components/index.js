@@ -4,3 +4,4 @@ export { Footer } from './common/Footer';
 
 // module
 export { Card } from './module/Card';
+export { InformationBox } from './module/InformationBox';
