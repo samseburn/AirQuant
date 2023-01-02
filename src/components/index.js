@@ -7,3 +7,4 @@ export { Footer } from './common/Footer';
 export { Card } from './module/Card';
 export { ProductMainImg } from './module/ProductMainImg';
 export { ProductAirTable } from './module/ProductAirTable';
+export { InformationBox } from './module/InformationBox';
