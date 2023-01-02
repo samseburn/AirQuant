@@ -1,5 +1,5 @@
 // import './App.css';
-import { Container } from 'components/common/Container';
+import { Container } from 'components';
 import { Case, Company, Product, Service, Tech } from 'pages';
 import Root from 'pages/Root/Root';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
