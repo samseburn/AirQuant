@@ -1,3 +1,4 @@
+import { Faq } from 'components';
 import React from 'react';
 
 const Service = () => {
@@ -12,6 +13,7 @@ const Service = () => {
       }}
     >
       고객문의 페이지 입니다.
+      <Faq />
     </div>
   );
 };
