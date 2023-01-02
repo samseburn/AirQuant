@@ -1,3 +1,5 @@
+import { CompanyAlgorithm, CompanyButton, CompanyTech } from 'components';
+
 const Company = () => {
   return (
     <div
@@ -9,7 +11,9 @@ const Company = () => {
         alignItems: 'center',
       }}
     >
-      기업소개 페이지 입니다.
+      <CompanyButton />
+      <CompanyTech />
+      <CompanyAlgorithm />
     </div>
   );
 };
