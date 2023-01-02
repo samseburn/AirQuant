@@ -6,6 +6,9 @@ export { Footer } from './common/Footer';
 // module
 export { Card } from './module/Card';
 
+export { CompanyButton } from './module/CompanyButton';
+export { CompanyTech } from './module/CompanyTech';
+export { CompanyAlgorithm } from './module/CompanyAlgorithm';
 export { CompanyIcon } from './module/CompanyIcon';
 export { CompanyLED } from './module/CompanyLED';
 
