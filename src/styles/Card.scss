@@ -1,0 +1,30 @@
+.card {
+  width: 245px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 30px;
+  background-color: #1b76ff;
+  padding: 30px 20px;
+
+  color: $white;
+  transition: background 200ms ease-in-out;
+
+  &:hover {
+    background: black;
+  }
+
+  &-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  &-description {
+    font-size: $font-size-14;
+    line-height: 17px;
+    font-weight: 400;
+    word-break: keep-all;
+  }
+}
