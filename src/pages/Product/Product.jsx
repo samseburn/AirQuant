@@ -1,5 +1,6 @@
 import { InformationBox } from 'components';
 import React from 'react';
+import { ProductMainImg, ProductAirTable } from 'components';
 
 const Product = () => {
   return (
@@ -13,7 +14,9 @@ const Product = () => {
         alignItems: 'center',
       }}
     >
-      <p>제품소개 페이지 입니다.</p>
+      <ProductMainImg />
+      <ProductAirTable />
+      <br />
 
       <InformationBox />
     </div>

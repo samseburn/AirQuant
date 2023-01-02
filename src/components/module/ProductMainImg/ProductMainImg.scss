@@ -1,0 +1,29 @@
+.airQuant_Main {
+    margin-left: 129px;
+    margin-right: 129px;
+
+    .airQuant_Main_Background_Image {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(228, 228, 228);
+        background-size: 100% 100%;
+    }
+
+    .airQuant_Title {
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 6%;
+
+        text-shadow: 0px 0px 20px rgba(34, 74, 103, 0.25);
+
+        .airQuant_Main_Title {
+            font-size: 100px;
+            font-weight: 600;
+        }
+
+        .airQuant_Sub_Title {
+            font-size: 30px;
+        }
+    }
+}
