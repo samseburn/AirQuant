@@ -1,4 +1,6 @@
-import { CompanyAlgorithm, CompanyButton, CompanyTech } from 'components';
+
+import React from 'react';
+import { CompanyIcon, CompanyLED, CompanyAlgorithm, CompanyButton, CompanyTech } from 'components';
 
 const Company = () => {
   return (
@@ -14,6 +16,8 @@ const Company = () => {
       <CompanyButton />
       <CompanyTech />
       <CompanyAlgorithm />
+      <CompanyIcon />
+      <CompanyLED />
     </div>
   );
 };
