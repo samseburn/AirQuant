@@ -1,0 +1,60 @@
+.box {
+    position: relative;
+    
+    .questionBox {
+      
+        border-bottom: 1px solid #C7C7C7;
+        display: flex;
+        justify-content: space-between;
+        width: 850px;
+        height: 70px;
+        padding: 0 20px;
+        line-height: 70px;
+
+        position: relative;
+        z-index: 10;
+
+      
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            background: white;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeIn {
+    overflow: hidden;
+    animation: fadeIn 0.4s ease;
+   
+  }
+  
+  /* fade out */
+  
+  @keyframes fadeOut {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .fadeOut {
+    overflow: hidden;
+    animation: fadeOut 0.4s ease;
+    animation-fill-mode: forwards;
+  }
