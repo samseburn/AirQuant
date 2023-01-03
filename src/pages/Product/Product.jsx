@@ -16,10 +16,8 @@ const Product = () => {
 
       <ProductPiquantExplanation />
       <ProductMainImg />
+      {/* <InformationBox /> */}
       <ProductAirTable />
-      <br />
-
-      <InformationBox />
     </div>
   );
 };
