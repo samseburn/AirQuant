@@ -1,3 +1,4 @@
+import { TechExplanation } from 'components';
 import React from 'react';
 
 const Tech = () => {
@@ -10,9 +11,7 @@ const Tech = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-    >
-      적용 기술 페이지 입니다.
-    </div>
+    ></div>
   );
 };
 
