@@ -1,4 +1,4 @@
-import { InformationBox } from 'components';
+import { InformationBox, ProductBlueBox } from 'components';
 import React from 'react';
 import { ProductMainImg, ProductAirTable } from 'components';
 
@@ -14,11 +14,11 @@ const Product = () => {
         alignItems: 'center',
       }}
     >
-      <ProductMainImg />
-      <ProductAirTable />
-      <br />
+      {/* <ProductMainImg />
+      <ProductAirTable /> */}
 
-      <InformationBox />
+      {/* <InformationBox /> */}
+      {/* <ProductBlueBox /> */}
     </div>
   );
 };
