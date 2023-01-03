@@ -3,7 +3,6 @@ import React from 'react';
 import {
   ProductMainImg,
   ProductAirTable,
-  InformationBox,
   ProductPiquantExplanation,
 } from 'components';
 
@@ -18,17 +17,7 @@ const Product = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-    >
-      <ProductPiquantExplanation />
-      <ProductMainImg />
-      {/* <InformationBox /> */}
-      <ProductAirTable />
-      {/* <ProductMainImg />
-      <ProductAirTable /> */}
-
-      {/* <InformationBox /> */}
-      {/* <ProductBlueBox /> */}
-    </div>
+    ></div>
   );
 };
 
