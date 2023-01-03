@@ -23,3 +23,4 @@ export { QuestionBox } from './module/QuestionBox';
 export { Box } from './module/Box';
 export { ProductBlueBox } from './module/ProductBlueBox';
 export { TechMeasurement } from './module/TechMeasurement';
+export { TechExplanation } from './module/TechExplanation';
