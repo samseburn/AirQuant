@@ -20,3 +20,5 @@ export { Faq } from './module/Faq';
 export { AnswerBox } from './module/AnswerBox';
 export { QuestionBox } from './module/QuestionBox';
 export { Box } from './module/Box';
+export { ProductBlueBox } from './module/ProductBlueBox';
+export { TechMeasurement } from './module/TechMeasurement';
