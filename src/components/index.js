@@ -5,6 +5,7 @@ export { Footer } from './common/Footer';
 
 // module
 export { Card } from './module/Card';
+export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
@@ -19,4 +20,3 @@ export { Faq } from './module/Faq';
 export { AnswerBox } from './module/AnswerBox';
 export { QuestionBox } from './module/QuestionBox';
 export { Box } from './module/Box';
-
