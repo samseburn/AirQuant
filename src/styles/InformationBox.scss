@@ -1,58 +1,87 @@
-p {
-  display: center;
-  font-size: 28px;
-}
-.title {
-  background-color: $blue_middle;
-  color: $white;
-  font-size: $font-size-24;
-  height: 64px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imgBox {
-  width: 704px;
-  height: 256px;
-  border: 1px solid gray;
-  margin-bottom: 50px;
-  .imgContent {
-    height: 192px;
+.InformationBox {
+  p {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 45px;
+  }
+  .title {
+    background-color: $blue_middle;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    height: 64px;
+    text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+  }
 
-    .leftChild {
-      height: 150px;
-      width: 150px;
-      background-color: gray;
-    }
-    .rightChild {
-      text-align: right;
-      font-size: 22.25px;
+  .imgBox {
+    width: 704px;
+    height: 256px;
+    border: 1px solid gray;
+    margin-bottom: 50px;
+    .imgContent {
+      height: 192px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .leftChild {
+        height: 150px;
+        width: 150px;
+        background-color: gray;
+      }
+      .rightChild {
+        text-align: right;
+        font-size: 22.25px;
+        font-weight: 600;
+        line-height: 35px;
+        span {
+          color: $blue_main;
+        }
+      }
     }
   }
-}
 
-.dangerBox {
-  width: 704px;
-  height: 415px;
-  border: 1px solid gray;
-  .content {
-    text-align: center;
-    .contentFirst {
-      font-size: 22.25px;
-    }
-    .contentSecond {
-      font-size: 19.25px;
-    }
-    .contentThird {
-      font-size: 16px;
-    }
-    .contentBottom {
-      font-size: 22px;
+  .dangerBox {
+    width: 704px;
+    height: 415px;
+    border: 1px solid gray;
+
+    .content {
+      height: 351px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 10px;
+      padding-right: 10px;
+      .contentFirst {
+        font-size: 22.25px;
+        font-weight: 600;
+        span {
+          color: $blue_main;
+        }
+      }
+      .contentSecond {
+        font-size: 19.25px;
+        line-height: 30px;
+      }
+      .contentThird {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      .contentBottom {
+        font-size: 22px;
+        border-top: 1px solid gray;
+        font-weight: 600;
+        padding-top: 30px;
+
+        span {
+          color: $blue_main;
+        }
+      }
     }
   }
 }
