@@ -1,3 +1,4 @@
+import { ProductPiquantExplanation } from 'components';
 import React from 'react';
 
 const Product = () => {
@@ -11,7 +12,7 @@ const Product = () => {
         alignItems: 'center',
       }}
     >
-      제품소개 페이지 입니다.
+      <ProductPiquantExplanation />
     </div>
   );
 };
