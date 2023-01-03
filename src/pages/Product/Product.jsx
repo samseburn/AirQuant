@@ -1,5 +1,10 @@
+import { InformationBox, ProductBlueBox } from 'components';
 import React from 'react';
-import { ProductMainImg, ProductAirTable, InformationBox, ProductPiquantExplanation } from 'components';
+import {
+  ProductMainImg,
+  ProductAirTable,
+  ProductPiquantExplanation,
+} from 'components';
 
 const Product = () => {
   return (
@@ -13,6 +18,7 @@ const Product = () => {
         alignItems: 'center',
       }}
     >
+
 
     </div>
   );
