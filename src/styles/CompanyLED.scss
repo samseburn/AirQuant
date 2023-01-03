@@ -1,5 +1,8 @@
+@import '../styles/mixins/flexbox';
+
 .CompanyLED {
   width: 100%;
+  // 나중에 높이 값 바꿔야함
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,12 +10,16 @@
     color: gray;
   }
   .CompanyLED_Charts {
-    display: flex;
+    @include flexbox;
     .CompanyLED_Chart {
       width: 400px;
       height: 300px;
       background-color: gray;
       margin: 50px;
     }
+  }
+  .CompanyLED_Content {
+    @include flexbox;
+    margin-bottom: 20px;
   }
 }
