@@ -2,8 +2,8 @@ import React from 'react';
 
 const InformationBox = () => {
   return (
-    <div>
-      <p>실내 공기질을 왜 정확하게 모니터링 해야할까요?</p>
+    <>
+      <p className='Product__Info'>실내 공기질을 왜 정확하게 모니터링 해야할까요?</p>
       <div className="imgBox">
         <div className="title">건물 외부 대비 심각한 공기 질 오염</div>
         <div className="imgContent">
@@ -38,7 +38,7 @@ const InformationBox = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
