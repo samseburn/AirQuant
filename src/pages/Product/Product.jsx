@@ -19,6 +19,7 @@ const Product = () => {
         alignItems: 'center',
       }}
     >
+
       <ProductPiquantExplanation />
       <ProductMainImg />
       <ProductAirTable />
