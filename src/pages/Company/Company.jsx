@@ -10,6 +10,7 @@ const Company = () => {
         height: '100vh',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
       }}
     >
       <CompanyIcon />
