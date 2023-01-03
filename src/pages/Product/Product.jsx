@@ -17,10 +17,7 @@ const Product = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-    >
-
-
-    </div>
+    ></div>
   );
 };
 
