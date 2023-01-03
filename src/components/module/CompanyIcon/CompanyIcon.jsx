@@ -26,8 +26,8 @@ const CompanyIcon = () => {
         &#40;C12666MA&#41;
       </h1>
       <div className="CompanyIcon_Imgs">
-        <div className="CompanyIcon_Img_Item Item1"></div>
-        <div className="CompanyIcon_Img_Item Item2"></div>
+        <div className="CompanyIcon_Img_Item imageLeft"></div>
+        <div className="CompanyIcon_Img_Item imageRight"></div>
       </div>
       <div className="CompanyIcon_Icons">
         <div className="CompanyIcon_Icon small">
