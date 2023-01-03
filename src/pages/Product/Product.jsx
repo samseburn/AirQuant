@@ -1,8 +1,8 @@
+import { InformationBox, ProductBlueBox } from 'components';
 import React from 'react';
 import {
   ProductMainImg,
   ProductAirTable,
-  InformationBox,
   ProductPiquantExplanation,
   ProductAirquantImg,
 } from 'components';

@@ -1,0 +1,20 @@
+.ProductBlueBox {
+  width: 100vw;
+  height: 30vh;
+  //   height: 214px;
+  background-color: $blue_main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    color: $white;
+    font-size: 26px;
+    text-align: center;
+    line-height: 47px;
+    span {
+      //   text-decoration: underline;
+      font-weight: 600;
+      box-shadow: inset 0 -2px 0 white;
+    }
+  }
+}
