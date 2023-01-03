@@ -1,6 +1,11 @@
-
 import React from 'react';
-import { CompanyIcon, CompanyLED, CompanyAlgorithm, CompanyButton, CompanyTech } from 'components';
+import {
+  CompanyIcon,
+  CompanyLED,
+  CompanyAlgorithm,
+  CompanyButton,
+  CompanyTech,
+} from 'components';
 
 const Company = () => {
   return (
@@ -16,8 +21,8 @@ const Company = () => {
     >
       <CompanyButton />
       <CompanyTech />
-      <CompanyAlgorithm />
       <CompanyIcon />
+      <CompanyAlgorithm />
       <CompanyLED />
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductAirTable.scss';
 
 const ProductAirTable = () => {
     return (
