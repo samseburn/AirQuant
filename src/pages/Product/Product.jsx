@@ -4,6 +4,7 @@ import {
   ProductMainImg,
   ProductAirTable,
   ProductPiquantExplanation,
+  ProductAirquantImg,
 } from 'components';
 
 const Product = () => {
