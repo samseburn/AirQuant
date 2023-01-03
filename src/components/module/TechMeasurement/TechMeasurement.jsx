@@ -6,6 +6,15 @@ const TechMeasurement = () => {
   function Modal() {
     return (
       <div className="Techmodal">
+        <div className="title">
+          <p>
+            측정결과
+            <br />
+            범위
+          </p>
+          <p>단위</p>
+          <p>정확도</p>
+        </div>
         <p className="explain">
           SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과 대체가능합니다.
         </p>
