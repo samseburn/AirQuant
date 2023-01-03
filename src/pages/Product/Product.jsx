@@ -15,10 +15,8 @@ const Product = () => {
       }}
     >
       <ProductMainImg />
+      {/* <InformationBox /> */}
       <ProductAirTable />
-      <br />
-
-      <InformationBox />
     </div>
   );
 };
