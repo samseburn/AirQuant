@@ -6,6 +6,7 @@ export { Footer } from './common/Footer';
 // module
 export { Card } from './module/Card';
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
+export { ProductAirquantImg } from './module/ProductAirquantImg';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
