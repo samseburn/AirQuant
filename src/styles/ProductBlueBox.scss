@@ -6,12 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .content {
+  &_content {
     color: $white;
     font-size: 26px;
     text-align: center;
     line-height: 47px;
-    span {
+    .ProductBlueBox_bold {
       //   text-decoration: underline;
       font-weight: 600;
       box-shadow: inset 0 -2px 0 white;
