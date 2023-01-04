@@ -16,6 +16,12 @@ function App() {
         { path: '/tech', element: <Container content={<Tech />} /> },
         { path: '/company', element: <Container content={<Company />} /> },
         { path: '/case', element: <Container content={<Case />} /> },
+        {
+          path: '/case/:caseId',
+          element: (
+            <Container content={<div>적용 사례 개별 콘텐츠 게시판</div>} />
+          ),
+        },
         { path: '/service', element: <Container content={<Service />} /> },
       ],
     },
