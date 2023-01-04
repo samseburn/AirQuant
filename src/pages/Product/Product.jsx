@@ -1,10 +1,12 @@
-import { InformationBox, ProductBlueBox, ProductGraphText } from 'components';
 import React from 'react';
 import {
+  ProductBlueBox,
+  ProductGraphText,
   ProductMainImg,
   ProductAirTable,
   ProductPiquantExplanation,
   ProductAirquantImg,
+  InformationBox,
   ProductGraph,
 } from 'components';
 
