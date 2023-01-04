@@ -24,6 +24,7 @@ const Company = () => {
       <CompanyIcon />
       <CompanyAlgorithm />
       <CompanyLED />
+      ㅇㅇㅇㅇ
     </div>
   );
 };
