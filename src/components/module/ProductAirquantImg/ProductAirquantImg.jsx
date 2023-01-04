@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductAirquantImg.scss';
 
 const ProductAirquantImg = () => {
   return (

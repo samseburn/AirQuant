@@ -1,34 +1,15 @@
-import { InformationBox, ProductBlueBox } from 'components';
+import { InformationBox, ProductBlueBox, ProductGraphText } from 'components';
 import React from 'react';
 import {
   ProductMainImg,
   ProductAirTable,
   ProductPiquantExplanation,
   ProductAirquantImg,
+  ProductGraph,
 } from 'components';
 
 const Product = () => {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-
-      <ProductPiquantExplanation />
-      <ProductMainImg />
-      <ProductAirTable />
-      <ProductAirquantImg />
-      <br />
-
-      <InformationBox />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Product;

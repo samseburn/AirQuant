@@ -1,13 +1,12 @@
 import { buildQueries } from '@testing-library/react';
 import React from 'react';
-import './ProductPiquantExplanation.scss';
 
 const ProductPiquantExplanation = () => {
   return (
-    <div className="parent">
+    <div className="Piquant_container">
       "
-      <div className="parent1">
-        <span className="Num1">
+      <div className="Piquant_container1">
+        <span className="Piquant_num1">
           <br />
           파이퀀트는 4차 산업의 핵심 기술인 IoT 기술과 빅데이터를 이용해
           <br />
@@ -19,7 +18,7 @@ const ProductPiquantExplanation = () => {
         <br />
         <br />
         <br />
-        <span className="Num2">
+        <span className="Piquant_num2">
           에어퀀트는 관리자가
           <span className="blue1"> 유해물질로부터 실내 환경 보호</span>
           하여

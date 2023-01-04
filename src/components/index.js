@@ -7,6 +7,8 @@ export { Footer } from './common/Footer';
 export { Card } from './module/Card';
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
+export { ProductGraph } from './module/ProductGraph';
+export { ProductGraphText } from './module/ProductGraphText';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
@@ -20,6 +22,9 @@ export { InformationBox } from './module/InformationBox';
 
 export { ProductBlueBox } from './module/ProductBlueBox';
 export { TechMeasurement } from './module/TechMeasurement';
+export { TechExplanation } from './module/TechExplanation';
+export { TechMain } from './module/TechMain';
+export { Button } from './module/Button';
 
 export { Faq } from './module/Faq';
 export { Box } from './module/Box';
