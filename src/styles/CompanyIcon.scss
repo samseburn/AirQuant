@@ -1,5 +1,5 @@
-@import '../styles/constants/colors';
-@import '../styles/mixins/flexbox';
+@import '../styles/constants/_colors';
+@import '../styles/mixins/_flexbox';
 
 .CompanyIcon {
   // container 높이 값 바꿔야함
@@ -8,29 +8,29 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  .CompanyIcon_Title {
+  &-title {
     color: $dark;
   }
-  .CompanyIcon_Imgs {
+  &-imgs {
     @include flexbox;
-    .CompanyIcon_Img_Item {
+    &-item {
       background-color: gray;
       width: 400px;
       height: 300px;
       margin: 40px;
     }
   }
-  .CompanyIcon_Icons {
+  &-icons {
     @include flexbox;
     span {
       margin: 10px;
     }
-    .CompanyIcon_Icon {
+    &-item {
       flex-direction: column;
       @include flexbox;
       width: 300px;
       margin: 10px;
-      .CompanyIcon_Icon_Item {
+      &-img {
         width: 150px;
         height: 150px;
         background-color: gray;
@@ -40,7 +40,7 @@
 }
 
 // 스크롤 이벤트 부분
-.CompanyIcon_Title_Scrolled {
+.CompanyIcon-title-scrolled {
   color: red;
-  transition: all 3s;
+  transition: all 1s;
 }
