@@ -7,8 +7,8 @@ export { Footer } from './common/Footer';
 export { Card } from './module/Card';
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
-export { ProductGraph } from './module/ProductGraph'
-export { ProductGraphText } from './module/ProductGraphText'
+export { ProductGraph } from './module/ProductGraph';
+export { ProductGraphText } from './module/ProductGraphText';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
