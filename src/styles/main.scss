@@ -14,8 +14,9 @@
 @import './mixins/responsive';
 
 // layout
-@import './Header';
-@import './Container';
-@import './Card';
+@import './layouts/Header';
+@import './layouts/Container';
+@import './layouts/Footer';
 
+@import './Card';
 @import './InformationBox';
