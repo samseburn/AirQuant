@@ -8,10 +8,7 @@ import {
 } from 'components';
 
 const Product = () => {
-  return (
-    <div>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Product;

@@ -28,3 +28,4 @@ export { TechMain } from './module/TechMain';
 export { AnswerBox } from './module/Faq/Box/AnswerBox';
 export { QuestionBox } from './module/Faq/Box/QuestionBox';
 export { Box } from './module/Faq/Box';
+export { Button } from './module/Button';
