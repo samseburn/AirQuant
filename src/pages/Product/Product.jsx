@@ -18,15 +18,7 @@ const Product = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-    >
-      <ProductPiquantExplanation />
-      <ProductMainImg />
-      <ProductAirTable />
-      <ProductAirquantImg />
-      <br />
-
-      <InformationBox />
-    </div>
+    ></div>
   );
 };
 
