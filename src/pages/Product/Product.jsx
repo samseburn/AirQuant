@@ -1,20 +1,17 @@
 import React from 'react';
 import {
+  ProductBlueBox,
+  ProductGraphText,
   ProductMainImg,
   ProductAirTable,
-  InformationBox,
   ProductPiquantExplanation,
+  ProductAirquantImg,
+  InformationBox,
+  ProductGraph,
 } from 'components';
 
 const Product = () => {
-  return (
-    <div>
-      <ProductPiquantExplanation />
-      <ProductMainImg />
-      {/* <InformationBox /> */}
-      <ProductAirTable />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Product;

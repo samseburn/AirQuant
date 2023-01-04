@@ -12,8 +12,8 @@ const Company = () => {
     <div>
       <CompanyButton />
       <CompanyTech />
-      <CompanyAlgorithm />
       <CompanyIcon />
+      <CompanyAlgorithm />
       <CompanyLED />
     </div>
   );

@@ -1,0 +1,86 @@
+.box {
+    position: relative;
+    width: 1200px;
+
+
+    .questionBox {
+        border-bottom: 1px solid #C7C7C7;
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+
+        height: 120px;
+        padding: 0 20px;
+        line-height: 40px;
+
+        // position: absolute;
+
+
+        z-index: 10;
+        background: white;
+        font-size: 26px;
+        font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+          color: #1b76ff;
+        }
+
+        .question {
+          word-break: keep-all;
+
+        }
+
+        .icon {
+          font-size: 40px;
+        }
+    }
+    .answerBox {
+      width: 100%;
+      height: 120px;
+      border-bottom: 1px solid #C7C7C7;
+      padding: 20px 20px 40px 20px;
+      z-index: 1;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+         display: block;
+    }
+  }
+  
+  .fadeIn {
+    overflow: hidden;
+    animation: fadeIn 0.4s ease;
+
+  }
+  
+  /* fade out */
+  
+  @keyframes fadeOut {
+    0% {
+      transform: translateY(0);
+
+    }
+  
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .fadeOut {
+    overflow: hidden;
+    animation: fadeOut 0.4s ease;
+    animation-fill-mode: forwards;
+    display: none;
+  }

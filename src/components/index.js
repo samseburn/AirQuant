@@ -6,6 +6,9 @@ export { Footer } from './common/Footer';
 // module
 export { Card } from './module/Card';
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
+export { ProductAirquantImg } from './module/ProductAirquantImg';
+export { ProductGraph } from './module/ProductGraph';
+export { ProductGraphText } from './module/ProductGraphText';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
@@ -16,7 +19,13 @@ export { CompanyLED } from './module/CompanyLED';
 export { ProductMainImg } from './module/ProductMainImg';
 export { ProductAirTable } from './module/ProductAirTable';
 export { InformationBox } from './module/InformationBox';
+
+export { ProductBlueBox } from './module/ProductBlueBox';
+export { TechMeasurement } from './module/TechMeasurement';
+export { TechExplanation } from './module/TechExplanation';
+export { TechMain } from './module/TechMain';
+export { Button } from './module/Button';
+
 export { Faq } from './module/Faq';
-export { AnswerBox } from './module/AnswerBox';
-export { QuestionBox } from './module/QuestionBox';
 export { Box } from './module/Box';
+export { AnswerBox } from './module/AnswerBox';

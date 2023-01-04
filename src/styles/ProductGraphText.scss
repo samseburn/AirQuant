@@ -1,0 +1,33 @@
+.Product__Graph__Main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .Product__p_text_Main {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .Product__p_text_inhauniv {
+        text-align: right;
+        margin-right: 30px;
+        color: $border;
+    }
+
+    .Product__div_text_health {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-top: 30px;
+        
+
+        color: $white;
+        background-color: $blue_main;
+        height: 50px;
+    }
+}
