@@ -17,10 +17,10 @@ export { CompanyLED } from './module/CompanyLED';
 export { ProductMainImg } from './module/ProductMainImg';
 export { ProductAirTable } from './module/ProductAirTable';
 export { InformationBox } from './module/InformationBox';
-export { Faq } from './module/Faq';
 
 export { ProductBlueBox } from './module/ProductBlueBox';
 export { TechMeasurement } from './module/TechMeasurement';
-export { AnswerBox } from './module/Faq/Box/AnswerBox';
-export { QuestionBox } from './module/Faq/Box/QuestionBox';
-export { Box } from './module/Faq/Box';
+
+export { Faq } from './module/Faq';
+export { Box } from './module/Box';
+export { AnswerBox } from './module/AnswerBox';
