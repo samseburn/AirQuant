@@ -1,10 +1,11 @@
 .InformationBox {
-  p {
+  &_bigTitle {
     text-align: center;
     font-size: 28px;
     margin-bottom: 45px;
+    font-weight: 700;
   }
-  .title {
+  &_title {
     background-color: $blue_middle;
     color: $white;
     font-size: 24px;
@@ -15,56 +16,53 @@
     justify-content: center;
     align-items: center;
   }
-.Product__Info {
-  display: center;
-  font-size: 28px;
-}
 
-.title {
-  background-color: $blue_middle;
-  color: $white;
-  font-size: $font-size-24;
-  height: 64px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  // .title {
+  //   background-color: $blue_middle;
+  //   color: $white;
+  //   font-size: $font-size-24;
+  //   height: 64px;
+  //   text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
-  .imgBox {
+  &_firstBox {
     width: 704px;
     height: 256px;
     border: 1px solid gray;
     margin-bottom: 50px;
+
     .imgContent {
       height: 192px;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
 
-      .leftChild {
+      &_leftChild {
         height: 150px;
         width: 150px;
         background-color: gray;
       }
-      .rightChild {
+      &_rightChild {
         text-align: right;
         font-size: 22.25px;
         font-weight: 600;
         line-height: 35px;
-        span {
+        &_blue {
           color: $blue_main;
         }
       }
     }
   }
 
-  .dangerBox {
+  &_secondBox {
     width: 704px;
     height: 415px;
     border: 1px solid gray;
 
-    .content {
+    &_content {
       height: 351px;
       text-align: center;
       display: flex;
@@ -72,28 +70,30 @@
       justify-content: space-evenly;
       padding-left: 10px;
       padding-right: 10px;
-      .contentFirst {
+
+      .dangerContentFirst {
         font-size: 22.25px;
         font-weight: 600;
-        span {
+
+        &_colorChange {
           color: $blue_main;
         }
       }
-      .contentSecond {
+      .dangerContentSecond {
         font-size: 19.25px;
         line-height: 30px;
       }
-      .contentThird {
+      .dangerContentThird {
         font-size: 16px;
         line-height: 25px;
       }
-      .contentBottom {
+      .dangerContentBottom {
         font-size: 22px;
         border-top: 1px solid gray;
         font-weight: 600;
         padding-top: 30px;
 
-        span {
+        &_colorChange {
           color: $blue_main;
         }
       }
