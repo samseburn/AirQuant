@@ -20,20 +20,25 @@
         .AirTable__Table_In {
             height: 350px;
             border-collapse: collapse;
-            // border: 1px solid black;
-            border-bottom: 2px solid #69A5FF;
+            border-bottom: 2px solid $blue_middle;
+            table-layout: fixed;
             
             .AirTable__Thead__tr {
                 height: 50px;
-                background-color: #69A5FF;
-                border-top-right-radius: 30px;
+                background-color: $blue_middle;
                 color: white;
                 font-size: 1.2rem;
+                
             }
 
             tr td {
-                border-bottom: 1px solid gainsboro;
-                padding: 10px;
+                border-bottom: 1px solid $background;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .AirTable__Tbody_tr {
+                background-color: $blue_bright;
             }
         }
     }
