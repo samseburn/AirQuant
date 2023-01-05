@@ -1,3 +1,4 @@
+import { InformationBox, ProductBlueBox, ProductGraphText, TechMain } from 'components';
 import React from 'react';
 import {
   ProductBlueBox,

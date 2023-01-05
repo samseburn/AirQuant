@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductMainImg.scss';
 
 const ProductMainImg = () => {
   return (
