@@ -1,4 +1,3 @@
-import { InformationBox, ProductBlueBox, ProductGraphText, TechMain } from 'components';
 import React from 'react';
 import {
   ProductBlueBox,
@@ -9,10 +8,13 @@ import {
   ProductAirquantImg,
   InformationBox,
   ProductGraph,
+  TechMain,
+  TechCustomers,
 } from 'components';
 
 const Product = () => {
-  return <div></div>;
+  return <div>
+  </div>;
 };
 
 export default Product;
