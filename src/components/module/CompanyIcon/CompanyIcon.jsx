@@ -25,13 +25,23 @@ const CompanyIcon = () => {
         <br />
         &#40;C12666MA&#41;
       </h1>
-      <div className="CompanyIcon-imgs">
+      <div
+        className={
+          scrollPosition > 80 ? 'CompanyIcon-imgs-scrolled' : 'CompanyIcon-imgs'
+        }
+      >
         <div className="CompanyIcon-imgs-item imageLeft"></div>
         <div className="CompanyIcon-imgs-item imageRight"></div>
       </div>
-      <div className="CompanyIcon-icons">
+      <div
+        className={
+          scrollPosition > 150
+            ? 'CompanyIcon-icons-scrolled'
+            : 'CompanyIcon-icons'
+        }
+      >
         <div className="CompanyIcon-icons-item small">
-          <div className="CompanyIcon-icons-item-img small_icon"></div>
+          <div className="CompanyIcon-icons-item-img"></div>
           <span>작은 사이즈</span>
           <span>
             파이퀀트의 분광 분석 장비는
@@ -39,7 +49,7 @@ const CompanyIcon = () => {
           </span>
         </div>
         <div className="CompanyIcon-icons-item price">
-          <div className="CompanyIcon-icons-item-img price_icon"></div>
+          <div className="CompanyIcon-icons-item-img"></div>
           <span>낮은 가격</span>
           <span>
             파이퀀트 분광 분석 장비는
@@ -48,7 +58,7 @@ const CompanyIcon = () => {
           </span>
         </div>
         <div className="CompanyIcon-icons-item accuracy">
-          <div className="CompanyIcon-icons-item-img accuracy_icon"></div>
+          <div className="CompanyIcon-icons-item-img"></div>
           <span>높은 정확도</span>
           <span>
             파이퀀트의 분광 분석 장비는 <br />약 $60,000가 넘는 기존 분광 분석

@@ -1,6 +1,12 @@
 @import '../styles/constants/_colors';
 @import '../styles/mixins/_flexbox';
 
+// 전체에 margin,padding 0px로 맞춰줘야 애니메이션 실행 후 위치가 움직여보이는 오류 없어짐,, 아마도,,?
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .CompanyIcon {
   // container 높이 값 바꿔야함
   width: 100%;
@@ -20,35 +26,41 @@
   }
   &-imgs {
     @include flexbox;
+    visibility: hidden;
+    &-scrolled {
+      @include flexbox;
+      animation-duration: 3s;
+      animation-name: upSlide;
+    }
     &-item {
       background-color: gray;
       width: 400px;
       height: 300px;
       margin: 40px;
-      &.imageLeft {
-        &-scrolled {
-          animation-duration: 3s;
-          animation-name: upSlide;
-        }
-      }
     }
   }
   &-icons {
     @include flexbox;
-    span {
-      margin: 10px;
-    }
     visibility: hidden;
     &-item {
       flex-direction: column;
       @include flexbox;
       width: 300px;
       margin: 10px;
+
       &-img {
         width: 150px;
         height: 150px;
         background-color: gray;
       }
+    }
+    &-scrolled {
+      @include flexbox;
+      span {
+        margin: 5px;
+      }
+      animation-duration: 3s;
+      animation-name: upSlide;
     }
   }
 }
