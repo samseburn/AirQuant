@@ -26,7 +26,13 @@ const CompanyIcon = () => {
         &#40;C12666MA&#41;
       </h1>
       <div className="CompanyIcon-imgs">
-        <div className="CompanyIcon-imgs-item imageLeft"></div>
+        <div
+          className={
+            scrollPosition > 50
+              ? 'CompanyIcon-imgs-item imageLeft-scrolled'
+              : 'CompanyIcon-imgs-item imageLeft'
+          }
+        ></div>
         <div className="CompanyIcon-imgs-item imageRight"></div>
       </div>
       <div className="CompanyIcon-icons">
