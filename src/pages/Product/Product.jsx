@@ -1,9 +1,3 @@
-import {
-  InformationBox,
-  ProductBlueBox,
-  ProductGraphText,
-  TechMain,
-} from 'components';
 import React from 'react';
 import {
   ProductBlueBox,
@@ -17,7 +11,7 @@ import {
 } from 'components';
 
 const Product = () => {
-  return <div>안녕</div>;
+  return <div></div>;
 };
 
 export default Product;
