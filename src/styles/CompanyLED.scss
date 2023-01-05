@@ -1,9 +1,9 @@
 @import '../styles/mixins/flexbox';
 
 .CompanyLED {
-  width: 100%;
-  // 나중에 높이 값 바꿔야함
   @include flexbox;
+  width: 100%;
+  height: 100vh;
   flex-direction: column;
   &-title {
     color: gray;
