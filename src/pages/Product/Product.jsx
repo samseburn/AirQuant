@@ -7,9 +7,7 @@ import {
   ProductPiquantExplanation,
   ProductAirquantImg,
   ProductGraph,
-  ProductAirquantImg,
   InformationBox,
-  ProductGraph,
 } from 'components';
 
 const Product = () => {
