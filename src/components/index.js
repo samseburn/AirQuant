@@ -5,10 +5,10 @@ export { Footer } from './common/Footer';
 
 // module
 export { Card } from './module/Card';
-export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
+export { ProductPiquantExplanation } from './module/ProductPiquantExplasnation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
-export { ProductGraph } from './module/ProductGraph'
-export { ProductGraphText } from './module/ProductGraphText'
+export { ProductGraph } from './module/ProductGraph';
+export { ProductGraphText } from './module/ProductGraphText';
 
 export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
@@ -29,3 +29,5 @@ export { AnswerBox } from './module/Faq/Box/AnswerBox';
 export { QuestionBox } from './module/Faq/Box/QuestionBox';
 export { Box } from './module/Faq/Box';
 export { Button } from './module/Button';
+
+export { TechConvenience } from './module/TechConvenience';

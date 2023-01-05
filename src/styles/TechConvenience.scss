@@ -1,5 +1,5 @@
 .TechConvenience {
-  padding-bottom: 200px;
+  padding-bottom: 250px;
   // 소제목
   &_title {
     font-size: 28px;
@@ -13,7 +13,7 @@
 
     // 왼쪽
     .TechConLeftChild {
-      padding: 20px;
+      padding: 25px;
 
       &_Img {
         width: 435px;
@@ -24,13 +24,13 @@
         font-size: 25px;
         padding-top: 20px;
         white-space: pre-wrap;
-        line-height: 2;
+        line-height: 1.5;
       }
     }
 
     // 오른쪽
     .TechConRightChild {
-      padding: 20px;
+      padding: 25px;
 
       &_Img {
         width: 435px;
@@ -41,7 +41,7 @@
         font-size: 25px;
         padding-top: 20px;
         white-space: pre-wrap;
-        line-height: 2;
+        line-height: 1.5;
       }
     }
   }
