@@ -24,6 +24,7 @@ export { ProductBlueBox } from './module/ProductBlueBox';
 export { TechMeasurement } from './module/TechMeasurement';
 export { TechExplanation } from './module/TechExplanation';
 export { TechMain } from './module/TechMain';
+export { TechCustomers } from './module/TechCustomers';
 export { Button } from './module/Button';
 
 export { Faq } from './module/Faq';
