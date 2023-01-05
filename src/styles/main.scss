@@ -14,10 +14,11 @@
 @import './mixins/responsive';
 
 // layout
-@import './Header';
-@import './Container';
-@import './Card';
+@import './layouts/Header';
+@import './layouts/Container';
+@import './layouts/Footer';
 
+@import './Card';
 @import './InformationBox';
 @import './ProductBlueBox.scss';
 @import './TechMeasurement.scss';
@@ -29,4 +30,7 @@
 @import './TechConvenience.scss';
 @import './ProductGraphText.scss';
 @import './TechMain.scss';
+
+@import './box.scss';
+@import './faq.scss';
 @import './ProductMainImg.scss';
