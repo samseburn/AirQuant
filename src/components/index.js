@@ -5,7 +5,7 @@ export { Footer } from './common/Footer';
 
 // module
 export { Card } from './module/Card';
-export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
+export { ProductPiquantExplanation } from './module/ProductPiquantExplasnation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
 export { ProductGraph } from './module/ProductGraph';
 export { ProductGraphText } from './module/ProductGraphText';
@@ -29,3 +29,5 @@ export { Button } from './module/Button';
 export { Faq } from './module/Faq';
 export { Box } from './module/Box';
 export { AnswerBox } from './module/AnswerBox';
+
+export { TechConvenience } from './module/TechConvenience';
