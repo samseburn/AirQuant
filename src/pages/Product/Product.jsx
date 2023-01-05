@@ -1,4 +1,4 @@
-import { InformationBox, ProductBlueBox, ProductGraphText } from 'components';
+import { InformationBox, ProductBlueBox, ProductGraphText, TechMain } from 'components';
 import React from 'react';
 import {
   ProductMainImg,
