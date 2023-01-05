@@ -1,0 +1,1 @@
+export {default as TechCustomers} from './TechCustomers'
