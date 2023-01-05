@@ -1,16 +1,32 @@
-@import '../styles/mixins/flexbox';
+@import '../styles/mixins/_flexbox';
+@import '../styles/constants/_fonts';
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .CompanyLED {
-  @include flexbox;
   width: 100%;
   height: 100vh;
+  @include flexbox;
   flex-direction: column;
   &-title {
-    color: gray;
+    visibility: hidden;
+    &-scrolled {
+      animation-name: upSlide;
+      animation-duration: 3s;
+    }
   }
   &-charts {
     @include flexbox;
-    &-item {
+    visibility: hidden;
+    &-scrolled {
+      @include flexbox;
+      animation-name: upSlide;
+      animation-duration: 3s;
+    }
+    &-left,
+    &-right {
       width: 400px;
       height: 300px;
       background-color: gray;
@@ -19,7 +35,25 @@
   }
 
   &-content {
-    @include flexbox;
-    margin-bottom: 20px;
+    visibility: hidden;
+    &-scrolled {
+      animation-name: upSlide;
+      animation-duration: 3s;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: $font-size-18;
+    }
+  }
+}
+
+@keyframes upSlide {
+  from {
+    margin-top: 10%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    opacity: 1;
   }
 }
