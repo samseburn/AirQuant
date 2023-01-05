@@ -4,6 +4,7 @@
 .CompanyIcon {
   // container 높이 값 바꿔야함
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -25,7 +26,6 @@
       height: 300px;
       margin: 40px;
       &.imageLeft {
-        visibility: hidden;
         &-scrolled {
           animation-duration: 3s;
           animation-name: upSlide;

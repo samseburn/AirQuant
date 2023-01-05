@@ -30,3 +30,6 @@ export { Button } from './module/Button';
 export { Faq } from './module/Faq';
 export { Box } from './module/Box';
 export { AnswerBox } from './module/AnswerBox';
+
+export { TechConvenience } from './module/TechConvenience';
+export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
