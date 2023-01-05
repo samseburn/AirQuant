@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  padding: 20px 80px;
+  background-color: #f8f8f8;
+
+  &-logo {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: $blue-main;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $blue-main;
+    margin-bottom: 10px;
+  }
+
+  &-information {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $blue-main;
+    }
+
+    &-address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .address-box {
+        p {
+          font-size: 14px;
+          &:first-child {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    &-contact {
+      width: 30%;
+      flex-shrink: 0;
+      flex-grow: 0;
+
+      dl {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+
+        dt {
+          font-weight: 700;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding: 20px 40px;
+    &-information {
+      flex-direction: column;
+    }
+  }
+
+  @include responsive(M) {
+  }
+}
