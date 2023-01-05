@@ -9,10 +9,13 @@ import {
   ProductGraph,
   InformationBox,
   ProductYoutubeFirst,
+  TechMain,
+  TechCustomers,
 } from 'components';
 
 const Product = () => {
-  return <div></div>;
+  return <div>
+  </div>;
 };
 
 export default Product;
