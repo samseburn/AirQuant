@@ -6,7 +6,6 @@ import {
   ProductAirTable,
   ProductPiquantExplanation,
   ProductAirquantImg,
-  ProductGraph,
   InformationBox,
   ProductYoutubeFirst,
   ProductYoutubeSecond,
@@ -14,11 +13,17 @@ import {
 import { TechMeasurementTable } from 'components/module/TechMeasurementTable';
 
 const Product = () => {
-  return (
-    <div>
-      <TechMeasurementTable />
-    </div>
-  );
+  return <div>
+    <ProductMainImg/>
+    <ProductPiquantExplanation/>
+    <InformationBox/>
+    <ProductYoutubeFirst/>
+    <ProductGraphText/>
+    <ProductYoutubeSecond/>
+    <ProductBlueBox/>
+    <ProductAirTable/>
+    <ProductAirquantImg/>
+  </div>;
 };
 
 export default Product;

@@ -40,7 +40,7 @@ const CompanyIcon = () => {
         }
       >
         <div className="CompanyIcon-icons-item small">
-          <div className="CompanyIcon-icons-item-img"></div>
+          <div className="CompanyIcon-icons-item-img small-icon"></div>
           <span>
             <b>작은 사이즈</b>
           </span>
@@ -50,7 +50,7 @@ const CompanyIcon = () => {
           </span>
         </div>
         <div className="CompanyIcon-icons-item price">
-          <div className="CompanyIcon-icons-item-img"></div>
+          <div className="CompanyIcon-icons-item-img price-icon"></div>
           <span>
             <b>낮은 가격</b>
           </span>
@@ -61,7 +61,7 @@ const CompanyIcon = () => {
           </span>
         </div>
         <div className="CompanyIcon-icons-item accuracy">
-          <div className="CompanyIcon-icons-item-img"></div>
+          <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
           <span>
             <b>높은 정확도</b>
           </span>
