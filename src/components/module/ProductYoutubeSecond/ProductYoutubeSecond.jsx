@@ -1,18 +1,18 @@
 import React from 'react';
 
-const ProductYoutubeFirst = () => {
+const ProductYoutubeSecond = () => {
   return (
-    <div className="ProductYoutubeFirst">
-      <div className="ProductYoutubeFirst_video">
+    <div className="ProductYoutubeSecond">
+      <div className="ProductYoutubeSecond_video">
         <iframe
-          className="firstYtv"
-          //   width="510"
+          className="secondYtv"
+          //   width="560"
           //   height="315"
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/e8CB9VkeWZM"
+          src="https://www.youtube.com/embed/9jx92FdlYOs"
           title="YouTube video player"
-          frameBorder="0"
+          frameborder="0"
           allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
@@ -21,4 +21,4 @@ const ProductYoutubeFirst = () => {
   );
 };
 
-export default ProductYoutubeFirst;
+export default ProductYoutubeSecond;
