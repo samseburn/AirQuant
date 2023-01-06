@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { company_product, company_product_drawing } from 'images';
 
 const CompanyIcon = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -7,7 +8,7 @@ const CompanyIcon = () => {
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
-  }, []);
+  }, [scrollPosition]);
 
   console.log(window.scrollY);
 
@@ -29,8 +30,12 @@ const CompanyIcon = () => {
           scrollPosition > 80 ? 'CompanyIcon-imgs-scrolled' : 'CompanyIcon-imgs'
         }
       >
-        <div className="CompanyIcon-imgs-item imageLeft"></div>
-        <div className="CompanyIcon-imgs-item imageRight"></div>
+        <div className="CompanyIcon-imgs-item imageLeft">
+          <img src={company_product}></img>
+        </div>
+        <div className="CompanyIcon-imgs-item imageRight">
+          <img src={company_product_drawing}></img>
+        </div>
       </div>
       <div
         className={
