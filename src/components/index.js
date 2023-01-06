@@ -30,11 +30,10 @@ export { TechCustomersMap } from './module/TechCustomersMap';
 export { Button } from './module/Button';
 
 export { Faq } from './module/Faq';
-export { Box } from './module/Box';
-export { AnswerBox } from './module/AnswerBox';
 
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
 export { TechPatent } from './module/TechPatent';
 export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
 export { TechMeasurementTable } from './module/TechMeasurementTable';
+export { FaqBox } from './module/FaqBox';
