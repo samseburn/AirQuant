@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../../../styles/CompanyIcon.scss';
 
 const CompanyIcon = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -42,7 +41,9 @@ const CompanyIcon = () => {
       >
         <div className="CompanyIcon-icons-item small">
           <div className="CompanyIcon-icons-item-img"></div>
-          <span>작은 사이즈</span>
+          <span>
+            <b>작은 사이즈</b>
+          </span>
           <span>
             파이퀀트의 분광 분석 장비는
             <br /> 한 손으로 들 만큼 작은 사이즈 입니다.
@@ -50,7 +51,9 @@ const CompanyIcon = () => {
         </div>
         <div className="CompanyIcon-icons-item price">
           <div className="CompanyIcon-icons-item-img"></div>
-          <span>낮은 가격</span>
+          <span>
+            <b>낮은 가격</b>
+          </span>
           <span>
             파이퀀트 분광 분석 장비는
             <br /> 약 $60,000가 넘는 기존 분광 분석 장비의
@@ -59,7 +62,9 @@ const CompanyIcon = () => {
         </div>
         <div className="CompanyIcon-icons-item accuracy">
           <div className="CompanyIcon-icons-item-img"></div>
-          <span>높은 정확도</span>
+          <span>
+            <b>높은 정확도</b>
+          </span>
           <span>
             파이퀀트의 분광 분석 장비는 <br />약 $60,000가 넘는 기존 분광 분석
             장비와
