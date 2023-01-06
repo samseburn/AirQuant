@@ -1,3 +1,4 @@
+import { table_logo } from 'images';
 import React from 'react';
 
 const InformationBox = () => {
@@ -13,8 +14,9 @@ const InformationBox = () => {
         <div className="InformationBox_title">
           건물 외부 대비 심각한 공기 질 오염
         </div>
+
         <div className="imgContent">
-          <div className="imgContent_leftChild">이미지</div>
+          <img src={table_logo} alt="" className="imgContent_leftChild" />
           <div className="imgContent_rightChild">
             <span className="imgContent_rightChild_blue">실내</span>공기
             오염물질의 농도

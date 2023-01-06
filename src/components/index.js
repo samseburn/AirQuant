@@ -37,3 +37,4 @@ export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
 export { TechPatent } from './module/TechPatent';
 export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
+export { TechMeasurementTable } from './module/TechMeasurementTable';
