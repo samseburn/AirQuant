@@ -13,17 +13,19 @@ import {
 import { TechMeasurementTable } from 'components/module/TechMeasurementTable';
 
 const Product = () => {
-  return <div>
-    <ProductMainImg/>
-    <ProductPiquantExplanation/>
-    <InformationBox/>
-    <ProductYoutubeFirst/>
-    <ProductGraphText/>
-    <ProductYoutubeSecond/>
-    <ProductBlueBox/>
-    <ProductAirTable/>
-    <ProductAirquantImg/>
-  </div>;
+  return (
+    <div>
+      <ProductMainImg />
+      <ProductPiquantExplanation />
+      <InformationBox />
+      <ProductYoutubeFirst />
+      <ProductGraphText />
+      <ProductYoutubeSecond />
+      <ProductBlueBox />
+      <ProductAirTable />
+      <ProductAirquantImg />
+    </div>
+  );
 };
 
 export default Product;

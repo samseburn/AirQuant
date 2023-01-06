@@ -16,7 +16,7 @@ const ProductAirquantImg = () => {
           기대 이상의 것도 감지해내는 에어퀀트
         </div>
       </div>
-      <div className="Airquant_Relative">
+      <div className="Airquant_Flex">
         <img className="Airquant_Main1" src={airquant_09} />
 
         <img className="Airquant_Main2" src={airquant_10} />
