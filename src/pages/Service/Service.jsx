@@ -1,9 +1,11 @@
-import { Faq } from 'components';
+import { Faq, Notice } from 'components';
 import React from 'react';
 
 const Service = () => {
   return (
     <div>
+      <Notice />
+
       <Faq />
     </div>
   );
