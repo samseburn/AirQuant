@@ -1,6 +1,6 @@
 .CompanyIcon {
+  word-break: keep-all;
   width: 100%;
-  height: 150vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -10,7 +10,7 @@
     visibility: hidden;
     //스크롤 시
     &-scrolled {
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
       animation-fill-mode: forwards;
     }
@@ -20,22 +20,19 @@
     visibility: hidden;
     &-scrolled {
       @include flexbox;
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
+      animation-fill-mode: forwards;
     }
     &-item {
-      width: 500px;
-      height: 400px;
-      margin: 40px;
-      &.imageLeft {
-        background-image: url(../images/Company/company_product.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
+      &.imageLeft,
       &.imageRight {
-        background-image: url(../images/Company/company_product_drawing.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        margin: 10px;
+        img {
+          width: 400px;
+          height: 400px;
+          margin: 50px;
+        }
       }
     }
   }
@@ -73,19 +70,37 @@
       span {
         margin: 8px;
       }
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
+      animation-fill-mode: forwards;
     }
   }
   @include responsive(M) {
-    &-icons-scrolled {
-      flex-direction: column;
+    img {
+    }
+    &-icons {
+      &-item {
+        width: 200px;
+      }
+      &-scrolled {
+        flex-direction: column;
+      }
+    }
+    &-imgs-item {
+      &.imageLeft,
+      &.imageRight {
+        img {
+          width: 300px;
+          height: 300px;
+          margin: 10px;
+        }
+      }
     }
   }
 }
 @keyframes upSlide {
   from {
-    margin-top: 20%;
+    margin-top: 10%;
     opacity: 0;
   }
 
