@@ -8,6 +8,9 @@ import {
   ProductAirquantImg,
   ProductGraph,
   InformationBox,
+  ProductYoutubeFirst,
+  TechMain,
+  TechCustomers,
 } from 'components';
 
 const Product = () => {

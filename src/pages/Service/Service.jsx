@@ -12,7 +12,7 @@ const Service = () => {
         alignItems: 'center',
       }}
     >
-      고객문의 페이지 입니다.
+      {/* 고객문의 페이지 입니다. */}
       <Faq />
     </div>
   );
