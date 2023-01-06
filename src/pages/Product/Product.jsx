@@ -9,8 +9,7 @@ import {
   ProductGraph,
   InformationBox,
   ProductYoutubeFirst,
-  TechMain,
-  TechCustomers,
+  ProductYoutubeSecond,
 } from 'components';
 
 const Product = () => {
