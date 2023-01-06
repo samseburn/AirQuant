@@ -2,6 +2,7 @@
 export { Header } from './common/Header';
 export { Container } from './common/Container';
 export { Footer } from './common/Footer';
+export { Navbar } from './common/Navbar';
 
 // module
 export { Card } from './module/Card';
@@ -33,3 +34,4 @@ export { AnswerBox } from './module/AnswerBox';
 
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
+export { TechPatent } from './module/TechPatent';
