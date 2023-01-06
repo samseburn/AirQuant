@@ -2,10 +2,11 @@
 export { Header } from './common/Header';
 export { Container } from './common/Container';
 export { Footer } from './common/Footer';
+export { Navbar } from './common/Navbar';
 
 // module
 export { Card } from './module/Card';
-export { ProductPiquantExplanation } from './module/ProductPiquantExplasnation';
+export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
 export { ProductGraph } from './module/ProductGraph';
 export { ProductGraphText } from './module/ProductGraphText';
