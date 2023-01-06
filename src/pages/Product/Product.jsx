@@ -11,9 +11,14 @@ import {
   ProductYoutubeFirst,
   ProductYoutubeSecond,
 } from 'components';
+import { TechMeasurementTable } from 'components/module/TechMeasurementTable';
 
 const Product = () => {
-  return <div></div>;
+  return (
+    <div>
+      <TechMeasurementTable />
+    </div>
+  );
 };
 
 export default Product;
