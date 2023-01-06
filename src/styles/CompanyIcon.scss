@@ -24,10 +24,19 @@
       animation-name: upSlide;
     }
     &-item {
-      background-color: gray;
       width: 500px;
       height: 400px;
       margin: 40px;
+      &.imageLeft {
+        background-image: url(../images/Company/company_product.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &.imageRight {
+        background-image: url(../images/Company/company_product_drawing.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
   }
   &-icons {
@@ -41,10 +50,22 @@
       &-img {
         width: 150px;
         height: 150px;
-        background-color: gray;
-      }
-      &.small {
-        animation-delay: 2s;
+        margin: 10px;
+        &.small-icon {
+          background-image: url(../images/Company/company_icon_02.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.price-icon {
+          background-image: url(../images/Company/company_icon_03.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.accuracy-icon {
+          background-image: url(../images/Company/company_icon_01.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
       }
     }
     &-scrolled {

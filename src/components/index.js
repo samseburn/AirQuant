@@ -26,6 +26,7 @@ export { TechMeasurement } from './module/TechMeasurement';
 export { TechExplanation } from './module/TechExplanation';
 export { TechMain } from './module/TechMain';
 export { TechCustomers } from './module/TechCustomers';
+export { TechCustomersMap } from './module/TechCustomersMap';
 export { Button } from './module/Button';
 
 export { Faq } from './module/Faq';
@@ -36,3 +37,4 @@ export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
 export { TechPatent } from './module/TechPatent';
 export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
+export { TechMeasurementTable } from './module/TechMeasurementTable';

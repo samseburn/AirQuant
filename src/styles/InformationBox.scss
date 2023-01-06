@@ -1,4 +1,9 @@
 .InformationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   &_bigTitle {
     text-align: center;
     font-size: 28px;
@@ -17,17 +22,6 @@
     align-items: center;
   }
 
-  // .title {
-  //   background-color: $blue_middle;
-  //   color: $white;
-  //   font-size: $font-size-24;
-  //   height: 64px;
-  //   text-align: center;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
   &_firstBox {
     width: 704px;
     height: 256px;
@@ -43,7 +37,6 @@
       &_leftChild {
         height: 150px;
         width: 150px;
-        background-color: gray;
       }
       &_rightChild {
         text-align: right;
