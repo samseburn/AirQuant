@@ -15,7 +15,7 @@ export default () => {
     <Swiper
       modules={[Pagination, Navigation]}
       pagination={{ clickable: true }}
-      spaceBetween={50}
+      spaceBetween={5}
       slidesPerView={2}
       breakpoints={{
         768: { slidesPerView: 3 },

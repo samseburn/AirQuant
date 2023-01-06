@@ -1,9 +1,10 @@
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+img {
+  width: 50%;
+  height: 50%;
 }
 
+SwiperSlideContainer {
+}
 .swiper {
   --swiper-theme-color: #1b76ff;
 }
