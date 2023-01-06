@@ -1,6 +1,5 @@
 .CompanyLED {
   width: 100%;
-  height: 150vh;
   @include flexbox;
   flex-direction: column;
   &-title {
@@ -9,6 +8,7 @@
       animation-name: upSlide;
       animation-duration: 3s;
       animation-fill-mode: forwards;
+      height: 10vh;
     }
   }
   &-charts {
@@ -19,6 +19,7 @@
       animation-name: upSlide;
       animation-duration: 3s;
       animation-fill-mode: forwards;
+      height: 70vh;
     }
     &-left,
     &-right {
@@ -35,6 +36,7 @@
     &-scrolled {
       text-align: center;
       font-size: $font-size-18;
+      height: 50vh;
     }
   }
 }
