@@ -17,7 +17,9 @@
 @import './layouts/Header';
 @import './layouts/Container';
 @import './layouts/Footer';
+@import './layouts/Navbar.scss';
 
+// module
 @import './Card';
 @import './InformationBox';
 @import './ProductBlueBox.scss';
@@ -30,6 +32,7 @@
 @import './TechConvenience.scss';
 @import './ProductGraphText.scss';
 @import './TechMain.scss';
+@import './TechCustomers.scss';
 
 @import './box.scss';
 @import './faq.scss';
