@@ -29,7 +29,6 @@ const ProductAirquantImg = () => {
         <img className="Airquant_Main6" src={airquant_04} />
         </div>
       </div>
-    </div>
   );
 };
 
