@@ -1,12 +1,21 @@
 .Piquant_container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+
   .Piquant_container1 {
     text-align: center;
+
   }
   .Piquant_num1 {
     font-size: 28px;
+    line-height: 2;
   }
   .Piquant_num2 {
     font-size: 24px;
+    line-height: 1.8;
   }
   .AirQuant {
     color: #1b76ff;
