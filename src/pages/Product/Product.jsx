@@ -10,7 +10,6 @@ import {
   ProductYoutubeFirst,
   ProductYoutubeSecond,
 } from 'components';
-import { TechMeasurementTable } from 'components/module/TechMeasurementTable';
 
 const Product = () => {
   return (
