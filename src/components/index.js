@@ -32,3 +32,4 @@ export { AnswerBox } from './module/AnswerBox';
 
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
+export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
