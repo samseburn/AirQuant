@@ -1,5 +1,5 @@
 .container {
-  @include flexbox();
   width: 100%;
-  margin-top: 44px;
+  max-width: 1180px;
+  margin-top: 60px;
 }

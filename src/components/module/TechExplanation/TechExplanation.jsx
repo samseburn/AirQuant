@@ -1,3 +1,4 @@
+import { airquant_10, explanation_phone, explanation_weather } from 'images';
 import React from 'react';
 
 const TechExplanation = () => {
@@ -10,21 +11,26 @@ const TechExplanation = () => {
         측정
       </p>
       <div className="TechExplanationPhoneWeb">
-        <div className="TechExplantionPhone"></div>
-        <div className="TechExplanationWeb"></div>
-        <p className="TechExplanationWeb1">
-          웹/모바일 어플리케이션과 연동하여 이상징후 알림
-        </p>
-        <p className="TechExplanationWeb2">
-          실내 공기질을 측정 및 기록하고
-          <br />
-          웹/모바일 어플리케이션과 연동하여
-          <br />
-          실내 공기질 유지 기준 초과 시 알림이 울립니다.
-        </p>
+        <div className="TechExplantionPhone">
+          <img className="TechExplantionPhone1" src={explanation_phone} />
+        </div>
+        <div className="TechExplanationWeb">
+          <p className="TechExplanationWeb1">
+            웹/모바일 어플리케이션과 연동하여 이상징후 알림
+          </p>
+          <p className="TechExplanationWeb2">
+            실내 공기질을 측정 및 기록하고
+            <br />
+            웹/모바일 어플리케이션과 연동하여
+            <br />
+            실내 공기질 유지 기준 초과 시 알림이 울립니다.
+          </p>
+        </div>
       </div>
       <div className="TechExplanationDigitalMonitoring">
-        <div className="TechExplanationDigital"></div>
+        <div className="TechExplanationDigital">
+          <img className="TechExplanationDigital1" src={explanation_weather} />
+        </div>
         <div className="TechExplanationMonitoring">
           <p className="TechExplanationMonitoring1">
             디지털 사이니지와 연동하여
@@ -41,7 +47,9 @@ const TechExplanation = () => {
         </div>
       </div>
       <div className="Airquantquality">
-        <div className="Airquant"></div>
+        <div className="Airquant">
+          <img className="Airquant1" src={airquant_10} />
+        </div>
         <div className="AirQuality">
           <p className="AirQuality1">
             공기조화 시스템(HVAC 시스템)과 연동하여
