@@ -9,6 +9,7 @@ import {
   ProductGraph,
   InformationBox,
   ProductYoutubeFirst,
+  ProductYoutubeSecond,
 } from 'components';
 
 const Product = () => {
