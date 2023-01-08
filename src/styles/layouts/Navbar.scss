@@ -1,0 +1,86 @@
+.navbar {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+
+  color: black;
+  .gnb {
+    @include column-flexbox(start, start);
+
+    .logo {
+      margin: 0;
+      width: 100%;
+      color: $blue_main;
+      border-bottom: 1px solid $border;
+      padding: 20px 0;
+      margin-bottom: 10px;
+
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: $blue_main;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        transition: width 350ms ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100px;
+        }
+      }
+
+      a {
+        width: 100%;
+        padding: 10px 0;
+      }
+    }
+
+    div {
+      width: 100%;
+
+      ol {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 100%;
+          border-bottom: 1px solid $border;
+
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: $blue_main;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            transition: width 350ms ease-in-out;
+          }
+
+          &:hover {
+            border-bottom: 1px solid $border;
+            &::after {
+              width: 50px;
+            }
+          }
+
+          a {
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,8 @@ export { Navbar } from './common/Navbar';
 
 // module
 export { Card } from './module/Card';
+export { TableItem } from './module/TableItem';
+
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
 export { ProductGraph } from './module/ProductGraph';
@@ -29,11 +31,14 @@ export { TechCustomers } from './module/TechCustomers';
 export { TechCustomersMap } from './module/TechCustomersMap';
 export { Button } from './module/Button';
 
-export { Faq } from './module/Faq';
-
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
 export { TechPatent } from './module/TechPatent';
 export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
 export { TechMeasurementTable } from './module/TechMeasurementTable';
+
+export { Faq } from './module/Faq';
 export { FaqBox } from './module/FaqBox';
+
+export { Notice } from './module/Notice';
+export { NoticeList } from './module/NoticeList';

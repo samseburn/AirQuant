@@ -24,3 +24,7 @@ yarn-error.log*
 
 # dist
 dist/
+
+# .vscode
+.vscode/settings.json
+

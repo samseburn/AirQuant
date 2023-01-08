@@ -1,7 +1,6 @@
 // import './App.css';
 import { Container } from 'components';
-import { Case, Company, Product, Service, Tech } from 'pages';
-import Root from 'pages/Root/Root';
+import { Case, CaseItem, Company, Product, Service, Tech, Root } from 'pages';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/main.scss';
 
@@ -18,9 +17,7 @@ function App() {
         { path: '/case', element: <Container content={<Case />} /> },
         {
           path: '/case/:caseId',
-          element: (
-            <Container content={<div>적용 사례 개별 콘텐츠 게시판</div>} />
-          ),
+          element: <Container content={<CaseItem />} />,
         },
         { path: '/service', element: <Container content={<Service />} /> },
       ],
