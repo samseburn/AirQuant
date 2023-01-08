@@ -6,6 +6,8 @@ export { Navbar } from './common/Navbar';
 
 // module
 export { Card } from './module/Card';
+export { TableItem } from './module/TableItem';
+
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
 export { ProductGraph } from './module/ProductGraph';
