@@ -1,16 +1,6 @@
-@import '../styles/constants/_colors';
-@import '../styles/mixins/_flexbox';
-
-// 전체에 margin,padding 0px로 맞춰줘야 애니메이션 실행 후 위치가 움직여보이는 오류 없어짐,, 아마도,,?
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .CompanyIcon {
-  // container 높이 값 바꿔야함
+  word-break: keep-all;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -20,8 +10,9 @@
     visibility: hidden;
     //스크롤 시
     &-scrolled {
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
+      animation-fill-mode: forwards;
     }
   }
   &-imgs {
@@ -29,14 +20,20 @@
     visibility: hidden;
     &-scrolled {
       @include flexbox;
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
+      animation-fill-mode: forwards;
     }
     &-item {
-      background-color: gray;
-      width: 400px;
-      height: 300px;
-      margin: 40px;
+      &.imageLeft,
+      &.imageRight {
+        margin: 10px;
+        img {
+          width: 400px;
+          height: 400px;
+          margin: 50px;
+        }
+      }
     }
   }
   &-icons {
@@ -47,42 +44,68 @@
       @include flexbox;
       width: 300px;
       margin: 10px;
-
       &-img {
         width: 150px;
         height: 150px;
-        background-color: gray;
+        margin: 10px;
+        &.small-icon {
+          background-image: url(../images/Company/company_icon_02.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.price-icon {
+          background-image: url(../images/Company/company_icon_03.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.accuracy-icon {
+          background-image: url(../images/Company/company_icon_01.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
       }
     }
     &-scrolled {
       @include flexbox;
       span {
-        margin: 5px;
+        margin: 8px;
       }
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-name: upSlide;
+      animation-fill-mode: forwards;
+    }
+  }
+  @include responsive(M) {
+    img {
+    }
+    &-icons {
+      &-item {
+        width: 200px;
+      }
+      &-scrolled {
+        flex-direction: column;
+      }
+    }
+    &-imgs-item {
+      &.imageLeft,
+      &.imageRight {
+        img {
+          width: 300px;
+          height: 300px;
+          margin: 10px;
+        }
+      }
     }
   }
 }
 @keyframes upSlide {
   from {
-    margin-top: 30%;
+    margin-top: 10%;
     opacity: 0;
   }
 
   to {
     margin-top: 0%;
-    opacity: 1;
-  }
-}
-@keyframes leftSlide {
-  from {
-    margin-left: 10%;
-    opacity: 0;
-  }
-
-  to {
-    margin-left: 0%;
     opacity: 1;
   }
 }

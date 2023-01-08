@@ -1,5 +1,6 @@
 .TechConvenience {
   padding-bottom: 250px;
+  align-items: center;
   // 소제목
   &_title {
     font-size: 28px;
@@ -10,6 +11,7 @@
 
   &_content {
     display: flex;
+    justify-content: center;
 
     // 왼쪽
     .TechConLeftChild {

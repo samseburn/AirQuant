@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../../styles/CompanyIcon.scss';
+import { company_product, company_product_drawing } from 'images';
 
 const CompanyIcon = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -8,7 +8,7 @@ const CompanyIcon = () => {
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
-  }, []);
+  }, [scrollPosition]);
 
   console.log(window.scrollY);
 
@@ -30,8 +30,12 @@ const CompanyIcon = () => {
           scrollPosition > 80 ? 'CompanyIcon-imgs-scrolled' : 'CompanyIcon-imgs'
         }
       >
-        <div className="CompanyIcon-imgs-item imageLeft"></div>
-        <div className="CompanyIcon-imgs-item imageRight"></div>
+        <div className="CompanyIcon-imgs-item imageLeft">
+          <img src={company_product}></img>
+        </div>
+        <div className="CompanyIcon-imgs-item imageRight">
+          <img src={company_product_drawing}></img>
+        </div>
       </div>
       <div
         className={
@@ -41,16 +45,20 @@ const CompanyIcon = () => {
         }
       >
         <div className="CompanyIcon-icons-item small">
-          <div className="CompanyIcon-icons-item-img"></div>
-          <span>작은 사이즈</span>
+          <div className="CompanyIcon-icons-item-img small-icon"></div>
+          <span>
+            <b>작은 사이즈</b>
+          </span>
           <span>
             파이퀀트의 분광 분석 장비는
             <br /> 한 손으로 들 만큼 작은 사이즈 입니다.
           </span>
         </div>
         <div className="CompanyIcon-icons-item price">
-          <div className="CompanyIcon-icons-item-img"></div>
-          <span>낮은 가격</span>
+          <div className="CompanyIcon-icons-item-img price-icon"></div>
+          <span>
+            <b>낮은 가격</b>
+          </span>
           <span>
             파이퀀트 분광 분석 장비는
             <br /> 약 $60,000가 넘는 기존 분광 분석 장비의
@@ -58,8 +66,10 @@ const CompanyIcon = () => {
           </span>
         </div>
         <div className="CompanyIcon-icons-item accuracy">
-          <div className="CompanyIcon-icons-item-img"></div>
-          <span>높은 정확도</span>
+          <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
+          <span>
+            <b>높은 정확도</b>
+          </span>
           <span>
             파이퀀트의 분광 분석 장비는 <br />약 $60,000가 넘는 기존 분광 분석
             장비와

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../../../styles/CompanyLED.scss';
 
 const CompanyLED = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -15,7 +14,7 @@ const CompanyLED = () => {
     <div className="CompanyLED">
       <h1
         className={
-          scrollPosition > 800
+          scrollPosition > 900
             ? 'CompanyLED-title-scrolled'
             : 'CompanyLED-title'
         }
@@ -24,7 +23,7 @@ const CompanyLED = () => {
       </h1>
       <div
         className={
-          scrollPosition > 1000
+          scrollPosition > 1100
             ? 'CompanyLED-charts-scrolled'
             : 'CompanyLED-charts'
         }

@@ -28,12 +28,17 @@ export { TechMeasurement } from './module/TechMeasurement';
 export { TechExplanation } from './module/TechExplanation';
 export { TechMain } from './module/TechMain';
 export { TechCustomers } from './module/TechCustomers';
+export { TechCustomersMap } from './module/TechCustomersMap';
 export { Button } from './module/Button';
-
-export { Faq } from './module/Faq';
-export { Box } from './module/Box';
-export { AnswerBox } from './module/AnswerBox';
 
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
 export { TechPatent } from './module/TechPatent';
+export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
+export { TechMeasurementTable } from './module/TechMeasurementTable';
+
+export { Faq } from './module/Faq';
+export { FaqBox } from './module/FaqBox';
+
+export { Notice } from './module/Notice';
+export { NoticeList } from './module/NoticeList';
