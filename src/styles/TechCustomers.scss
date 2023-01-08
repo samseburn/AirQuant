@@ -1,63 +1,21 @@
 .TechCustomers__container {
-    width: 100%;
-    height: 100vh;
-    // background-color: aqua;
-
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    .TechCustomers__main_div {
-        width: 100%;
-    
+    width: 100%;
+    // height 100vh를 주면 맵한번 돌릴때마다 100vh의 값을 주는거같음...
+    // 어떻게 해야 맵 돌린거 전부를 하나로 묶고 하나의 div에 100vh값을 줄수있을지...? 
+    // 내가 바보였음 ㅡㅡ 클래스이름 똑같이줌 바본가..
+    height: 100vh;
 
     .TechCustomers__title {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-
-    .TechCustomers__image {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-
-        .TechCustomers__image_1,
-        .TechCustomers__image_2,
-        .TechCustomers__image_3,
-        .TechCustomers__image_4,
-        .TechCustomers__image_5 {
-            width: 60%;
-            height: 140px;
-        }
-
-        .TechCustomers__image_1 {
-            // background-image: url('../../public/img/logo-1.jpg');
-            background-size:cover;
-        }
-
-        .TechCustomers__image_2 {
-            // background-image: url('../../public/img/logo-2.jpg');
-            background-size: cover;
-            height: 140px;
-        }
-
-        .TechCustomers__image_3 {
-            // background-image: url('../../public/img/logo-3.jpg');
-            background-size: cover;
-        }
-
-        .TechCustomers__image_4 {
-            // background-image: url('../../public/img/logo-4.jpg');
-            background-size: cover;
-        }
-
-        .TechCustomers__image_5 {
-            // background-image: url('../../public/img/logo-5.jpg');
-            background-size: cover;
+        .TechCustomers__main_title {
+            font-size: 3rem;
+            font-weight: 700;
         }
     }
-}
+
+    // .TechCustomers__map {
+    // }
 }

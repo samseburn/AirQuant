@@ -1,50 +1,66 @@
 .Airquant_Main {
-  font-size: 28px;
+  width: 100%;
+  height: 100vh;
+
+  .Airquant_Main_Content {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  //
+  .Airquant_Main_Flex {
+    display: flex;
+  }
   .Airquant_Main1 {
-    background-color: gray;
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    left: 30px;
+    width: 100%;
+    height: 100%;
+    width: 1600px;
+    height: 1000px;
+
+    margin-right: 200px;
   }
   .Airquant_Main2 {
-    background-color: black;
-    width: 550px;
-    height: 550px;
-    position: absolute;
-    top: 700px;
-    left: 750px;
+    width: 100%;
+    height: 100%;
+    width: 700px;
+    height: 450px;
+
+    top: 1000px;
+    left: 550px;
   }
   .Airquant_Main3 {
-    background-color: blue;
+    width: 100%;
+    height: 100%;
     width: 468px;
     height: 307px;
-    position: absolute;
-    right: 905px;
-    top: 1100px;
+
+    right: 650px;
+    top: 850px;
   }
   .Airquant_Main4 {
-    background-color: red;
+    width: 100%;
+    height: 100%;
     width: 320px;
     height: 320px;
-    position: absolute;
-    top: 1430px;
-    right: 900px;
+
+    top: 1200px;
+    right: 800px;
   }
   .Airquant_Main5 {
-    background-color: orange;
+    width: 100%;
+    height: 100%;
     width: 320px;
     height: 320px;
-    position: absolute;
-    top: 1430px;
-    right: 537px;
+
+    top: 1200px;
+    right: 450px;
   }
   .Airquant_Main6 {
-    background-color: yellow;
+    width: 100%;
+    height: 100%;
     width: 320px;
     height: 320px;
-    position: absolute;
-    top: 1430px;
-    right: 175px;
+
+    top: 1200px;
+    right: 100px;
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from 'components';
+import { FaqBox } from 'components';
 
 const faqData = [
   {
@@ -8,7 +8,7 @@ const faqData = [
   },
   {
     question: `[공기청정기] [모션 공기청정기] ACL-140MA의 모션센서 감지 시 2명 이상이 각각 다른 방향으로 이동 시 센서 반응은 어떻게 되나요?`,
-    answer: `자가설치가 어려운 경우 설치 서비스 신청하실수 있습니다.​
+    answer: `자가설치가 어려운 경우 설치 서비스 신청하실수 있습니다. 
       당사 서비스엔지니어가 방문하여 설치 및 점검 후 사용방법까지 설명해 드립니다.
       서비스 신청은 당사 홈페이지 및 고객상담실에서 신청하실 수 있습니다.​`,
   },
@@ -29,13 +29,10 @@ const faqData = [
 
 const Faq = () => {
   return (
-    <div className="faqBox">
-      <h3>자주하는 질문 Best5 입니다.</h3>
-      <div>
-        {faqData.map((item) => (
-          <Box question={item.question} answer={item.answer} />
-        ))}
-      </div>
+    <div className="faq">
+      {faqData.map((item) => (
+        <FaqBox question={item.question}>{item.answer}</FaqBox>
+      ))}
     </div>
   );
 };

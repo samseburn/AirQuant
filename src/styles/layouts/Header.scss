@@ -1,39 +1,75 @@
 .header {
+  transition: color 350ms ease-in-out, background-color 350ms ease-in-out;
+
+  @include flexbox();
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
-  padding: 0 20px;
-  background-color: $blue-main;
+  background-color: white;
+
+  color: $blue-main;
   z-index: 10;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid $border;
 
-  h1 {
-    color: white;
-    font-size: 18px;
-    line-height: 1.625;
-  }
+  .gnb {
+    @include flexbox(between, center);
 
-  ol {
-    display: flex;
-    list-style: none;
+    width: 100%;
+    max-width: 1280px;
 
-    li {
-      &:not(li:last-child) {
-        margin-right: 12px;
-      }
+    h1 {
+      font-size: 24px;
+      line-height: 1.625;
+    }
 
-      a {
-        display: block;
-        width: 100%;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
+    ol {
+      display: flex;
+      list-style: none;
+
+      li {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 350ms ease-in-out;
+        overflow: hidden;
+        &:hover {
+          border-bottom: 2px solid $blue-main;
+          font-weight: 800;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 20px;
+          font-size: 15px;
+          text-decoration: none;
+          font-weight: 600;
+        }
       }
     }
+
+    .menu-icon {
+      @include flexbox();
+      width: 32px;
+      height: 32px;
+      color: $blue-main;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  &.blue {
+    background-color: $blue-main;
+    color: white;
+
+    .menu-icon {
+      color: white;
+    }
+  }
+
+  @include responsive(T) {
+    padding: 0 20px;
   }
 }

@@ -45,6 +45,7 @@ export { default as company_icon_02 } from './Company/company_icon_02.png';
 export { default as company_icon_03 } from './Company/company_icon_01.png';
 export { default as company_main } from './Company/company_main.png';
 export { default as company_product } from './Company/company_product.png';
+export { default as company_product_drawing } from './Company/company_product_drawing.png';
 
 // Case
 

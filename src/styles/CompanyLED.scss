@@ -6,20 +6,19 @@
     visibility: hidden;
     &-scrolled {
       animation-name: upSlide;
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-fill-mode: forwards;
       height: 10vh;
     }
   }
   &-charts {
-    @include flexbox;
     visibility: hidden;
     &-scrolled {
       @include flexbox;
       animation-name: upSlide;
-      animation-duration: 3s;
+      animation-duration: 1.5s;
       animation-fill-mode: forwards;
-      height: 70vh;
+      height: 60vh;
     }
     &-left,
     &-right {
@@ -34,7 +33,11 @@
     margin-top: 30px;
     visibility: hidden;
     &-scrolled {
+      animation-name: upSlide;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
       text-align: center;
+      word-break: keep-all;
       font-size: $font-size-18;
       height: 50vh;
     }
@@ -43,7 +46,7 @@
 
 @keyframes upSlide {
   from {
-    margin-top: 20%;
+    margin-top: 5%;
     opacity: 0;
   }
 
