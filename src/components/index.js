@@ -18,6 +18,8 @@ export { CompanyTech } from './module/CompanyTech';
 export { CompanyAlgorithm } from './module/CompanyAlgorithm';
 export { CompanyIcon } from './module/CompanyIcon';
 export { CompanyLED } from './module/CompanyLED';
+export { CompanyIntro } from './module/CompanyIntro';
+export { CompanyAlgoChart } from './module/CompanyAlgoChart';
 
 export { ProductMainImg } from './module/ProductMainImg';
 export { ProductAirTable } from './module/ProductAirTable';
