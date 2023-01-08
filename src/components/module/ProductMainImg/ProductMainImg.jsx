@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from "react";
 import { airquant_06 } from 'images';
 
 
 const ProductMainImg = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   return (
     <>
       <div className="airQuant_Main">
