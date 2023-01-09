@@ -5,42 +5,44 @@ export { Footer } from './common/Footer';
 export { Navbar } from './common/Navbar';
 
 // module
+export { Button } from './module/Button';
 export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
+export { InformationBox } from './product/InformationBox';
 
-export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
-export { ProductAirquantImg } from './module/ProductAirquantImg';
-export { ProductGraph } from './module/ProductGraph';
-export { ProductGraphText } from './module/ProductGraphText';
+// product
+export { ProductAirquantImg } from './product/ProductAirquantImg';
+export { ProductAirTable } from './product/ProductAirTable';
+export { ProductBlueBox } from './product/ProductBlueBox';
+export { ProductGraph } from './product/ProductGraph';
+export { ProductGraphText } from './product/ProductGraphText';
+export { ProductMainImg } from './product/ProductMainImg';
+export { ProductPiquantExplanation } from './product/ProductPiquantExplanation';
+export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
+export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
 
-export { CompanyButton } from './module/CompanyButton';
-export { CompanyTech } from './module/CompanyTech';
-export { CompanyAlgorithm } from './module/CompanyAlgorithm';
-export { CompanyIcon } from './module/CompanyIcon';
-export { CompanyLED } from './module/CompanyLED';
-export { CompanyIntro } from './module/CompanyIntro';
-export { CompanyAlgoChart } from './module/CompanyAlgoChart';
+// tech
+export { TechConvenience } from './tech/TechConvenience';
+export { TechCustomers } from './tech/TechCustomers';
+export { TechCustomersMap } from './tech/TechCustomersMap';
+export { TechExplanation } from './tech/TechExplanation';
+export { TechMain } from './tech/TechMain';
+export { TechMeasurement } from './tech/TechMeasurement';
+export { TechMeasurementTable } from './tech/TechMeasurementTable';
+export { TechPatent } from './tech/TechPatent';
 
-export { ProductMainImg } from './module/ProductMainImg';
-export { ProductAirTable } from './module/ProductAirTable';
-export { InformationBox } from './module/InformationBox';
+// company
+export { CompanyTech } from './company/CompanyTech';
+export { CompanyAlgorithm } from './company/CompanyAlgorithm';
+export { CompanyIcon } from './company/CompanyIcon';
+export { CompanyLED } from './company/CompanyLED';
+export { CompanyIntro } from './company/CompanyIntro';
+export { CompanyAlgoChart } from './company/CompanyAlgoChart';
 
-export { ProductBlueBox } from './module/ProductBlueBox';
-export { TechMeasurement } from './module/TechMeasurement';
-export { TechExplanation } from './module/TechExplanation';
-export { TechMain } from './module/TechMain';
-export { TechCustomers } from './module/TechCustomers';
-export { TechCustomersMap } from './module/TechCustomersMap';
-export { Button } from './module/Button';
+// case
 
-export { TechConvenience } from './module/TechConvenience';
-export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
-export { TechPatent } from './module/TechPatent';
-export { ProductYoutubeSecond } from './module/ProductYoutubeSecond';
-export { TechMeasurementTable } from './module/TechMeasurementTable';
-
-export { Faq } from './module/Faq';
-export { FaqBox } from './module/FaqBox';
-
-export { Notice } from './module/Notice';
-export { NoticeList } from './module/NoticeList';
+// service
+export { Faq } from './service/Faq';
+export { FaqBox } from './service/FaqBox';
+export { Notice } from './service/Notice';
+export { NoticeList } from './service/NoticeList';
