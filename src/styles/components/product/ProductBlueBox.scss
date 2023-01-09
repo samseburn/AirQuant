@@ -1,20 +1,62 @@
 .ProductBlueBox {
-  width: 100%;
-  height: 30vh;
-  //   height: 214px;
-  background-color: $blue_main;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  &_content {
-    color: $white;
-    font-size: 26px;
-    text-align: center;
-    line-height: 47px;
-    .ProductBlueBox_bold {
-      //   text-decoration: underline;
-      font-weight: 600;
-      box-shadow: inset 0 -2px 0 white;
+
+  // 스크롤 시 배경
+  &_backGround {
+    width: 100%;
+    height: 60vh;
+    //   height: 214px;
+    background-color: #1b76ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // 스크롤 시 이벤트 나타나는 시간
+    transition: 2s;
+
+    // 스크롤 시 내용
+    &_Scrolledcontent {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      line-height: 100px;
+      transition: 2s;
+
+      .ProductBlueBox_bold {
+        //   text-decoration: underline;
+        font-weight: 600;
+        box-shadow: inset 0 -2px 0 white;
+      }
     }
+    //스크롤 전 내용
+    &_content {
+      color: white;
+      font-size: 26px;
+      text-align: center;
+      line-height: 47px;
+      transition: 1.5s;
+      .ProductBlueBox_bold {
+        //   text-decoration: underline;
+        font-weight: 600;
+        box-shadow: inset 0 -2px 0 white;
+      }
+    }
+  }
+
+  // 스크롤 전 배경
+  &_ScrolledbackGround {
+    width: 100%;
+    height: 30vh;
+    //   height: 214px;
+    background-color: #1b76ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // 이벤트 사라지는 시간
+    transition: 1.5s;
+    animation-duration: 5s;
   }
 }
