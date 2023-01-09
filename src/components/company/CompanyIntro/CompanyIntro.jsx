@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-// import CompanyMainImg from '../../../images/Company/company_main.png';
 import { company_main } from 'images';
-import { Button } from '../Button';
 
 import 'aos/dist/aos.css';
+import { Button } from 'components/module/Button';
 
 const CompanyIntro = () => {
   useEffect(() => {
