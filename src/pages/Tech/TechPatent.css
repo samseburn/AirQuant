@@ -1,0 +1,20 @@
+img {
+  width: 80%;
+  height: 80%;
+}
+
+SwiperSlideContainer {
+}
+.swiper {
+  --swiper-theme-color: #1b76ff;
+}
+.patent {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.patent_center {
+  align-items: center;
+}

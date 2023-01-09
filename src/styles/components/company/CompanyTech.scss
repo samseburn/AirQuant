@@ -3,10 +3,9 @@
   flex-direction: column;
 
   max-width: 80%;
-  height: 100vh;
+  height: 90vh;
 
   margin: auto;
-  margin-top: 100px;
 
   @include flexbox;
 
@@ -16,32 +15,16 @@
     font-size: $font-size-24;
     font-weight: 700;
     color: $blue_main;
-
-    // margin-bottom: 50px;
   }
 
   &-Text {
+    margin-top: 50px;
+
     font-size: $font-size-24;
-    margin-bottom: 100px;
+    line-height: $line-height-24;
 
     &-Small {
       font-size: $font-size-18;
     }
   }
 }
-
-// .TechTitle {
-//   text-align: center;
-
-//   font-size: 40px;
-//   font-weight: 700;
-//   color: $blue_main;
-// }
-
-// .TechText {
-//   font-size: $font-size-24;
-// }
-
-// .TechSmallText {
-//   font-size: $font-size-18;
-// }

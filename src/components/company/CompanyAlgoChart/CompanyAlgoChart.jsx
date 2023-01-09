@@ -67,7 +67,7 @@ const CompanyAlgoChart = () => {
       height={400}
       data={data}
       margin={{
-        top: 5,
+        top: 40,
         right: 30,
         left: 10,
         bottom: 20,
