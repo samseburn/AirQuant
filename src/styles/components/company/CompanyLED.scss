@@ -22,10 +22,7 @@
     }
     &-left,
     &-right {
-      width: 400px;
-      height: 300px;
-      background-color: gray;
-      margin: 50px;
+      margin: 20px;
     }
   }
 
@@ -46,7 +43,7 @@
 
 @keyframes upSlide {
   from {
-    margin-top: 5%;
+    margin-top: 10%;
     opacity: 0;
   }
 

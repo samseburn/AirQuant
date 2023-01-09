@@ -8,7 +8,10 @@ const CompanyIcon = () => {
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
-  }, [scrollPosition]);
+    return () => {
+      window.removeEventListener('scroll', updateScroll);
+    };
+  }, []);
 
   console.log(window.scrollY);
 
@@ -16,7 +19,7 @@ const CompanyIcon = () => {
     <div className="CompanyIcon">
       <h1
         className={
-          scrollPosition > 30
+          scrollPosition > 200
             ? 'CompanyIcon-title-scrolled'
             : 'CompanyIcon-title'
         }
@@ -27,19 +30,21 @@ const CompanyIcon = () => {
       </h1>
       <div
         className={
-          scrollPosition > 80 ? 'CompanyIcon-imgs-scrolled' : 'CompanyIcon-imgs'
+          scrollPosition > 300
+            ? 'CompanyIcon-imgs-scrolled'
+            : 'CompanyIcon-imgs'
         }
       >
         <div className="CompanyIcon-imgs-item imageLeft">
-          <img src={company_product}></img>
+          <img src={company_product} alt="modul"></img>
         </div>
         <div className="CompanyIcon-imgs-item imageRight">
-          <img src={company_product_drawing}></img>
+          <img src={company_product_drawing} alt="model drawing"></img>
         </div>
       </div>
       <div
         className={
-          scrollPosition > 150
+          scrollPosition > 500
             ? 'CompanyIcon-icons-scrolled'
             : 'CompanyIcon-icons'
         }
