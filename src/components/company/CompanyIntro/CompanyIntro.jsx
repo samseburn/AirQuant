@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import { company_main } from 'images';
+import { Button } from 'components';
 
 import 'aos/dist/aos.css';
-import { Button } from 'components/module/Button';
 
 const CompanyIntro = () => {
   useEffect(() => {
@@ -11,12 +11,12 @@ const CompanyIntro = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up">
+    <div className="Intro" data-aos="fade-up">
       <hr className="Intro-TopHr" />
       <p className="Intro-Title">Expose Light, Analyze Right</p>
 
       <div className="Intro-Contents">
-        <img src={company_main} className="Intro-Contents-Img" />
+        <img src={company_main} className="Intro-Contents-Img" alt="" />
         <div className="Intro-Contents-Text">
           <div className="Intro-Contents-Text-Top">
             파이퀀트는 분광 분석 기반의
@@ -41,7 +41,10 @@ const CompanyIntro = () => {
         </div>
       </div>
 
-      <Button />
+      <div className="Intro-Button">
+        <Button url="http://www.piquant.asia" text="홈페이지" />
+        <Button url="https://blog.naver.com/piquant_asia" text="공식 블로그" />
+      </div>
 
       <hr className="Intro-BottomHr" />
     </div>

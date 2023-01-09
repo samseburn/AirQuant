@@ -3,8 +3,8 @@ import {
   airquant_04,
   airquant_05,
   airquant_09,
-  airquant_11,
-  airquant_10,
+  airquant_12,
+  airquant_13,
 } from 'images';
 import React from 'react';
 //
@@ -22,14 +22,14 @@ const ProductAirquantImg = () => {
         <div className="Airquant_img_second">
           <img className="Airquant_Main3" src={airquant_05} />
           <div className="Airquant_img_third">
-            <img className="Airquant_Main4" src={airquant_11} />
+            <img className="Airquant_Main4" src={airquant_12} />
             <img className="Airquant_Main5" src={airquant_03} />
             <img className="Airquant_Main6" src={airquant_04} />
           </div>
         </div>
       </div>
       <div className="Airquant_img_fourth">
-        <img className="Airquant_Main2" src={airquant_10} />
+        <img className="Airquant_Main2" src={airquant_13} />
       </div>
     </div>
   );
