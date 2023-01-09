@@ -14,6 +14,8 @@ export { default as airquant_08 } from './Product/airquant_08.jpeg';
 export { default as airquant_09 } from './Product/airquant_09.png';
 export { default as airquant_10 } from './Product/airquant_10.png';
 export { default as airquant_11 } from './Product/airquant_11.png';
+export { default as airquant_12 } from './Product/airquant_12.png';
+export { default as airquant_13 } from './Product/airquant_13.png';
 export { default as table_logo } from './Product/table_logo.png';
 
 // Tech
@@ -28,6 +30,8 @@ export { default as convenience_08 } from './Tech/convenience_08.png';
 export { default as convenience_09 } from './Tech/convenience_09.png';
 export { default as explanation_phone } from './Tech/explanation_phone.png';
 export { default as explanation_weather } from './Tech/explanation_weather.png';
+export { default as explanation_phone0 } from './Tech/explanation_phone0.png';
+export { default as explanation_weather0 } from './Tech/explanation_weather0.png';
 export { default as logo_01 } from './Tech/logo_01.jpg';
 export { default as logo_02 } from './Tech/logo_02.jpg';
 export { default as logo_03 } from './Tech/logo_03.jpg';
