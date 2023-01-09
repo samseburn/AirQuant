@@ -36,10 +36,10 @@ const CompanyIcon = () => {
         }
       >
         <div className="CompanyIcon-imgs-item imageLeft">
-          <img src={company_product}></img>
+          <img src={company_product} alt="modul"></img>
         </div>
         <div className="CompanyIcon-imgs-item imageRight">
-          <img src={company_product_drawing}></img>
+          <img src={company_product_drawing} alt="model drawing"></img>
         </div>
       </div>
       <div
