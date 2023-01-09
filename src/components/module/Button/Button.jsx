@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 const Button = (props) => {
   // props[functionName(sendData,openWindow),url,text] 받고
   const sendData = () => {
@@ -8,12 +6,6 @@ const Button = (props) => {
   const openWindow = () => {
     return window.open(`${props.url}`, '_blank');
   };
-
-  useEffect(() => {
-    sendData();
-    console.log(`안녕`);
-    openWindow();
-  }, [sendData, openWindow]);
 
   return (
     <div className="Button" onClick={openWindow}>
