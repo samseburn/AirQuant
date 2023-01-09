@@ -1,29 +1,37 @@
-import React from 'react';
-// import CompanyMainImg from '../../../images/Company/company_main.png';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import { company_main } from 'images';
 
-const CompanyIntro = () => {
-  return (
-    <div className="ComponyIntro">
-      <hr className="IntroTopHr" />
-      <p className="IntroTitle">Expose Light, Analyze Right</p>
+import 'aos/dist/aos.css';
+import { Button } from 'components/module/Button';
 
-      <div className="IntroContents">
-        <img src={company_main} className="IntroImg" />
-        <div className="IntroText">
-          <div className="IntroTopText">
+const CompanyIntro = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
+  return (
+    <div data-aos="fade-up">
+      <hr className="Intro-TopHr" />
+      <p className="Intro-Title">Expose Light, Analyze Right</p>
+
+      <div className="Intro-Contents">
+        <img src={company_main} className="Intro-Contents-Img" />
+        <div className="Intro-Contents-Text">
+          <div className="Intro-Contents-Text-Top">
             파이퀀트는 분광 분석 기반의
             <br />
             물질 성분 분석 솔루션을 제공하며,
             <br />
             휴대용 분광기술을 통해
             <br />
-            <span className="IntroLargeText">
-              우리 모두가 <span className="IntorBlueText">‘퀀트’</span>가 되는
-              세상을 꿈꿉니다.
+            <span className="Intro-Contents-Text-Large">
+              우리 모두가{' '}
+              <span className="Intro-Contents-Text-Large-Blue">‘퀀트’</span>가
+              되는 세상을 꿈꿉니다.
             </span>
           </div>
-          <div className="IntroBottomText">
+          <div className="Intro-Contents-Text-Bottom">
             <strong>주요 제품</strong>
             <br />
             에어퀀트(실내 공기질 모니터링), 워터스캐너(수질분석),
@@ -33,7 +41,9 @@ const CompanyIntro = () => {
         </div>
       </div>
 
-      <hr className="IntroBottomHr" />
+      <Button />
+
+      <hr className="Intro-BottomHr" />
     </div>
   );
 };

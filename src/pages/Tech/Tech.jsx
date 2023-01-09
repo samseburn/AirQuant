@@ -1,4 +1,4 @@
-import { TechExplanation } from 'components';
+import { TechConvenience, TechCustomers, TechExplanation, TechMain, TechMeasurement, TechMeasurementTable, TechPatent } from 'components';
 import React from 'react';
 
 // 편의기능 맵 이미지 경로
@@ -50,16 +50,12 @@ const Tech = () => {
     },
   ];
   return (
-    <div
-      style={{
-        display: 'flex',
-        width: '100%',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      {/* {TechConList.map((tech) => (
+    <div>
+      <TechMain/>
+      <TechMeasurementTable/>
+      <TechExplanation/>
+      
+      {TechConList.map((tech) => (
         <TechConvenience
           key={tech.id}
           title={tech.title}
@@ -68,7 +64,11 @@ const Tech = () => {
           rightChild={tech.rightChild}
           rightChildImg={tech.rightChildImg}
         />
-      ))} */}
+      ))}
+
+      <TechCustomers/>
+      <TechPatent/>
+
     </div>
   );
 };

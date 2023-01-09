@@ -4,11 +4,13 @@ import {
   CompanyLED,
   CompanyAlgorithm,
   CompanyTech,
+  CompanyIntro,
 } from 'components';
 
 const Company = () => {
   return (
     <div>
+      <CompanyIntro />
       <CompanyTech />
       <CompanyIcon />
       <CompanyAlgorithm />

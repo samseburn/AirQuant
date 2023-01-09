@@ -3,28 +3,45 @@
   flex-direction: column;
 
   max-width: 80%;
+  height: 100vh;
 
   margin: auto;
   margin-top: 100px;
+
+  @include flexbox;
+
+  &-Title {
+    text-align: center;
+
+    font-size: $font-size-24;
+    font-weight: 700;
+    color: $blue_main;
+
+    // margin-bottom: 50px;
+  }
+
+  &-Text {
+    font-size: $font-size-24;
+    margin-bottom: 100px;
+
+    &-Small {
+      font-size: $font-size-18;
+    }
+  }
 }
 
-.TechTitle {
-  text-align: center;
+// .TechTitle {
+//   text-align: center;
 
-  font-size: 40px;
-  font-weight: 700;
-  color: rgba(27, 118, 255, 1);
-}
+//   font-size: 40px;
+//   font-weight: 700;
+//   color: $blue_main;
+// }
 
-.TechText {
-  /* width: 80%; */
+// .TechText {
+//   font-size: $font-size-24;
+// }
 
-  font-size: 32px;
-  /* text-align: center; */
-
-  /* display: flex; */
-}
-
-.TechSmallText {
-  font-size: 15px;
-}
+// .TechSmallText {
+//   font-size: $font-size-18;
+// }
