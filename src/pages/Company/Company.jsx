@@ -3,14 +3,14 @@ import {
   CompanyIcon,
   CompanyLED,
   CompanyAlgorithm,
-  CompanyButton,
   CompanyTech,
+  CompanyIntro,
 } from 'components';
 
 const Company = () => {
   return (
     <div>
-      <CompanyButton />
+      <CompanyIntro />
       <CompanyTech />
       <CompanyIcon />
       <CompanyAlgorithm />
