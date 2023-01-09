@@ -52,7 +52,7 @@ const Tech = () => {
   return (
     <div>
       <TechMain/>
-      <TechMeasurementTable/>
+      {/* <TechMeasurementTable/> */}
       <TechExplanation/>
       
       {TechConList.map((tech) => (

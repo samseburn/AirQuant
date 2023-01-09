@@ -18,7 +18,7 @@ const InformationBox = () => {
         <div className="imgContent">
           <img src={table_logo} alt="" className="imgContent_leftChild" />
           <div className="imgContent_rightChild">
-            <span className="imgContent_rightChild_blue">실내</span>공기
+            <span className="imgContent_rightChild_blue">실내공기 </span>
             오염물질의 농도
             <br />
             실외 대비{' '}
