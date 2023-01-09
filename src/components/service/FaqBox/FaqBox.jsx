@@ -17,7 +17,7 @@ const FaqBox = (props) => {
   return (
     <div className="faqBox">
       <div className="questionBox" onClick={toggle}>
-        <div className={`question ${open ? 'on' : 'off'}`}>
+        <div className={`question ${open ? 'open' : 'close'}`}>
           {props.question}
         </div>
 
@@ -37,7 +37,7 @@ const FaqBox = (props) => {
             : { height: '0px' }
         }
       >
-        <div className="answer">{props.children}</div>
+        <div className="answer">{props.answer}</div>
       </div>
     </div>
   );

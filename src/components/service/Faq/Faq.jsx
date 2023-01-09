@@ -31,7 +31,7 @@ const Faq = () => {
   return (
     <div className="faq">
       {faqData.map((item) => (
-        <FaqBox question={item.question}>{item.answer}</FaqBox>
+        <FaqBox question={item.question} answer={item.answer} />
       ))}
     </div>
   );
