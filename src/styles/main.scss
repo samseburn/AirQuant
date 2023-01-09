@@ -17,33 +17,44 @@
 @import './layouts/Header';
 @import './layouts/Container';
 @import './layouts/Footer';
-@import './layouts/Navbar.scss';
+@import './layouts/Navbar';
 
 // module
-@import './Card';
-@import './InformationBox';
-@import './ProductBlueBox.scss';
-@import './TechMeasurement.scss';
-@import './TechExplanation.scss';
-@import './ProductAirquantImg.scss';
-@import './ProductPiquantExplanation.scss';
-@import './ProductAirTable.scss';
-@import './TechMeasurementTable.scss';
-@import './TechConvenience.scss';
-@import './ProductGraphText.scss';
-@import './TechMain.scss';
-@import './TechCustomers.scss';
-@import './TechCustomersMap.scss';
+@import './module/Card';
+@import './module/Button';
+@import './module/TableItem';
 
-@import './box.scss';
-@import './faq.scss';
-@import './noticeList.scss';
+// components
+// product
+@import './components/product/ProductAirquantImg';
+@import './components/product/ProductAirTable';
+@import './components/product/ProductBlueBox';
+@import './components/product/ProductGraphText';
+@import './components/product/ProductMainImg';
+@import './components/product/ProductPiquantExplanation';
+@import './components/product/ProductYoutubeFirst';
+@import './components/product/ProductYoutubeSecond';
+@import './components/product/InformationBox';
 
-@import './ProductMainImg.scss';
-@import './ProductYoutubeFirst.scss';
-@import './ProductYoutubeSecond.scss';
-@import './CompanyIcon.scss';
-@import './CompanyLED.scss';
-@import './CompanyIntro.scss';
-@import './CompanyTech.scss';
-@import './CompanyAlgorithm.scss';
+// tech
+@import './components/tech/TechMeasurement';
+@import './components/tech/TechExplanation';
+@import './components/tech/TechMeasurementTable';
+@import './components/tech/TechConvenience';
+@import './components/tech/TechMain';
+@import './components/tech/TechCustomers';
+@import './components/tech/TechCustomersMap';
+
+// company
+@import './components/company/CompanyAlgorithm';
+@import './components/company/CompanyIcon';
+@import './components/company/CompanyIntro';
+@import './components/company/CompanyLED';
+@import './components/company/CompanyTech';
+
+// case
+
+// service
+@import './components/service/box';
+@import './components/service/faq';
+@import './components/service/noticeList';

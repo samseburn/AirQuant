@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../../styles/Button.scss';
-
 const Button = (props) => {
   return (
     <div
