@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../../styles/CompanyTech.scss';
-
 const CompanyTech = () => {
   return (
     <div className="CompanyTech">

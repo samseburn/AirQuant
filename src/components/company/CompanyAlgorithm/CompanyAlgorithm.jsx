@@ -1,6 +1,5 @@
 import React from 'react';
-import '../../../styles/CompanyAlgorithm.scss';
-import { CompanyAlgoChart } from '../CompanyAlgoChart';
+import { CompanyAlgoChart } from 'components';
 
 const CompanyAlgorithm = () => {
   return (
