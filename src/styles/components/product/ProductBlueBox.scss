@@ -6,9 +6,9 @@
   // 스크롤 시 배경
   &_backGround {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     //   height: 214px;
-    background-color: #1b76ff;
+    background-color: $blue_main;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,15 +19,16 @@
     // 스크롤 시 내용
     &_Scrolledcontent {
       color: white;
-      font-size: 40px;
+      font-size: 35px;
       text-align: center;
-      line-height: 100px;
-      transition: 2s;
+      line-height: 85px;
+      transition: 3s;
 
       .ProductBlueBox_bold {
         //   text-decoration: underline;
-        font-weight: 600;
-        box-shadow: inset 0 -2px 0 white;
+        font-weight: 700;
+        box-shadow: inset 0 -5px 0 $white;
+        // font-size: 70px;
       }
     }
     //스크롤 전 내용
@@ -36,11 +37,11 @@
       font-size: 26px;
       text-align: center;
       line-height: 47px;
-      transition: 1.5s;
+      transition: 3s;
       .ProductBlueBox_bold {
         //   text-decoration: underline;
-        font-weight: 600;
-        box-shadow: inset 0 -2px 0 white;
+        font-weight: 500;
+        box-shadow: inset 0 -2px 0 $white;
       }
     }
   }
@@ -50,7 +51,7 @@
     width: 100%;
     height: 30vh;
     //   height: 214px;
-    background-color: #1b76ff;
+    background-color: $blue_main;
     display: flex;
     justify-content: center;
     align-items: center;
