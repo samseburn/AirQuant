@@ -1,4 +1,4 @@
-import { airquant_10, explanation_phone, explanation_weather } from 'images';
+import { airquant_13, explanation_phone0, explanation_weather0 } from 'images';
 import React from 'react';
 
 const TechExplanation = () => {
@@ -12,7 +12,7 @@ const TechExplanation = () => {
       </p>
       <div className="TechExplanationPhoneWeb">
         <div className="TechExplantionPhone">
-          <img className="TechExplantionPhone1" src={explanation_phone} />
+          <img className="TechExplantionPhone1" src={explanation_phone0} />
         </div>
         <div className="TechExplanationWeb">
           <p className="TechExplanationWeb1">
@@ -29,7 +29,7 @@ const TechExplanation = () => {
       </div>
       <div className="TechExplanationDigitalMonitoring">
         <div className="TechExplanationDigital">
-          <img className="TechExplanationDigital1" src={explanation_weather} />
+          <img className="TechExplanationDigital1" src={explanation_weather0} />
         </div>
         <div className="TechExplanationMonitoring">
           <p className="TechExplanationMonitoring1">
@@ -48,7 +48,7 @@ const TechExplanation = () => {
       </div>
       <div className="Airquantquality">
         <div className="Airquant">
-          <img className="Airquant1" src={airquant_10} />
+          <img className="Airquant1" src={airquant_13} />
         </div>
         <div className="AirQuality">
           <p className="AirQuality1">
