@@ -7,13 +7,13 @@ export { Navbar } from './common/Navbar';
 // module
 export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
+export { Button } from './module/Button';
 
 export { ProductPiquantExplanation } from './module/ProductPiquantExplanation';
 export { ProductAirquantImg } from './module/ProductAirquantImg';
 export { ProductGraph } from './module/ProductGraph';
 export { ProductGraphText } from './module/ProductGraphText';
 
-export { CompanyButton } from './module/CompanyButton';
 export { CompanyTech } from './module/CompanyTech';
 export { CompanyAlgorithm } from './module/CompanyAlgorithm';
 export { CompanyIcon } from './module/CompanyIcon';
@@ -31,7 +31,6 @@ export { TechExplanation } from './module/TechExplanation';
 export { TechMain } from './module/TechMain';
 export { TechCustomers } from './module/TechCustomers';
 export { TechCustomersMap } from './module/TechCustomersMap';
-export { Button } from './module/Button';
 
 export { TechConvenience } from './module/TechConvenience';
 export { ProductYoutubeFirst } from './module/ProductYoutubeFirst';
