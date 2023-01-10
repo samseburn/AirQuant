@@ -1,12 +1,11 @@
 .Airquant_Main {
   width: 100%;
-  height: 270vh;
-  position: relative;
+  height: 300vh;
   .Airquant_Main_Content1 {
     color: $blue_main;
-    font-size: 130px;
+    font-size: 115px;
     margin-bottom: -103px;
-    margin-left: 930px;
+    margin-left: 615px;
   }
   .Airquant_Main_Content2 {
     font-size: 2rem;
@@ -29,39 +28,40 @@
   }
   .Airquant_img_third {
     display: flex;
-    margin-left: 250px;
+    margin-left: 120px;
   }
   .Airquant_Main_1 {
   }
   .Airquant_Main1 {
-    width: 1600px;
-    height: 1000px;
+    width: 1250px;
+    height: 650px;
     margin-left: -200px;
   }
   .Airquant_Main2 {
-    width: 553px;
-    height: 553px;
+    width: 380px;
+    height: 380px;
     margin-left: -250px;
-    margin-top: 500px;
+    margin-top: 400px;
   }
   .Airquant_Main3 {
-    width: 650px;
-    height: 457px;
-    margin-left: 250px;
+    width: 468px;
+    height: 307px;
+    margin-left: 120px;
+    margin-top: -50px;
     margin-bottom: 40px;
   }
   .Airquant_Main4 {
-    width: 430px;
-    height: 430px;
+    width: 320px;
+    height: 320px;
     margin-right: 40px;
   }
   .Airquant_Main5 {
-    width: 430px;
-    height: 430px;
+    width: 320px;
+    height: 320px;
     margin-right: 40px;
   }
   .Airquant_Main6 {
-    width: 430px;
-    height: 430px;
+    width: 320px;
+    height: 320px;
   }
 }

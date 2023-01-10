@@ -1,8 +1,8 @@
-.Intro {
-  height: 90vh;
+.CompanyIntro {
+  height: 80vh;
 
   &-TopHr {
-    width: 80px;
+    width: 70px;
 
     border: 2px solid;
 
@@ -24,7 +24,7 @@
 
   &-Contents {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     max-width: 80%;
@@ -34,6 +34,8 @@
     &-Img {
       width: 500px;
       height: 350px;
+
+      margin-right: 200px;
     }
 
     &-Text {
@@ -66,7 +68,7 @@
 
     gap: 30px;
 
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   &-BottomHr {
