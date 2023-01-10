@@ -17,12 +17,11 @@ const Product = () => {
       <ProductMainImg />
       <ProductPiquantExplanation />
       <InformationBox />
-      {/* <ProductYoutubeFirst /> */}
       <ProductGraphText />
       <ProductYoutubeSecond />
       <ProductBlueBox />
       <ProductAirTable />
-      <ProductAirquantImg />
+      {/* <ProductAirquantImg /> */}
     </div>
   );
 };

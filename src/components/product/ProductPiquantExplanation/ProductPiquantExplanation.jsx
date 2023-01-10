@@ -1,11 +1,18 @@
 // import { buildQueries } from '@testing-library/react';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const ProductPiquantExplanation = () => {
+  useEffect(() => {
+    Aos.init({ duration:1500})
+  }, []);
+
   return (
     <div className="Piquant_container">
       <div className="Piquant_mark1">"</div>
-      <div className="Piquant_mark2">"</div>
+
       <div className="Piquant_container1">
         <span className="Piquant_num1">
           <br />
@@ -26,9 +33,8 @@ const ProductPiquantExplanation = () => {
           <span className="blue2">안전하고 쾌적한 실내환경을 조성</span>
           하는 데 기여합니다.
         </div>
-        <br />
       </div>
-      "
+      <div className="Piquant_mark2">"</div>
     </div>
   );
 };
