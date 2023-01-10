@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const TechMeasurementTable = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  });
   return (
     <>
       <div className="TechMeasurementTable">
@@ -58,24 +64,37 @@ const TechMeasurementTable = () => {
             </tbody>
           </table>
         </div>
-        <p className="TechMeasurementTable_explain">
+        <p className="TechMeasurementTable_explain" data-aos="zoom-out">
           SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과 대체가능합니다.
         </p>
         <div className="TechMeasurementTable_spec">
           <p className="TechMeasurementTable_spec_title">기술스펙</p>
-          <p>
-            <strong>크기 :</strong> 153mm(L) x 153mm(W) x 60mm(H)
-          </p>
-          <p>
-            <strong>무게 :</strong> 550g
-          </p>
-          <p>
-            <strong>통신방법 :</strong> Wi-Fi, 블루투스, 이더넷{' '}
-          </p>
-          <p>
-            <strong>전원 인가 방법 :</strong> PoE (Power over Ethernet) | DC 5V
-            2A
-          </p>
+          <div className="TechMeasurementTable_spec_content">
+            <p>
+              <span className="TechMeasurementTable_spec_content_bold">
+                크기 :
+              </span>{' '}
+              153mm(L) x 153mm(W) x 60mm(H)
+            </p>
+            <p>
+              <span className="TechMeasurementTable_spec_content_bold">
+                무게 :
+              </span>{' '}
+              550g
+            </p>
+            <p>
+              <span className="TechMeasurementTable_spec_content_bold">
+                통신방법 :
+              </span>{' '}
+              Wi-Fi, 블루투스, 이더넷{' '}
+            </p>
+            <p>
+              <span className="TechMeasurementTable_spec_content_bold">
+                전원 인가 방법 :
+              </span>{' '}
+              PoE (Power over Ethernet) | DC 5V 2A
+            </p>
+          </div>
         </div>
       </div>
     </>
