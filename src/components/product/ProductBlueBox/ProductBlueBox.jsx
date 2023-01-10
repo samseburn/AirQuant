@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 
 const ProductBlueBox = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  // const [absoluteTop, setAbsoluteTop] = useState(0);
 
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -10,20 +11,44 @@ const ProductBlueBox = () => {
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
   }, []);
+
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    // if (scrollRef.current == undefined) {
+    // } else {
+    //   const scroll = scrollRef.current.getBoundingClientRect().top;
+    //   const absoluteTop = window.pageYOffset + scroll;
+    // }
+  });
+
+  useEffect(() => {
+    if (scrollRef.current == undefined) {
+    }
+  });
+
+  let scroll;
+  scrollRef.current == undefined
+    ? (scroll = 0)
+    : (scroll = scrollRef.current.getBoundingClientRect().top);
+
+  //    const scroll = scrollRef.current.getBoundingClientRect().top;
+  const absoluteTop = window.pageYOffset + scroll;
+
   return (
-    <div className="ProductBlueBox">
+    <div className="ProductBlueBox" ref={scrollRef}>
       <div
         // 스크롤 위치 확인 필수!
         style={{ backgroundPosition: scrollPosition }}
         className={
-          scrollPosition > 4000
+          scrollPosition > absoluteTop - 200
             ? 'ProductBlueBox_backGround'
             : 'ProductBlueBox_ScrolledbackGround'
         }
       >
         <div
           className={
-            scrollPosition > 4000
+            scrollPosition > absoluteTop - 200
               ? 'ProductBlueBox_backGround_Scrolledcontent'
               : 'ProductBlueBox_backGround_content'
           }

@@ -1,10 +1,17 @@
 import { table_logo } from 'images';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { ProductYoutubeFirst } from '../ProductYoutubeFirst';
 
 const InformationBox = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <div className="InformationBox">
-      <p className="InformationBox_bigTitle">
+      <p className="InformationBox_bigTitle" data-aos="zoom-in">
         실내 공기질을 왜 정확하게 모니터링 해야할까요?
       </p>
 
@@ -18,7 +25,7 @@ const InformationBox = () => {
         <div className="imgContent">
           <img src={table_logo} alt="" className="imgContent_leftChild" />
           <div className="imgContent_rightChild">
-            <span className="imgContent_rightChild_blue">실내</span>공기
+            <span className="imgContent_rightChild_blue">실내공기 </span>
             오염물질의 농도
             <br />
             실외 대비{' '}
@@ -58,6 +65,7 @@ const InformationBox = () => {
           </div>
         </div>
       </div>
+      <ProductYoutubeFirst />
     </div>
   );
 };

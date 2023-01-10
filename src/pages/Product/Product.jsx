@@ -10,7 +10,6 @@ import {
   ProductYoutubeFirst,
   ProductYoutubeSecond,
 } from 'components';
-//
 
 const Product = () => {
   return (
@@ -18,12 +17,11 @@ const Product = () => {
       <ProductMainImg />
       <ProductPiquantExplanation />
       <InformationBox />
-      <ProductYoutubeFirst />
       <ProductGraphText />
       <ProductYoutubeSecond />
       <ProductBlueBox />
       <ProductAirTable />
-      <ProductAirquantImg />
+      {/* <ProductAirquantImg /> */}
     </div>
   );
 };

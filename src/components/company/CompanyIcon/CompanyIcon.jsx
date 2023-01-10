@@ -1,50 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { company_product, company_product_drawing } from 'images';
 
-const CompanyIcon = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', updateScroll);
-  }, [scrollPosition]);
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-  console.log(window.scrollY);
+const CompanyIcon = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <div className="CompanyIcon">
-      <h1
-        className={
-          scrollPosition > 30
-            ? 'CompanyIcon-title-scrolled'
-            : 'CompanyIcon-title'
-        }
-      >
+      <h1 className="CompanyIcon-title-scrolled" data-aos="fade-up">
         파이퀀트는 하마쯔사의 소형 분광기 모듈을 사용합니다
         <br />
         &#40;C12666MA&#41;
       </h1>
-      <div
-        className={
-          scrollPosition > 80 ? 'CompanyIcon-imgs-scrolled' : 'CompanyIcon-imgs'
-        }
-      >
+      <div className="CompanyIcon-imgs-scrolled" data-aos="fade-up">
         <div className="CompanyIcon-imgs-item imageLeft">
-          <img src={company_product}></img>
+          <img src={company_product} alt="module" />
         </div>
         <div className="CompanyIcon-imgs-item imageRight">
-          <img src={company_product_drawing}></img>
+          <img src={company_product_drawing} alt="model drawing" />
         </div>
       </div>
-      <div
-        className={
-          scrollPosition > 150
-            ? 'CompanyIcon-icons-scrolled'
-            : 'CompanyIcon-icons'
-        }
-      >
-        <div className="CompanyIcon-icons-item small">
+      <div className="CompanyIcon-icons-scrolled">
+        <div className="CompanyIcon-icons-item small" data-aos="fade-up">
           <div className="CompanyIcon-icons-item-img small-icon"></div>
           <span>
             <b>작은 사이즈</b>
@@ -54,7 +35,11 @@ const CompanyIcon = () => {
             <br /> 한 손으로 들 만큼 작은 사이즈 입니다.
           </span>
         </div>
-        <div className="CompanyIcon-icons-item price">
+        <div
+          className="CompanyIcon-icons-item price"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
           <div className="CompanyIcon-icons-item-img price-icon"></div>
           <span>
             <b>낮은 가격</b>
@@ -65,7 +50,11 @@ const CompanyIcon = () => {
             <br /> 가격보다 저렴합니다.
           </span>
         </div>
-        <div className="CompanyIcon-icons-item accuracy">
+        <div
+          className="CompanyIcon-icons-item accuracy"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
           <span>
             <b>높은 정확도</b>
