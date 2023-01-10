@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
 
   &_Contents {
     margin: 15% 0 3% 0;
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: -5vh;
   }
 
   &_Table {
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     // width: 100%;
     display: flex;
     justify-content: center;
@@ -48,15 +47,17 @@
   }
   &_spec {
     font-size: 20px;
-    padding-bottom: 10vh;
+    padding-bottom: 40vh;
     padding-right: 20%;
-    line-height: 1.5;
 
     &_title {
       font-weight: 700;
       color: $blue_main;
-      // font-size: 30px;
       width: 40%;
+      padding-bottom: 15px;
+    }
+    &_content {
+      line-height: 1.5;
     }
   }
 }

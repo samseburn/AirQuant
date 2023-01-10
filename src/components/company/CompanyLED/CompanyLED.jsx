@@ -88,7 +88,7 @@ const CompanyLED = () => {
     <div className="CompanyLED">
       <h1
         className={
-          scrollPosition > 1700
+          scrollPosition > 3000
             ? 'CompanyLED-title-scrolled'
             : 'CompanyLED-title'
         }
@@ -97,7 +97,7 @@ const CompanyLED = () => {
       </h1>
       <div
         className={
-          scrollPosition > 2000
+          scrollPosition > 3100
             ? 'CompanyLED-charts-scrolled'
             : 'CompanyLED-charts'
         }
@@ -145,7 +145,7 @@ const CompanyLED = () => {
       </div>
       <div
         className={
-          scrollPosition > 2000
+          scrollPosition > 3150
             ? 'CompanyLED-content-scrolled'
             : 'CompanyLED-content'
         }

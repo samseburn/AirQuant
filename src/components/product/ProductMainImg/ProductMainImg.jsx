@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { airquant_06 } from 'images';
+import { airquant_14 } from 'images';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -13,11 +13,11 @@ const ProductMainImg = () => {
     <>
       <div className="airQuant_Main">
         <div className="airQuant_Main_Background_Image_main">
-          <img className="airQuant_Main_Background_Image" src={airquant_06} />
+          <img className="airQuant_Main_Background_Image" src={airquant_14} />
         </div>
-        <div className="airQuant_Title" data-aos="fade-up">
-          <p className="airQuant_Main_Title">AirQuant</p>
-          <p className="airQuant_Sub_Title">
+        <div className="airQuant_Title">
+          <p className="airQuant_Main_Title" data-aos="fade-up">AirQuant</p>
+          <p className="airQuant_Sub_Title"  data-aos="fade-up">
             Integrated Indoor Air Quality Management IoT solution
           </p>
         </div>

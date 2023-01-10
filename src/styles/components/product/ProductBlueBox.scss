@@ -19,16 +19,20 @@
     // 스크롤 시 내용
     &_Scrolledcontent {
       color: white;
-      font-size: 35px;
+      font-size: 2rem;
       text-align: center;
       line-height: 85px;
-      transition: 3s;
+      transition: 1.25s;
 
       .ProductBlueBox_bold {
         //   text-decoration: underline;
         font-weight: 700;
         box-shadow: inset 0 -5px 0 $white;
-        // font-size: 70px;
+        font-size: 70px;
+        font-size: 4rem;
+
+        // transform: scale(3);
+        transition: all 1.25s ease-in-out;
       }
     }
     //스크롤 전 내용
@@ -37,11 +41,14 @@
       font-size: 26px;
       text-align: center;
       line-height: 47px;
-      transition: 3s;
+      transition: 1.25s;
+
       .ProductBlueBox_bold {
         //   text-decoration: underline;
+        font-size: 2rem;
         font-weight: 500;
         box-shadow: inset 0 -2px 0 $white;
+        transition: all 1.25s ease-in-out;
       }
     }
   }
