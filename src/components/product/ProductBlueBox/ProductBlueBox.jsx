@@ -10,7 +10,6 @@ const ProductBlueBox = () => {
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
   }, []);
-  console.log(scrollPosition);
   return (
     <div className="ProductBlueBox">
       <div
