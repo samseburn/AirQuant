@@ -1,5 +1,5 @@
 .TechConvenience {
-  padding-bottom: 250px;
+  padding-bottom: 40vh;
   align-items: center;
   // 소제목
   &_title {
@@ -15,7 +15,7 @@
 
     // 왼쪽
     .TechConLeftChild {
-      padding: 25px;
+      padding-right: 30px;
 
       &_Img {
         width: 435px;
@@ -32,7 +32,7 @@
 
     // 오른쪽
     .TechConRightChild {
-      padding: 25px;
+      padding-left: 30px;
 
       &_Img {
         width: 435px;
