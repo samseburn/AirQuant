@@ -16,14 +16,14 @@ const ProductBlueBox = () => {
         // 스크롤 위치 확인 필수!
         style={{ backgroundPosition: scrollPosition }}
         className={
-          scrollPosition > 4700
+          scrollPosition > 3900
             ? 'ProductBlueBox_backGround'
             : 'ProductBlueBox_ScrolledbackGround'
         }
       >
         <div
           className={
-            scrollPosition > 4700
+            scrollPosition > 3900
               ? 'ProductBlueBox_backGround_Scrolledcontent'
               : 'ProductBlueBox_backGround_content'
           }

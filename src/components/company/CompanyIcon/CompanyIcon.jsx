@@ -22,7 +22,7 @@ const CompanyIcon = () => {
     <div className="CompanyIcon">
       <h1
         className={
-          scrollPosition > 200
+          scrollPosition > 1000
             ? 'CompanyIcon-title-scrolled'
             : 'CompanyIcon-title'
         }
@@ -33,7 +33,7 @@ const CompanyIcon = () => {
       </h1>
       <div
         className={
-          scrollPosition > 300
+          scrollPosition > 1200
             ? 'CompanyIcon-imgs-scrolled'
             : 'CompanyIcon-imgs'
         }
@@ -47,7 +47,7 @@ const CompanyIcon = () => {
       </div>
       <div
         className={
-          scrollPosition > 500
+          scrollPosition > 1700
             ? 'CompanyIcon-icons-scrolled'
             : 'CompanyIcon-icons'
         }
