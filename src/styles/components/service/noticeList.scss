@@ -1,11 +1,59 @@
 
 .noticeList {
-    margin: 100px;
-    border-top: 3px solid #797979;
-    border-collapse: collapse;
+  width: 90%;
+  margin: 200px auto;
+  border-top: 3px solid $teritiary;
+  //표 테두리와 셀 테두리 간격 없애기
+  border-collapse: collapse;
+  text-align: center;
+  // display: ;
 
+  
   th, td {
+    padding: 20px;
+    border-bottom: 1px solid $teritiary;
+  }
+
+  // .noticeData, .noticeHeader {
+
+  // }
+
+  .noticeData {
+    cursor: pointer;
     height: 60px;
-    border-bottom: 1px solid #797979;
+
+    &:hover {
+      background-color: rgba(184, 212, 255, 0.2)
+    }
+    .noticeTitle {
+      text-align: left;
+      width: 75%;
+    }
+  }
+
+  @include responsive(T) {
+    // 768 ~ 1200
+    // margin: 150px 0;
+    // width: 768px;
+
+      .noticeTitle {
+      overflow: hidden;
+      // 글자가 특정범위를 벗어나는 경우? (...)으로
+      text-overflow: ellipsis;
+
+      //최대 라인수 지정하기
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      //박스 내부 컨텐츠 정렬 수직으로
+      -webkit-box-orient: vertical;
+      // line-height: 1rem;    /* 추가 */
+      // height: 150px; 
+  }
+  }
+  
+  @include responsive(M) {
+        // 576~768 이하일 때
+        // margin: 100px 0;
+        width: 576px;
   }
 }
