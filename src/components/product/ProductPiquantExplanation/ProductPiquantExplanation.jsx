@@ -1,13 +1,20 @@
 // import { buildQueries } from '@testing-library/react';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const ProductPiquantExplanation = () => {
+  useEffect(() => {
+    Aos.init({ duration:1500})
+  }, []);
+
   return (
     <div className="Piquant_container">
       <div className="Piquant_mark1">"</div>
       <div className="Piquant_mark2">"</div>
-      <div className="Piquant_container1">
-        <span className="Piquant_num1">
+      <div className="Piquant_container1" >
+        <span className="Piquant_num1" data-aos="zoom-in">
           <br />
           파이퀀트는 4차 산업의 핵심 기술인 IoT 기술과 빅데이터를 이용해
           <br />

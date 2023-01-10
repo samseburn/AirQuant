@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ProductGraph } from '../ProductGraph';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const ProductGraphText = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500});
+  }, []);
+
   return (
     <div className="Product__Graph__Main">
       <p className="Product__p_text_Main">
@@ -9,7 +16,7 @@ const ProductGraphText = () => {
       </p>
       <p className="Product__p_text_inhauniv">출처 : 인하대병원 (2020)</p>
       <ProductGraph />
-      <span className="Product__div_text_health">
+      <span className="Product__div_text_health" data-aos="zoom-in">
         건강에 미치는 악영향은 실제로 나타나는 중
       </span>
     </div>
