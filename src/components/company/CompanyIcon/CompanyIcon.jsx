@@ -8,8 +8,11 @@ const CompanyIcon = () => {
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
+    console.log('Company Icon Component Rendered :: In');
     return () => {
+      // 스크롤 이벤트가 적용된 컴포넌트를 나가게 되면 적용 x 하기 위해,,
       window.removeEventListener('scroll', updateScroll);
+      console.log('Compnay Icon Component Rendered :: Out');
     };
   }, []);
 
@@ -19,7 +22,7 @@ const CompanyIcon = () => {
     <div className="CompanyIcon">
       <h1
         className={
-          scrollPosition > 200
+          scrollPosition > 1000
             ? 'CompanyIcon-title-scrolled'
             : 'CompanyIcon-title'
         }
@@ -30,21 +33,21 @@ const CompanyIcon = () => {
       </h1>
       <div
         className={
-          scrollPosition > 300
+          scrollPosition > 1200
             ? 'CompanyIcon-imgs-scrolled'
             : 'CompanyIcon-imgs'
         }
       >
         <div className="CompanyIcon-imgs-item imageLeft">
-          <img src={company_product} alt="modul"></img>
+          <img src={company_product} alt="module" />
         </div>
         <div className="CompanyIcon-imgs-item imageRight">
-          <img src={company_product_drawing} alt="model drawing"></img>
+          <img src={company_product_drawing} alt="model drawing" />
         </div>
       </div>
       <div
         className={
-          scrollPosition > 500
+          scrollPosition > 1700
             ? 'CompanyIcon-icons-scrolled'
             : 'CompanyIcon-icons'
         }
