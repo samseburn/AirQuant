@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const ProductGraphText = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500});
+    Aos.init();
   }, []);
 
   return (
@@ -16,7 +16,7 @@ const ProductGraphText = () => {
       </p>
       <p className="Product__p_text_inhauniv">출처 : 인하대병원 (2020)</p>
       <ProductGraph />
-      <span className="Product__div_text_health" data-aos="zoom-in">
+      <span className="Product__div_text_health" data-aos="fade-up" data-aos-duration="3000" >
         건강에 미치는 악영향은 실제로 나타나는 중
       </span>
     </div>

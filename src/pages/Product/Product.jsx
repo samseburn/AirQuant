@@ -21,7 +21,7 @@ const Product = () => {
       <ProductYoutubeSecond />
       <ProductBlueBox />
       <ProductAirTable />
-      {/* <ProductAirquantImg /> */}
+      <ProductAirquantImg />
     </div>
   );
 };
