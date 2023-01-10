@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Aos from 'aos';
 import { company_main } from 'images';
 import { Button } from 'components';
 
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const CompanyIntro = () => {
@@ -11,27 +11,29 @@ const CompanyIntro = () => {
   }, []);
 
   return (
-    <div className="Intro" data-aos="fade-up">
-      <hr className="Intro-TopHr" />
-      <p className="Intro-Title">Expose Light, Analyze Right</p>
+    <div className="CompanyIntro" data-aos="fade-up">
+      <hr className="CompanyIntro-TopHr" />
+      <p className="CompanyIntro-Title">Expose Light, Analyze Right</p>
 
-      <div className="Intro-Contents">
-        <img src={company_main} className="Intro-Contents-Img" alt="" />
-        <div className="Intro-Contents-Text">
-          <div className="Intro-Contents-Text-Top">
+      <div className="CompanyIntro-Contents">
+        <img src={company_main} className="CompanyIntro-Contents-Img" alt="" />
+        <div className="CompanyIntro-Contents-Text">
+          <div className="CompanyIntro-Contents-Text-Top">
             파이퀀트는 분광 분석 기반의
             <br />
             물질 성분 분석 솔루션을 제공하며,
             <br />
             휴대용 분광기술을 통해
             <br />
-            <span className="Intro-Contents-Text-Large">
+            <span className="CompanyIntro-Contents-Text-Large">
               우리 모두가{' '}
-              <span className="Intro-Contents-Text-Large-Blue">‘퀀트’</span>가
-              되는 세상을 꿈꿉니다.
+              <span className="CompanyIntro-Contents-Text-Large-Blue">
+                ‘퀀트’
+              </span>
+              가 되는 세상을 꿈꿉니다.
             </span>
           </div>
-          <div className="Intro-Contents-Text-Bottom">
+          <div className="CompanyIntro-Contents-Text-Bottom">
             <strong>주요 제품</strong>
             <br />
             에어퀀트(실내 공기질 모니터링), 워터스캐너(수질분석),
@@ -41,12 +43,12 @@ const CompanyIntro = () => {
         </div>
       </div>
 
-      <div className="Intro-Button">
+      <div className="CompanyIntro-Button">
         <Button url="http://www.piquant.asia" text="홈페이지" />
         <Button url="https://blog.naver.com/piquant_asia" text="공식 블로그" />
       </div>
 
-      <hr className="Intro-BottomHr" />
+      <hr className="CompanyIntro-BottomHr" />
     </div>
   );
 };
