@@ -11,13 +11,13 @@ const InformationBox = () => {
   }, []);
   return (
     <div className="InformationBox">
-      <p className="InformationBox_bigTitle" data-aos="zoom-in">
+      <p className="InformationBox_bigTitle" data-aos="fade-up">
         실내 공기질을 왜 정확하게 모니터링 해야할까요?
       </p>
 
       {/* 박스1 */}
 
-      <div className="InformationBox_firstBox">
+      <div className="InformationBox_firstBox" data-aos="fade-up">
         <div className="InformationBox_title">
           건물 외부 대비 심각한 공기 질 오염
         </div>
@@ -38,7 +38,7 @@ const InformationBox = () => {
 
       {/* 박스2 */}
 
-      <div className="InformationBox_secondBox">
+      <div className="InformationBox_secondBox" data-aos="fade-up">
         <div className="InformationBox_title">공기 질 오염의 위험성</div>
         <div className="InformationBox_secondBox_content">
           <div className="dangerContentFirst">
