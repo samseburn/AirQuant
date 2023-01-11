@@ -1,10 +1,22 @@
-import React from 'react';
-import { NoticeList } from 'components';
+import React, { useEffect } from 'react';
+import { NoticeItem, NoticeList, TableItem } from 'components';
+import { noticeData } from 'components/service/NoticeList/NoticeList';
+import { useParams } from 'react-router-dom';
 
 const Notice = () => {
+  const { noticeId } = useParams();
+  console.log(noticeId);
+
+  console.log(noticeData.data);
   return (
     <div>
-      <NoticeList />
+      {noticeId ? (
+        // console.log(noticeData.data)
+        <NoticeItem data={noticeData.data} params={noticeId} />
+      ) : (
+        // <TableItem data={noticeData.data} params={noticeId} />
+        <NoticeList />
+      )}
     </div>
   );
 };
