@@ -6,24 +6,11 @@
   text-align: center;
   &-title {
     color: $dark;
-    //스크롤 전에는 안 보이게 히든값 주기
-    visibility: hidden;
     //스크롤 시
-    &-scrolled {
-      animation-duration: 1.5s;
-      animation-name: upSlide;
-      animation-fill-mode: forwards;
-    }
   }
   &-imgs {
     @include flexbox;
-    visibility: hidden;
-    &-scrolled {
-      @include flexbox;
-      animation-duration: 1.5s;
-      animation-name: upSlide;
-      animation-fill-mode: forwards;
-    }
+
     &-item {
       &.imageLeft,
       &.imageRight {
@@ -38,7 +25,7 @@
   }
   &-icons {
     @include flexbox;
-    visibility: hidden;
+
     &-item {
       flex-direction: column;
       @include flexbox;
@@ -65,26 +52,14 @@
         }
       }
     }
-    &-scrolled {
-      @include flexbox;
-      span {
-        margin: 8px;
-      }
-      animation-duration: 1.5s;
-      animation-name: upSlide;
-      animation-fill-mode: forwards;
+
+    span {
+      margin: 8px;
     }
   }
   @include responsive(M) {
-    img {
-    }
     &-icons {
-      &-item {
-        width: 200px;
-      }
-      &-scrolled {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
     &-imgs-item {
       &.imageLeft,
@@ -96,16 +71,5 @@
         }
       }
     }
-  }
-}
-@keyframes upSlide {
-  from {
-    margin-top: 10%;
-    opacity: 0;
-  }
-
-  to {
-    margin-top: 0%;
-    opacity: 1;
   }
 }
