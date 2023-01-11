@@ -48,3 +48,24 @@
     }
   }
 }
+
+// 반응형
+@include responsive(T) {
+  .TechConvenience {
+    &_content {
+      flex-direction: column;
+      text-align: center;
+
+      // 왼쪽
+      .TechConLeftChild {
+        padding-bottom: 10vh;
+        padding-right: 0px;
+      }
+
+      // 오른쪽
+      .TechConRightChild {
+        padding-left: 0px;
+      }
+    }
+  }
+}

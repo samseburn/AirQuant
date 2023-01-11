@@ -98,3 +98,12 @@
     }
   }
 }
+
+// 반응형
+@include responsive(T) {
+  .InformationBox {
+    &_bigTitle {
+      font-size: 20px;
+    }
+  }
+}
