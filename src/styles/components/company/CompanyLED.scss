@@ -3,23 +3,10 @@
   @include flexbox;
   flex-direction: column;
   &-title {
-    visibility: hidden;
-    &-scrolled {
-      animation-name: upSlide;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      height: 10vh;
-    }
+    height: 10vh;
   }
   &-charts {
-    visibility: hidden;
-    &-scrolled {
-      @include flexbox;
-      animation-name: upSlide;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      height: 60vh;
-    }
+    @include flexbox;
     &-left,
     &-right {
       margin: 20px;
@@ -28,27 +15,14 @@
 
   &-content {
     margin-top: 30px;
-    visibility: hidden;
-    &-scrolled {
-      animation-name: upSlide;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      text-align: center;
-      word-break: keep-all;
-      font-size: $font-size-18;
-      height: 50vh;
+    text-align: center;
+    word-break: keep-all;
+    font-size: $font-size-18;
+    height: 50vh;
+  }
+  @include responsive(M) {
+    &-charts {
+      flex-direction: column;
     }
-  }
-}
-
-@keyframes upSlide {
-  from {
-    margin-top: 10%;
-    opacity: 0;
-  }
-
-  to {
-    margin-top: 0%;
-    opacity: 1;
   }
 }
