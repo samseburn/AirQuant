@@ -4,20 +4,24 @@
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  .Piquant_mark1 {
-    font-size: 200px;
-    font-family: cursive;
-    color: $blue_light;
-    margin-left: 140px;
-    margin-bottom: -180px;
+  .Piquant_container_spot {
     display: inline;
   }
-  .Piquant_mark2 {
-    font-size: 200px;
+  .Piquant_container_spot1 {
+    font-size: 130px;
     font-family: cursive;
     color: $blue_light;
-    margin-left: 1050px;
-    margin-top: -70px;
+    position: relative;
+    right: 24%;
+    top: 16%;
+  }
+  .Piquant_container_spot2 {
+    font-size: 130px;
+    font-family: cursive;
+    color: $blue_light;
+    position: relative;
+    left: 24%;
+    bottom: 5%;
   }
   .Piquant_container1 {
     text-align: center;
