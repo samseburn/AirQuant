@@ -1,34 +1,43 @@
 .Airquant_Main {
   width: 100%;
-  height: 300vh;
-  .Airquant_Main_Content1 {
+  height: 180vh;
+
+  .Airquant_Dots {
+    font-size: 130px;
     color: $blue_main;
-    font-size: 115px;
-    margin-bottom: -103px;
-    margin-left: 615px;
+    position: relative;
+    left: 49.1%;
   }
-  .Airquant_Main_Content2 {
+  .Airquant_Main_Content1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    margin-top: -10px;
     margin-bottom: 50px;
   }
   .Airquant_Main_title {
     color: $blue_main;
   }
   //
-  .Airquant_Flex {
+  .Airquant_Flex_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .Airquant_img_first {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .Airquant_img_second {
     display: flex;
   }
   .Airquant_img_third {
     display: flex;
-    margin-left: 120px;
+    margin-left: 102px;
+    justify-content: center;
+    align-items: center;
   }
   .Airquant_Main_1 {
   }

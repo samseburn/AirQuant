@@ -17,6 +17,7 @@ export { default as airquant_11 } from './Product/airquant_11.png';
 export { default as airquant_12 } from './Product/airquant_12.png';
 export { default as airquant_13 } from './Product/airquant_13.png';
 export { default as airquant_14 } from './Product/airquant_14.jpg';
+export { default as airquant_15 } from './Product/airquant_15.jpg';
 export { default as table_logo } from './Product/table_logo.png';
 
 // Tech
@@ -53,5 +54,11 @@ export { default as company_product } from './Company/company_product.png';
 export { default as company_product_drawing } from './Company/company_product_drawing.png';
 
 // Case
+export { default as case_01 } from './Case/case_01.jpg';
+export { default as case_02 } from './Case/case_02.jpg';
+export { default as case_03 } from './Case/case_03.jpg';
+export { default as case_04 } from './Case/case_04.jpg';
+export { default as case_05 } from './Case/case_05.jpeg';
+export { default as case_06 } from './Case/case_06.jpg';
 
 // Contact

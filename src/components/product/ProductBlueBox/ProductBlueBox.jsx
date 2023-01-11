@@ -15,11 +15,11 @@ const ProductBlueBox = () => {
   const scrollRef = useRef();
 
   // useEffect(() => {
-  // if (scrollRef.current == undefined) {
-  // } else {
-  //   const scroll = scrollRef.current.getBoundingClientRect().top;
-  //   const absoluteTop = window.pageYOffset + scroll;
-  // }
+  //   if (scrollRef.current == undefined) {
+  //   } else {
+  //     const scroll = scrollRef.current.getBoundingClientRect().top;
+  //     const absoluteTop = window.pageYOffset + scroll;
+  //   }
   // });
 
   // useEffect(() => {

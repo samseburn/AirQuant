@@ -1,16 +1,22 @@
 import { airquant_13, explanation_phone0, explanation_weather0 } from 'images';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const TechExplanation = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <div className="TechExplanation">
-      <div className="FineDust">
+      <div className="FineDust" data-aos="fade-up">
         미세먼지(PM10), 초미세먼지(PM2.5)를 포함한
         <br />
         <span className="FineDustEleven">총 11가지 </span> 항목을 실시간으로
         측정
       </div>
-      <div className="TechExplanationPhoneWeb">
+      <div className="TechExplanationPhoneWeb" data-aos="fade-up">
         <div className="TechExplantionPhone">
           <img className="TechExplantionPhone1" src={explanation_phone0} />
         </div>
@@ -27,7 +33,7 @@ const TechExplanation = () => {
           </div>
         </div>
       </div>
-      <div className="TechExplanationDigitalMonitoring">
+      <div className="TechExplanationDigitalMonitoring" data-aos="fade-up">
         <div className="TechExplanationMonitoring">
           <div className="TechExplanationMonitoring1">
             디지털 사이니지와 연동하여
@@ -46,7 +52,7 @@ const TechExplanation = () => {
           <img className="TechExplanationDigital1" src={explanation_weather0} />
         </div>
       </div>
-      <div className="Airquantquality">
+      <div className="Airquantquality" data-aos="fade-up">
         <div className="Airquant">
           <img className="Airquant1" src={airquant_13} />
         </div>
