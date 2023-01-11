@@ -1,17 +1,15 @@
 .faq {
-  margin: 200px auto;
-  width: 80%;
-  border-bottom: 1px solid #c7c7c7;
+  margin: 0 auto;
+  border-bottom: 1px solid #C7C7C7;
+  width: 90%;
 
   @include responsive(T) {
     // 768 ~ 1200
-    margin: 150px 0;
     width: 100%;
   }
 
   @include responsive(M) {
     // 576~768 이하일 때
-    margin: 100px 0;
     width: 100%;
   }
 }
