@@ -12,7 +12,7 @@ import { patent_01, patent_02, patent_03, patent_04, patent_05 } from 'images';
 
 export default () => {
   return (
-    <div className='patent_container'>
+    <div className="patent_container">
       <div className="patent_center">
         <div className="patent">에어퀀트 인증 및 특허</div>
         <Swiper
@@ -51,6 +51,10 @@ export default () => {
             <img src={patent_02} />
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="button-group">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   );
