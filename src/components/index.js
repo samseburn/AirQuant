@@ -8,7 +8,7 @@ export { Navbar } from './common/Navbar';
 export { Button } from './module/Button';
 export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
-export { InformationBox } from './product/InformationBox';
+export { Pagination } from './module/Pagination';
 
 // product
 export { ProductAirquantImg } from './product/ProductAirquantImg';
@@ -20,6 +20,7 @@ export { ProductMainImg } from './product/ProductMainImg';
 export { ProductPiquantExplanation } from './product/ProductPiquantExplanation';
 export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
 export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
+export { InformationBox } from './product/InformationBox';
 
 // tech
 export { TechConvenience } from './tech/TechConvenience';
@@ -47,3 +48,4 @@ export { Faq } from './service/Faq';
 export { FaqBox } from './service/FaqBox';
 export { Notice } from './service/Notice';
 export { NoticeList } from './service/NoticeList';
+export { Contact } from './service/Contact';

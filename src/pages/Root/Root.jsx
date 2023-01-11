@@ -1,4 +1,4 @@
-import { Header, Footer } from 'components';
+import { Header, Footer, Navbar } from 'components';
 import { Outlet } from 'react-router-dom';
 
 const Root = ({ children }) => {

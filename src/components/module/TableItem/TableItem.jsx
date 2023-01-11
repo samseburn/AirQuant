@@ -1,25 +1,78 @@
-import React from 'react';
+import { CaseDataContext } from 'App';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 const TableItem = () => {
+  const caseData = useContext(CaseDataContext);
+  const { caseId } = useParams();
+  const [caseItem, setCaseItem] = useState({});
+  const [prevItem, setPrevItem] = useState({});
+  const [nextItem, setNextItem] = useState({});
+
+  useEffect(() => {
+    if (caseData.length >= 1) {
+      const targetCase = caseData.find((item) => item.id === parseInt(caseId));
+      const prevCase = caseData.find(
+        (item) => item.id === parseInt(caseId) - 1
+      );
+      const nextCase = caseData.find(
+        (item) => item.id === parseInt(caseId) + 1
+      );
+
+      setCaseItem(targetCase);
+      setPrevItem(prevCase);
+      setNextItem(nextCase);
+    }
+  }, [caseId]);
+
+  // const handleClickTableItem = () => {
+  //   console.log(nextItem);
+  //   if (!prevItem || !nextItem) {
+  //     alert('요청하신 적용 사례가 없습니다.');
+  //     navigate('/case', { reaplace: true });
+  //   }
+  //   // else if (prevItem) {
+  //   //   navigate(`/case/${parseInt(caseId) - 1}`);
+  //   // } else if (nextItem) {
+  //   //   navigate(`case/${parseInt(caseId) + 1}`);
+  //   // }
+  // };
+
   return (
     <div className="TableItem">
-      <div className="TableItem-title">
-        <h1>렌탈 서비스</h1>
-        <span className="date">2023-01-01</span>
+      <Link className="back" to={'/case'}>
+        ⇤ 뒤로 가기
+      </Link>
+      <div className="TableItem-info">
+        <div className="image-box">
+          <img src={caseItem.image} alt="" />
+        </div>
+        <div className="text-group">
+          <div className="TableItem-title">
+            <h1>{caseItem.title}</h1>
+            <span className="date">2023-01-01</span>
+          </div>
+          <p className="TableItem-desc">{caseItem.description}</p>
+        </div>
       </div>
-      <p className="TableItem-desc">
-        저작자·발명가·과학기술자와 예술가의 권리는 법률로써 보호한다. 대통령은
-        헌법과 법률이 정하는 바에 의하여 공무원을 임면한다. 국민의 자유와 권리는
-        헌법에 열거되지 아니한 이유로 경시되지 아니한다. 국가원로자문회의의
-        조직·직무범위 기타 필요한 사항은 법률로 정한다. 감사원은 세입·세출의
-        결산을 매년 검사하여 대통령과 차년도국회에 그 결과를 보고하여야 한다.
-        모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를
-        가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할
-        의무를 진다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은
-        제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 국회는
-        선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의
-        주류에 대한 동의권을 가진다.
-      </p>
+      <div className="TableItem-pagination">
+        <div className="pagination prev">
+          <span>이전</span>
+          {prevItem ? (
+            <Link to={`/case/${parseInt(caseId) - 1}`}>{prevItem.title}</Link>
+          ) : (
+            <Link to={'/case'}>없음</Link>
+          )}
+        </div>
+        <div className="pagination next">
+          <span>다음</span>
+          {nextItem ? (
+            <Link to={`/case/${parseInt(caseId) + 1}`}>{nextItem.title}</Link>
+          ) : (
+            <Link to={'/case'}>없음</Link>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
