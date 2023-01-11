@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const ProductYoutubeFirst = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <div className="ProductYoutubeFirst">
+    <div className="ProductYoutubeFirst" data-aos="fade-up">
       <div className="ProductYoutubeFirst_video">
         <iframe
           className="firstYtv"
