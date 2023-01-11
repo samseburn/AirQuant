@@ -1,10 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { VscMenu } from 'react-icons/vsc';
 import { Navbar } from '../Navbar';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isOpen, setIsopen] = useState(false);
+  const _header = useRef(null);
+  // const locationNow = useLocation();
+
+  // if (locationNow.pathname === '/') return null;
+
+  const toggleSidebar = () => {
+    isOpen === true ? setIsopen(false) : setIsopen(true);
+  };
 
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -17,9 +27,22 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    function headerChange() {
+      if (scrollPosition > 35) {
+        _header.current.classList.add('blue');
+      } else _header.current.classList.remove('blue');
+    }
+    headerChange();
+  }, [scrollPosition]);
+
   console.log(scrollPosition);
   return (
-    <header className={`header ${scrollPosition < 100 ? 'blue' : ''}`}>
+    <header
+      ref={_header}
+      // className={`header `}
+      className={`header ${scrollPosition < 100 ? 'blue' : ''}`}
+    >
       <div className="gnb">
         <h1 className="logo">
           <Link to={'./'}>AirQuant</Link>
@@ -44,10 +67,10 @@ const Header = () => {
           </ol>
         </div>
         <div className="menu-icon sm-only">
-          <VscMenu />
+          <VscMenu onClick={toggleSidebar} />
         </div>
       </div>
-      {/* <Navbar /> */}
+      <Navbar open={isOpen} toggle={toggleSidebar} />
     </header>
   );
 };
