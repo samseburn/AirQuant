@@ -9,6 +9,7 @@ export { Button } from './module/Button';
 export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
 export { Pagination } from './module/Pagination';
+export { Tab } from './module/Tab';
 
 // product
 export { ProductAirquantImg } from './product/ProductAirquantImg';
