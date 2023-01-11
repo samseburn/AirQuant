@@ -1,6 +1,9 @@
 .faqBox {
 
+
+  
   .questionBox {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +30,7 @@
     }
 
     .icon {
-      font-size: 40px;
+      font-size: 35px;
       padding: 0 20px;
       transform: rotate(0deg);
       transition: transform 500ms ease-in-out;
@@ -44,6 +47,7 @@
   
     .answer {
       padding: 2rem 4rem 6rem 4rem;
+      word-break: keep-all;
     }
   }
 
