@@ -17,6 +17,7 @@ export { default as airquant_11 } from './Product/airquant_11.png';
 export { default as airquant_12 } from './Product/airquant_12.png';
 export { default as airquant_13 } from './Product/airquant_13.png';
 export { default as airquant_14 } from './Product/airquant_14.jpg';
+export { default as airquant_15 } from './Product/airquant_15.jpg';
 export { default as table_logo } from './Product/table_logo.png';
 
 // Tech

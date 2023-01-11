@@ -18,7 +18,7 @@ const Product = () => {
       <ProductPiquantExplanation />
       <InformationBox />
       <ProductGraphText />
-      <ProductYoutubeSecond />
+      {/* <ProductYoutubeSecond /> */}
       <ProductBlueBox />
       <ProductAirTable />
       <ProductAirquantImg />
