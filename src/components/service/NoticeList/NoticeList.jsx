@@ -53,9 +53,11 @@ const NoticeList = () => {
         {noticeData.data.map((item) => {
           return (
             <tr className="noticeData">
-              <td>{item.no}</td>
-              <td className="noticeTitle">{item.title}</td>
-              <td>{item.date}</td>
+              <td className="noticeNo">{item.no}</td>
+              <td className="noticeTitle">
+                <p className="noticeTitleP">{item.title}</p>
+              </td>
+              <td className="noticeDate">{item.date}</td>
             </tr>
           );
         })}
