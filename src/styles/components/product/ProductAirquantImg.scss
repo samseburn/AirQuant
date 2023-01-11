@@ -1,11 +1,12 @@
 .Airquant_Main {
   width: 100%;
-  height: 180vh;
+  height: 210vh;
 
-  .Airquant_Dots {
+  .Airquant_Main_Dots {
     font-size: 130px;
     color: $blue_main;
     position: relative;
+    display: inline;
     left: 49.1%;
   }
   .Airquant_Main_Content1 {
