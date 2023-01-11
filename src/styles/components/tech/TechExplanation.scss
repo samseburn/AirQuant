@@ -1,86 +1,91 @@
 .TechExplanation {
   width: 100%;
-  height: 400vh;
+  margin-bottom: 500px;
 
   .FineDust {
     font-size: 45px;
     text-align: center;
-    margin-top: px;
-    margin-bottom: 150px;
+    margin-bottom: 30vh;
   }
   .FineDustEleven {
     font-weight: bold;
   }
   .TechExplanationPhoneWeb {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .TechExplantionPhone1 {
     width: 100%;
     height: 100%;
-    width: 308px;
-    height: 502px;
-    margin-left: 100px;
+    width: 408px;
+    height: 650px;
+    margin-left: px;
     margin-bottom: 300px;
   }
   .TechExplanationWeb {
     margin-left: 130px;
+    margin-top: -400px;
   }
   .TechExplanationWeb1 {
     // p
 
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
     margin-top: 280px;
     margin-bottom: 50px;
   }
   .TechExplanationWeb2 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .TechExplanationDigitalMonitoring {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .TechExplanationDigital1 {
     width: 100%;
     height: 100%;
-    width: 550px;
-    height: 350px;
-    margin-left: 100px;
+    width: 650px;
+    height: 500px;
+    margin-left: 120px;
     margin-bottom: 300px;
   }
   .TechExplanationMonitoring {
     text-align: right;
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: px;
+    margin-top: -220px;
   }
   .TechExplanationMonitoring1 {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 35px;
   }
   .TechExplanationMonitoring2 {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .Airquant1 {
     width: 100%;
     height: 100%;
-    width: 400px;
-    height: 400px;
-    margin-left: 100px;
+    width: 600px;
+    height: 600px;
   }
   .Airquantquality {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .AirQuality {
     margin-left: 100px;
     margin-top: 150px;
   }
   .AirQuality1 {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
   }
   .AirQuality2 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 50px;
   }
 }

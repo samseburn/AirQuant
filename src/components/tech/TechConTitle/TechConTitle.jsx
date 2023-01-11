@@ -59,7 +59,7 @@ const TechConTitle = () => {
   });
   return (
     <>
-      <div className="TechConTitle" data-aos="zoom-out">
+      <div className="TechConTitle" data-aos="fade-up">
         에어퀀트(AirQuant)의 다양한 편의기능
       </div>
       {TechConList.map((tech) => (
