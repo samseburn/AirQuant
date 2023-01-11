@@ -1,12 +1,15 @@
-.Intro {
+.CompanyIntro {
+  height: 80vh;
+
   &-TopHr {
-    width: 80px;
+    width: 70px;
 
     border: 2px solid;
 
     color: $blue_main;
 
-    margin-bottom: 5px;
+    margin: auto;
+    margin-top: 100px;
   }
 
   &-Title {
@@ -16,21 +19,23 @@
     font-weight: 700;
     color: $blue_main;
 
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 15px;
   }
 
   &-Contents {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     max-width: 80%;
     margin: auto;
+    margin-top: 40px;
 
     &-Img {
       width: 500px;
       height: 350px;
+
+      margin-right: 200px;
     }
 
     &-Text {
@@ -39,8 +44,6 @@
 
       &-Top {
         font-size: $font-size-18;
-
-        margin-bottom: 50px;
 
         &-Large {
           font-size: $font-size-24;
@@ -53,79 +56,25 @@
       }
 
       &-Bottom {
+        margin-top: 40px;
+
         font-size: $font-size-14;
       }
     }
   }
 
-  &-BottomHr {
-    max-width: 80%;
+  &-Button {
+    @include flexbox;
+
+    gap: 30px;
 
     margin-top: 50px;
   }
+
+  &-BottomHr {
+    max-width: 80%;
+
+    margin: auto;
+    margin-top: 30px;
+  }
 }
-
-// .IntroTopHr {
-//   width: 80px;
-
-//   border: 2px solid;
-
-//   color: rgba(27, 118, 255, 1);
-
-//   margin-bottom: 5px;
-// }
-
-// .IntroTitle {
-//   text-align: center;
-
-//   font-size: 40px;
-//   font-weight: 700;
-//   color: rgba(27, 118, 255, 1);
-
-//   margin-top: 10px;
-//   margin-bottom: 50px;
-// }
-
-// .IntroContents {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-
-//   max-width: 80%;
-//   margin: auto;
-// }
-
-// .IntroImg {
-//   width: 500px;
-//   height: 350px;
-// }
-
-// .IntroText {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .IntroTopText {
-//   font-size: $font-size-18;
-
-//   margin-bottom: 50px;
-// }
-
-// .IntroLargeText {
-//   font-size: $font-size-24;
-// }
-
-// .IntorBlueText {
-//   font-weight: 700;
-//   color: $blue_main;
-// }
-
-// .IntroBottomText {
-//   font-size: $font-size-14;
-// }
-
-// .IntroBottomHr {
-//   max-width: 80%;
-
-//   margin-top: 50px;
-// }

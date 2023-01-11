@@ -1,4 +1,4 @@
-import { Faq, Notice } from 'components';
+import { Contact, Faq, Notice } from 'components';
 import React from 'react';
 
 const Service = () => {
@@ -7,6 +7,8 @@ const Service = () => {
       <Notice />
 
       <Faq />
+
+      <Contact />
     </div>
   );
 };

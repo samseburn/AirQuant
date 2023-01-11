@@ -1,0 +1,33 @@
+/* img {
+  width: 80%;
+  height: 80%;
+}
+
+SwiperSlideContainer {
+} */
+
+.patent_container {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper {
+  width: 70%;
+  --swiper-theme-color: #1b76ff84;
+}
+
+.swiper-slide > img {
+  width: 230px;
+  height: 300px;
+}
+
+.patent {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.patent_center {
+  align-items: center;
+}

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TechCustomersMap from '../TechCustomersMap/TechCustomersMap';
 import { logo_01, logo_02, logo_03, logo_04, logo_05 } from 'images';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const TechCustomers = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500});
+  }, []);
+
   const customersList = [
     { img: logo_01 },
     { img: logo_02 },

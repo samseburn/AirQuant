@@ -10,7 +10,6 @@ import {
   ProductYoutubeFirst,
   ProductYoutubeSecond,
 } from 'components';
-//
 
 const Product = () => {
   return (
@@ -18,9 +17,8 @@ const Product = () => {
       <ProductMainImg />
       <ProductPiquantExplanation />
       <InformationBox />
-      <ProductYoutubeFirst />
       <ProductGraphText />
-      <ProductYoutubeSecond />
+      {/* <ProductYoutubeSecond /> */}
       <ProductBlueBox />
       <ProductAirTable />
       <ProductAirquantImg />
