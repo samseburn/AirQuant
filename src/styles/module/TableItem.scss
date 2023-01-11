@@ -1,6 +1,69 @@
 .TableItem {
+  @include column-flexbox(center, start);
+
   width: 100%;
-  background-color: skyblue;
-  min-height: 500px;
-  padding: 50px;
+  max-width: 960px;
+  padding: 20px 0;
+  border-top: 1.5px solid gray;
+
+  .back {
+    margin-bottom: 50px;
+  }
+
+  &-info {
+    @include flexbox(start, start);
+    column-gap: 50px;
+    margin-bottom: 50px;
+
+    .image-box {
+      display: block;
+      width: 50vw;
+      height: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+
+    .text-group {
+      @include column-flexbox(between);
+    }
+  }
+
+  &-pagination {
+    @include column-flexbox(start, start);
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1.5px solid gray;
+
+    .pagination {
+      @include flexbox(start);
+      width: 100%;
+      padding: 0 20px;
+      font-size: 15px;
+
+      &:first-child {
+        border-bottom: 1px solid #aaa;
+      }
+
+      span {
+        display: block;
+        margin-right: 20px;
+        font-weight: 700;
+      }
+
+      a {
+        display: block;
+        margin: 30px 0;
+        transition: all 350ms ease-in-out;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

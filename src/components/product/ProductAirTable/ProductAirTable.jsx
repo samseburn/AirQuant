@@ -11,8 +11,8 @@ const ProductAirTable = () => {
     return (
         <>
         <div className='AirTable__container'>
-            <p className='AirTable__Contents' data-aos="zoom-in">다중이용시설 실내공기질 유지기준</p>
-            <div className='AirTable__Table'>
+            <p className='AirTable__Contents' data-aos="fade-up">다중이용시설 실내공기질 유지기준</p>
+            <div className='AirTable__Table' data-aos="fade-up" data-aos-delay="500">
             <table className='AirTable__Table_In'>
                 <thead>
                     <tr className='AirTable__Thead__tr'>

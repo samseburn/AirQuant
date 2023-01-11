@@ -6,17 +6,17 @@ import 'aos/dist/aos.css';
 
 const CompanyIcon = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (
     <div className="CompanyIcon">
-      <h1 className="CompanyIcon-title-scrolled" data-aos="fade-up">
+      <h1 className="CompanyIcon-title" data-aos="fade-up">
         파이퀀트는 하마쯔사의 소형 분광기 모듈을 사용합니다
         <br />
         &#40;C12666MA&#41;
       </h1>
-      <div className="CompanyIcon-imgs-scrolled" data-aos="fade-up">
+      <div className="CompanyIcon-imgs" data-aos="fade-up">
         <div className="CompanyIcon-imgs-item imageLeft">
           <img src={company_product} alt="module" />
         </div>
@@ -24,7 +24,7 @@ const CompanyIcon = () => {
           <img src={company_product_drawing} alt="model drawing" />
         </div>
       </div>
-      <div className="CompanyIcon-icons-scrolled">
+      <div className="CompanyIcon-icons">
         <div className="CompanyIcon-icons-item small" data-aos="fade-up">
           <div className="CompanyIcon-icons-item-img small-icon"></div>
           <span>
@@ -38,7 +38,7 @@ const CompanyIcon = () => {
         <div
           className="CompanyIcon-icons-item price"
           data-aos="fade-up"
-          data-aos-delay="250"
+          data-aos-delay="300"
         >
           <div className="CompanyIcon-icons-item-img price-icon"></div>
           <span>
@@ -53,7 +53,7 @@ const CompanyIcon = () => {
         <div
           className="CompanyIcon-icons-item accuracy"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="600"
         >
           <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
           <span>
