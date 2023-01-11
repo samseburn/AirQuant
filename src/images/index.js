@@ -54,5 +54,11 @@ export { default as company_product } from './Company/company_product.png';
 export { default as company_product_drawing } from './Company/company_product_drawing.png';
 
 // Case
+export { default as case_01 } from './Case/case_01.jpg';
+export { default as case_02 } from './Case/case_02.jpg';
+export { default as case_03 } from './Case/case_03.jpg';
+export { default as case_04 } from './Case/case_04.jpg';
+export { default as case_05 } from './Case/case_05.jpeg';
+export { default as case_06 } from './Case/case_06.jpg';
 
 // Contact
