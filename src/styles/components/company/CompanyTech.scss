@@ -1,4 +1,6 @@
 .CompanyTech {
+  word-break: keep-all;
+
   display: flex;
   flex-direction: column;
 
@@ -25,6 +27,12 @@
 
     &-Small {
       font-size: $font-size-18;
+    }
+  }
+
+  @include responsive(M) {
+    &-Title {
+      margin-top: 220px;
     }
   }
 }
