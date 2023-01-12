@@ -21,21 +21,30 @@ const Navbar = (props) => {
             <NavLink
               to={'./'}
               className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+              onClick={toggle}
             >
               제품소개
             </NavLink>
           </li>
           <li className="navbar-nav-item">
-            <Link to={'./tech'}>적용기술</Link>
+            <Link to={'./tech'} onClick={toggle}>
+              적용기술
+            </Link>
           </li>
           <li className="navbar-nav-item">
-            <Link to={'./company'}>회사소개</Link>
+            <Link to={'./company'} onClick={toggle}>
+              회사소개
+            </Link>
           </li>
           <li className="navbar-nav-item">
-            <Link to={'./case'}>적용사례</Link>
+            <Link to={'./case'} onClick={toggle}>
+              적용사례
+            </Link>
           </li>
           <li className="navbar-nav-item">
-            <Link to={'./service'}>고객문의</Link>
+            <Link to={'./service'} onClick={toggle}>
+              고객문의
+            </Link>
           </li>
         </ol>
       </nav>
