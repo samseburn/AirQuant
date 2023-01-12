@@ -108,15 +108,16 @@ const Qna = () => {
             ref={emailRef}
             type="text"
             name="email"
-            placeholder="이메일 주소를 입력하세요"
+            placeholder="
+            Please enter your email"
             onChange={changeHandler}
             value={data.email}
           />
           {error.email ? (
             data.email.length < 1 ? (
-              <div className="small">이메일 주소를 입력하세요</div>
+              <div className="qna-error">이메일 주소를 입력하세요</div>
             ) : !emailRegex.test(data.email) ? (
-              <div className="small">이메일 주소를 바르게 입력하세요</div>
+              <div className="qna-error">이메일 주소를 바르게 입력하세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
@@ -130,13 +131,13 @@ const Qna = () => {
             ref={nameRef}
             type="text"
             name="name"
-            placeholder="이름을 입력하세요"
+            placeholder="Please enter your name"
             onChange={changeHandler}
             value={data.name}
           />
           {error.name ? (
             data.name.length < 1 ? (
-              <div className="small">이름을 입력해주세요</div>
+              <div className="qna-error">이름을 입력해주세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
@@ -150,13 +151,13 @@ const Qna = () => {
             ref={titleRef}
             type="text"
             name="title"
-            placeholder="제목을 입력하세요"
+            placeholder="Please enter a title"
             onChange={changeHandler}
             value={data.title}
           />
           {error.title ? (
             data.title.length < 1 ? (
-              <div className="small">제목을 입력해주세요</div>
+              <div className="qna-error">제목을 입력해주세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
@@ -174,14 +175,14 @@ const Qna = () => {
             value={data.help}
             placeholder="선택하세요"
           >
-            <option>=== 선택하세요 ===</option>
+            <option>== Please choose an option ==</option>
             <option value="Price">1. 가격은 얼마인가요</option>
             <option value="Repair">2. 수리가 필요해요</option>
             <option value="Warranty">3. 보증기간이 궁금해요</option>
           </select>
           {error.help ? (
             data.help.length < 1 ? (
-              <div className="small">선택하세요</div>
+              <div className="qna-error">선택하세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
@@ -194,13 +195,14 @@ const Qna = () => {
           <textarea
             ref={askRef}
             name="ask"
-            placeholder="설명을 입력하세요"
+            placeholder="
+            Please enter a description"
             onChange={changeHandler}
             value={data.ask}
           ></textarea>
           {error.ask ? (
             data.ask.length < 1 ? (
-              <div className="small">이름을 입력해주세요</div>
+              <div className="qna-error">설명을 입력해주세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
