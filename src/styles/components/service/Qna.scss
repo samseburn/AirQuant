@@ -7,13 +7,16 @@
     input,
     select,
     textarea {
-      width: 550px;
+      width: 500px;
       height: 70px;
-      padding-left: 20px;
+      padding-left: 15px;
       border: 1px solid lightgray;
       border-radius: 10px;
       font-size: $font-size-18;
       color: gray;
+      -webkit-appearance: none; /* 크롬 화살표 없애기 */
+      -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+      appearance: none; /* 화살표 없애기 */
       &:focus {
         outline: 1px solid $blue_main;
         &::-webkit-input-placeholder,
@@ -22,17 +25,6 @@
           color: transparent;
         }
       }
-    }
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px white inset !important;
-    }
-    .select {
-      -webkit-appearance: none; /* 크롬 화살표 없애기 */
-      -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
-      appearance: none; /* 화살표 없애기 */
     }
 
     textarea {
@@ -59,13 +51,13 @@
       @include flexbox;
     }
   }
-  .small {
+  &-error {
     color: #fb2576;
     font-size: $font-size-14;
     width: 100%;
     text-align: center;
   }
   &-hidden {
-    height: 12.88px;
+    height: 16.09px;
   }
 }
