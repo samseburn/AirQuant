@@ -24,15 +24,19 @@ const TechConvenience = ({
       </div>
       <div className="TechConvenience_content">
         {/* 왼쪽 */}
-        <div className="TechConLeftChild" data-aos="flip-down">
+        <div
+          className="TechConLeftChild"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <img className="TechConLeftChild_Img" src={leftChildImg} />
           <div className="TechConLeftChild_text">{leftChild}</div>
         </div>
         {/* 오른쪽 */}
         <div
           className="TechConRightChild"
-          data-aos="flip-down"
-          data-aos-duration="4500"
+          data-aos="fade-up"
+          data-aos-delay="1000"
         >
           <img className="TechConRightChild_Img" src={rightChildImg} />
           <div className="TechConRightChild_text">{rightChild}</div>

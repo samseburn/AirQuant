@@ -13,7 +13,11 @@ const TechMeasurementTable = () => {
         <p className="TechMeasurementTable_Contents" data-aos="fade-up">
           측정 항목
         </p>
-        <div className="TechMeasurementTable_Table" data-aos="fade-up">
+        <div
+          className="TechMeasurementTable_Table"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
           <table className="TechMeasurementTable_Table_In">
             <thead>
               <tr className="TechMeasurementTable_Thead__tr">
@@ -66,36 +70,24 @@ const TechMeasurementTable = () => {
             </tbody>
           </table>
         </div>
-        <p className="TechMeasurementTable_explain">
+        <p className="TechMeasurementTable_explain" data-aos="fade-up">
           SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과 대체가능합니다.
         </p>
-        <div className="TechMeasurementTable_spec">
-          <p className="TechMeasurementTable_spec_title">기술스펙</p>
-          <div className="TechMeasurementTable_spec_content">
-            <p>
-              <span className="TechMeasurementTable_spec_content_bold">
-                크기 :
-              </span>{' '}
-              153mm(L) x 153mm(W) x 60mm(H)
-            </p>
-            <p>
-              <span className="TechMeasurementTable_spec_content_bold">
-                무게 :
-              </span>{' '}
-              550g
-            </p>
-            <p>
-              <span className="TechMeasurementTable_spec_content_bold">
-                통신방법 :
-              </span>{' '}
-              Wi-Fi, 블루투스, 이더넷{' '}
-            </p>
-            <p>
-              <span className="TechMeasurementTable_spec_content_bold">
-                전원 인가 방법 :
-              </span>{' '}
-              PoE (Power over Ethernet) | DC 5V 2A
-            </p>
+
+        {/* 기술 스펙 */}
+        <div className="TechMeasurementTable_spec" data-aos="fade-up">
+          <div className="TechMeasurementTable_spec_graybox">
+            <div className="TechMeasurementTable_spec_graybox_section1">
+              기술 스펙
+            </div>
+            <div className="TechMeasurementTable_spec_graybox_section2">
+              크기 : 153mm(L) x 153mm(W) x 60mm(H) <br />
+              전원 인가 방법 : PoE (Power over Ethernet) / DC 5V 2A
+            </div>
+            <div className="TechMeasurementTable_spec_graybox_section3">
+              무게 : 550g <br />
+              통신방법 : Wi-Fi, 블루투스, 이더넷
+            </div>
           </div>
         </div>
       </div>
