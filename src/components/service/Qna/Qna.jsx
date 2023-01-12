@@ -114,14 +114,14 @@ const Qna = () => {
           />
           {error.email ? (
             data.email.length < 1 ? (
-              <small>이메일 주소를 입력하세요</small>
+              <div className="small">이메일 주소를 입력하세요</div>
             ) : !emailRegex.test(data.email) ? (
-              <small>이메일 주소를 바르게 입력하세요</small>
+              <div className="small">이메일 주소를 바르게 입력하세요</div>
             ) : (
-              <div className="none"></div>
+              <div className="qna-hidden"></div>
             )
           ) : (
-            <div className="none"></div>
+            <div className="qna-hidden"></div>
           )}
         </div>
         <div className="input-group">
@@ -136,12 +136,12 @@ const Qna = () => {
           />
           {error.name ? (
             data.name.length < 1 ? (
-              <small>이름을 입력해주세요</small>
+              <div className="small">이름을 입력해주세요</div>
             ) : (
-              <div className="none"></div>
+              <div className="qna-hidden"></div>
             )
           ) : (
-            <div className="none"></div>
+            <div className="qna-hidden"></div>
           )}
         </div>
         <div className="input-group">
@@ -156,35 +156,37 @@ const Qna = () => {
           />
           {error.title ? (
             data.title.length < 1 ? (
-              <small>제목을 입력해주세요</small>
+              <div className="small">제목을 입력해주세요</div>
             ) : (
-              <div className="none"></div>
+              <div className="qna-hidden"></div>
             )
           ) : (
-            <div className="none"></div>
+            <div className="qna-hidden"></div>
           )}
         </div>
         <div className="input-group">
-          <label>도움이 필요한 부분을 선택하세요</label>
+          <label>문의유형</label>
           <select
+            className="select"
             name="help"
             ref={helpRef}
             onChange={changeHandler}
             value={data.help}
+            placeholder="선택하세요"
           >
-            <option value="0">- 선택하세요 -</option>
+            <option>=== 선택하세요 ===</option>
             <option value="Price">1. 가격은 얼마인가요</option>
             <option value="Repair">2. 수리가 필요해요</option>
             <option value="Warranty">3. 보증기간이 궁금해요</option>
           </select>
           {error.help ? (
             data.help.length < 1 ? (
-              <small>선택하세요</small>
+              <div className="small">선택하세요</div>
             ) : (
-              <div className="none"></div>
+              <div className="qna-hidden"></div>
             )
           ) : (
-            <div className="none"></div>
+            <div className="qna-hidden"></div>
           )}
         </div>
         <div className="input-group">
@@ -198,12 +200,12 @@ const Qna = () => {
           ></textarea>
           {error.ask ? (
             data.ask.length < 1 ? (
-              <small>이름을 입력해주세요</small>
+              <div className="small">이름을 입력해주세요</div>
             ) : (
-              <div className="none"></div>
+              <div className="qna-hidden"></div>
             )
           ) : (
-            ''
+            <div className="qna-hidden"></div>
           )}
         </div>
         <Button text="문의하기" />

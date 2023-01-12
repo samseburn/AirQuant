@@ -7,14 +7,15 @@
     input,
     select,
     textarea {
-      width: 400px;
-      height: 50px;
-      padding: 1px 2px 1px 8px;
+      width: 550px;
+      height: 70px;
+      padding-left: 20px;
       border: 1px solid lightgray;
       border-radius: 10px;
+      font-size: $font-size-18;
+      color: gray;
       &:focus {
-        // outline: 4px solid lightblue;
-        outline: 1px solid lightblue;
+        outline: 1px solid $blue_main;
         &::-webkit-input-placeholder,
         &::-webkit-textarea-placeholder {
           // input태그 포커스 시 placeholder 글자 사라지게 만들기
@@ -22,36 +23,49 @@
         }
       }
     }
-    select {
-      width: 412px;
-      height: 54px;
-      color: gray;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
     }
+    .select {
+      -webkit-appearance: none; /* 크롬 화살표 없애기 */
+      -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+      appearance: none; /* 화살표 없애기 */
+    }
+
     textarea {
-      height: 100px;
+      height: 150px;
+      padding-top: 10px;
     }
   }
-
+  label {
+    font-size: $font-size-18;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    // color: $blue_main;
+  }
   // 추가
   .input-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 10px;
 
     small {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexbox;
     }
   }
-}
-
-small {
-  color: red;
-}
-
-.none {
-  height: 17px;
+  .small {
+    color: #fb2576;
+    font-size: $font-size-14;
+    width: 100%;
+    text-align: center;
+  }
+  &-hidden {
+    height: 12.88px;
+  }
 }
