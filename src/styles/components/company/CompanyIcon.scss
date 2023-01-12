@@ -5,7 +5,10 @@
   flex-direction: column;
   text-align: center;
   &-title {
+    @include flexbox;
     color: $dark;
+    font-size: $font-size-24;
+    font-weight: 900;
     //스크롤 시
   }
   &-imgs {
