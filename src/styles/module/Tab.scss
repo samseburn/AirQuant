@@ -38,6 +38,7 @@
 
       button {
         display: block;
+        min-height: 68px;
         font-size: 18px;
         color: $border;
         padding: 20px;
@@ -49,14 +50,10 @@
     width: 100%;
     min-height: 500px;
     border-radius: 30px;
-    padding: 40px 0;
     // background: rgba($blue-light, 0.2);
   }
 
   @include responsive(T) {
-    width: 100%;
-    padding: 0 20px;
-
     &-header {
       .menu-item {
         &:not(:last-child) {
@@ -66,6 +63,7 @@
         button {
           font-size: 16px;
           padding: 12px 20px;
+          height: auto;
         }
       }
     }
