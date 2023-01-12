@@ -1,29 +1,23 @@
 import { CaseDataContext } from 'App';
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, Navigate, useParams } from 'react-router-dom';
 
-const TableItem = () => {
-  const caseData = useContext(CaseDataContext);
-  const { caseId } = useParams();
+const TableItem = ({ params, data }) => {
   const [caseItem, setCaseItem] = useState({});
   const [prevItem, setPrevItem] = useState({});
   const [nextItem, setNextItem] = useState({});
 
   useEffect(() => {
-    if (caseData.length >= 1) {
-      const targetCase = caseData.find((item) => item.id === parseInt(caseId));
-      const prevCase = caseData.find(
-        (item) => item.id === parseInt(caseId) - 1
-      );
-      const nextCase = caseData.find(
-        (item) => item.id === parseInt(caseId) + 1
-      );
+    if (data.length >= 1) {
+      const targetCase = data.find((item) => item.id === parseInt(params));
+      const prevCase = data.find((item) => item.id === parseInt(params) - 1);
+      const nextCase = data.find((item) => item.id === parseInt(params) + 1);
 
       setCaseItem(targetCase);
       setPrevItem(prevCase);
       setNextItem(nextCase);
     }
-  }, [caseId]);
+  }, [params]);
 
   // const handleClickTableItem = () => {
   //   console.log(nextItem);
@@ -40,13 +34,15 @@ const TableItem = () => {
 
   return (
     <div className="TableItem">
-      <Link className="back" to={'/case'}>
+      <Link className="back" to={-1}>
         ⇤ 뒤로 가기
       </Link>
       <div className="TableItem-info">
-        <div className="image-box">
-          <img src={caseItem.image} alt="" />
-        </div>
+        {caseItem.image && (
+          <div className="image-box">
+            <img src={caseItem.image} alt="" />
+          </div>
+        )}
         <div className="text-group">
           <div className="TableItem-title">
             <h1>{caseItem.title}</h1>
@@ -59,7 +55,7 @@ const TableItem = () => {
         <div className="pagination prev">
           <span>이전</span>
           {prevItem ? (
-            <Link to={`/case/${parseInt(caseId) - 1}`}>{prevItem.title}</Link>
+            <Link to={`/case/${parseInt(params) - 1}`}>{prevItem.title}</Link>
           ) : (
             <Link to={'/case'}>없음</Link>
           )}
@@ -67,7 +63,7 @@ const TableItem = () => {
         <div className="pagination next">
           <span>다음</span>
           {nextItem ? (
-            <Link to={`/case/${parseInt(caseId) + 1}`}>{nextItem.title}</Link>
+            <Link to={`/case/${parseInt(params) + 1}`}>{nextItem.title}</Link>
           ) : (
             <Link to={'/case'}>없음</Link>
           )}
