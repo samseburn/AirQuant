@@ -30,7 +30,7 @@ const TechConTitle = () => {
     },
     {
       id: 2,
-      title: '일간/주간/월간 실내 공기질 분석 리포트 제공',
+      title: '일간/주간/월간\n 실내 공기질 분석 리포트 제공',
       leftChild: '주기별 실내 공기질 분석 리포트 ',
       leftChildImg: convenience_03,
       rightChild: '웹 페이지 내 실내 공기질 트렌드 확인',
@@ -38,7 +38,7 @@ const TechConTitle = () => {
     },
     {
       id: 3,
-      title: '웹/모바일 어플리케이션을 통한 모니터링',
+      title: '웹/모바일 어플리케이션을 통한\n 모니터링',
       leftChild: '모바일 어플리케이션',
       leftChildImg: convenience_05,
       rightChild: '설치구역별, 측정항목별\n모니터링 가능',
@@ -60,7 +60,8 @@ const TechConTitle = () => {
   return (
     <>
       <div className="TechConTitle" data-aos="fade-up">
-        에어퀀트(AirQuant)의 다양한 편의기능
+        <span className="TechConTitle_br">에어퀀트(AirQuant)의 </span>다양한
+        편의기능
       </div>
       {TechConList.map((tech) => (
         <TechConvenience

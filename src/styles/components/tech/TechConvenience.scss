@@ -50,7 +50,7 @@
 }
 
 // 반응형
-@include responsive(M) {
+@include responsive(T) {
   .TechConvenience {
     &_content {
       flex-direction: column;
@@ -65,6 +65,39 @@
       // 오른쪽
       .TechConRightChild {
         padding-left: 0px;
+      }
+    }
+  }
+}
+
+// 반응형 2
+@include responsive(M) {
+  .TechConvenience {
+    &_title {
+      white-space: pre-wrap;
+      font-size: 22px;
+    }
+    &_content {
+      flex-direction: column;
+      text-align: center;
+
+      // 왼쪽
+      .TechConLeftChild {
+        padding-bottom: 10vh;
+        padding-right: 0px;
+        &_Img {
+          width: 300px;
+          height: 170px;
+        }
+      }
+
+      // 오른쪽
+      .TechConRightChild {
+        padding-left: 0px;
+        &_Img {
+          width: 300px;
+          height: 170px;
+        }
       }
     }
   }

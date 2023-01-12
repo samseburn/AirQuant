@@ -4,3 +4,13 @@
   font-weight: 700;
   padding-bottom: 20vh;
 }
+
+// 반응형
+@include responsive(M) {
+  .TechConTitle {
+    font-size: 30px;
+    &_br {
+      display: block;
+    }
+  }
+}

@@ -1,4 +1,5 @@
-.Product__Graph__Main {
+.Product__{
+&Graph__Main {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,20 +8,26 @@
 
   width: 100%;
   height: 150vh;
+}
 
-  .Product__p_text_Main {
+  &p_text_Main {
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 10px;
   }
 
-  .Product__p_text_inhauniv {
+  &p_text_inhauniv {
     color: $border;
-    margin-left: 500px;
+    // margin-left: 500px;
   }
 
-  .Product__div_text_health {
+  // .Product__In_Graph {
+  //   width: 500px;
+  //   height: 300px;
+  // }
+
+  &div_text_health {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,5 +42,15 @@
     color: $white;
     background-color: $blue_main;
     height: 50px;
+  }
+}
+
+// 반응형 768px
+@include responsive(T) {
+  .Product__ {
+    &p_text_inhauniv {
+      font-size: 1rem;
+      // margin-left: 300px;
+    }
   }
 }
