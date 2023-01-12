@@ -7,13 +7,13 @@
     input,
     select,
     textarea {
-      width: 500px;
-      height: 70px;
+      width: 100%;
+      padding: 20px;
       padding-left: 15px;
       border: 1px solid lightgray;
       border-radius: 10px;
       font-size: $font-size-18;
-      color: gray;
+      color: $secondary;
       -webkit-appearance: none; /* 크롬 화살표 없애기 */
       -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
       appearance: none; /* 화살표 없애기 */
@@ -37,10 +37,10 @@
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 10px;
-    // color: $blue_main;
   }
   // 추가
   .input-group {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -59,5 +59,14 @@
   }
   &-hidden {
     height: 16.09px;
+  }
+
+  @include responsive(M) {
+    &-submit {
+      gap: 5px;
+    }
+    .input-group {
+      width: 100%;
+    }
   }
 }
