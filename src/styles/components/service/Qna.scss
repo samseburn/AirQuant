@@ -1,0 +1,57 @@
+.qna {
+  &-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    input,
+    select,
+    textarea {
+      width: 400px;
+      height: 50px;
+      padding: 1px 2px 1px 8px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      &:focus {
+        // outline: 4px solid lightblue;
+        outline: 1px solid lightblue;
+        &::-webkit-input-placeholder,
+        &::-webkit-textarea-placeholder {
+          // input태그 포커스 시 placeholder 글자 사라지게 만들기
+          color: transparent;
+        }
+      }
+    }
+    select {
+      width: 412px;
+      height: 54px;
+      color: gray;
+    }
+    textarea {
+      height: 100px;
+    }
+  }
+
+  // 추가
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    small {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+small {
+  color: red;
+}
+
+.none {
+  height: 17px;
+}
