@@ -1,10 +1,10 @@
-import { Contact, Faq, Notice, Tab } from 'components';
+import { Tab } from 'components';
 import React from 'react';
 
-const Service = () => {
+const Service = ({ index }) => {
   return (
     <div>
-      <Tab />
+      <Tab start={index} />
     </div>
   );
 };

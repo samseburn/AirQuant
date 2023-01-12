@@ -1,12 +1,15 @@
-import { TableItem } from 'components';
-import React from 'react';
+import React, { useContext } from 'react';
+import { Section, TableItem } from 'components';
+import { CaseDataContext } from 'App';
+import { useParams } from 'react-router-dom';
 
 const CaseItem = () => {
+  const caseData = useContext(CaseDataContext);
+  const { caseId } = useParams();
   return (
-    <div className="case">
-      <h1 className="case-title">적용 사례</h1>
-      <TableItem />
-    </div>
+    <Section title={'적용사례'}>
+      <TableItem data={caseData} params={caseId} />
+    </Section>
   );
 };
 

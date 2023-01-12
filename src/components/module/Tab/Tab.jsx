@@ -1,30 +1,41 @@
 import { useState } from 'react';
-import { Faq, Notice } from 'components';
+import { Section, Faq, Notice, Qna } from 'components';
 import { CaseItem } from 'pages';
-import Qna from 'components/service/Qna/Qna';
+import { useNavigate } from 'react-router-dom';
 
-const Tab = ({ children }) => {
+const Tab = ({ children, start = 1 }) => {
+  const navigate = useNavigate();
   const tabMenuData = [
-    { idx: 0, title: '자주 묻는 질문', content: <Faq /> },
-    { idx: 1, title: '공지사항', content: <Notice /> },
-    { idx: 2, title: '문의하기', content: <Qna /> },
+    {
+      idx: 0,
+      title: '자주 묻는 질문',
+      content: <Faq />,
+      navigate: '/service/faq',
+    },
+    {
+      idx: 1,
+      title: '공지사항',
+      content: <Notice />,
+      navigate: '/service/notice',
+    },
+    { idx: 2, title: '문의하기', content: <Qna />, navigate: '/service/qna' },
   ];
-  const [index, setIndex] = useState(0);
-  // const handleClickTabMenu = (id) => {
-  //   console.log('tab menu', id, 'clicked');
-  // };
+  const [index, setIndex] = useState(start);
+  const handleClickTabMenu = (menu) => {
+    setIndex(menu.idx);
+    navigate(`${menu.navigate}`);
+  };
 
   return (
-    <div className="Tab">
-      <h1 className="Tab-title">고객 지원</h1>
-      <div className="Tab-wrapper">
+    <Section title={'고객지원'}>
+      <div className="Tab">
         <header className="Tab-header">
           <ol className="menu-list">
             {tabMenuData.map((menu) => (
               <li
                 key={menu.idx}
                 className={`menu-item ${index === menu.idx ? 'is-active' : ''}`}
-                onClick={() => setIndex(menu.idx)}
+                onClick={() => handleClickTabMenu(menu)}
               >
                 <button>{menu.title}</button>
               </li>
@@ -37,7 +48,7 @@ const Tab = ({ children }) => {
             .map((menu) => menu.content)}
         </section>
       </div>
-    </div>
+    </Section>
   );
 };
 

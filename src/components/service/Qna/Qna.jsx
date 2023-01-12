@@ -1,5 +1,5 @@
 const Qna = () => {
-  return <div></div>;
+  return <div>Qna</div>;
 };
 
 export default Qna;

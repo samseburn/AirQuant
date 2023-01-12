@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { Card } from 'components';
+import { Card, Section } from 'components';
 import { CaseDataContext } from 'App';
 
 const Case = () => {
   const caseData = useContext(CaseDataContext);
   return (
-    <section className="case">
-      <h1 className="case-title">적용 사례</h1>
+    <Section title={'적용사례'}>
       <CaseWrapper>
         {caseData.map((item) => (
           <Card
@@ -18,7 +17,7 @@ const Case = () => {
           />
         ))}
       </CaseWrapper>
-    </section>
+    </Section>
   );
 };
 

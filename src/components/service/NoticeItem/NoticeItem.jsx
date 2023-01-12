@@ -1,8 +1,13 @@
-import { CaseDataContext } from 'App';
-import React, { useContext, useEffect, useState } from 'react';
+import { noticeData } from 'components/service/NoticeList/NoticeList';
+import React, { useEffect, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 
-const TableItem = ({ params, data }) => {
+const NoticeItem = ({ params }) => {
+  useEffect(() => {
+    console.log(noticeData.data[0].title);
+  });
+
+  const data = noticeData.data;
   const [caseItem, setCaseItem] = useState({});
   const [prevItem, setPrevItem] = useState({});
   const [nextItem, setNextItem] = useState({});
@@ -19,34 +24,16 @@ const TableItem = ({ params, data }) => {
     }
   }, [params]);
 
-  // const handleClickTableItem = () => {
-  //   console.log(nextItem);
-  //   if (!prevItem || !nextItem) {
-  //     alert('요청하신 적용 사례가 없습니다.');
-  //     navigate('/case', { reaplace: true });
-  //   }
-  //   // else if (prevItem) {
-  //   //   navigate(`/case/${parseInt(caseId) - 1}`);
-  //   // } else if (nextItem) {
-  //   //   navigate(`case/${parseInt(caseId) + 1}`);
-  //   // }
-  // };
-
   return (
     <div className="TableItem">
-      <Link className="back" to={-1}>
+      <Link className="back" to={'/service/notice'}>
         ⇤ 뒤로 가기
       </Link>
       <div className="TableItem-info">
-        {caseItem.image && (
-          <div className="image-box">
-            <img src={caseItem.image} alt="" />
-          </div>
-        )}
         <div className="text-group">
           <div className="TableItem-title">
             <h1>{caseItem.title}</h1>
-            <span className="date">2023-01-01</span>
+            <span className="date">{caseItem.date}</span>
           </div>
           <p className="TableItem-desc">{caseItem.description}</p>
         </div>
@@ -55,17 +42,21 @@ const TableItem = ({ params, data }) => {
         <div className="pagination prev">
           <span>이전</span>
           {prevItem ? (
-            <Link to={`/case/${parseInt(params) - 1}`}>{prevItem.title}</Link>
+            <Link to={`/service/notice/${parseInt(params) - 1}`}>
+              {prevItem.title}
+            </Link>
           ) : (
-            <Link to={'/case'}>없음</Link>
+            <Link to={'/service/notice'}>없음</Link>
           )}
         </div>
         <div className="pagination next">
           <span>다음</span>
           {nextItem ? (
-            <Link to={`/case/${parseInt(params) + 1}`}>{nextItem.title}</Link>
+            <Link to={`/service/notice/${parseInt(params) + 1}`}>
+              {nextItem.title}
+            </Link>
           ) : (
-            <Link to={'/case'}>없음</Link>
+            <Link to={'/service/notice'}>없음</Link>
           )}
         </div>
       </div>
@@ -73,4 +64,4 @@ const TableItem = ({ params, data }) => {
   );
 };
 
-export default TableItem;
+export default NoticeItem;
