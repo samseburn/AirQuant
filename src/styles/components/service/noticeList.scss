@@ -1,6 +1,7 @@
 .noticeList {
   width: 100%;
-  // border-top: 3px solid $teritiary;
+  border-top: 2px solid $teritiary;
+
   //표 테두리와 셀 테두리 간격 없애기
   border-collapse: collapse;
   text-align: center;
@@ -72,5 +73,14 @@
     // 576~768 이하일 때
     // margin: 100px 0;
     width: 100%;
+    .noticeHeader {
+      th:first-child {
+        display: none;
+      }
+    }
+
+    .noticeNo {
+      display: none;
+    }
   }
 }

@@ -1,22 +1,28 @@
 .faqBox {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background: $background-banner;
+  border-radius: 16px;
 
-
-  
   .questionBox {
+    @include flexbox(between);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border-top: 1px solid #C7C7C7;
+    border-top: 1px solid rgba($border, 0.1);
     height: 100px;
     padding: 0px 20px;
 
     line-height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: black;
     cursor: pointer;
+
+    &:not(:first-child) {
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
 
     &:hover {
       color: #1b76ff;
@@ -36,7 +42,7 @@
       transition: transform 500ms ease-in-out;
     }
     .upIcon {
-      color: #C7C7C7;
+      color: #c7c7c7;
       transform: rotate(180deg);
     }
   }
@@ -44,7 +50,7 @@
   .answer-open {
     overflow: hidden;
     transition: height ease 0.5s;
-  
+
     .answer {
       padding: 2rem 4rem 6rem 4rem;
       word-break: keep-all;
@@ -77,7 +83,6 @@
     }
 
     .answer-open {
-
       .answer {
         padding: 2rem 2rem 3rem 2rem;
       }
@@ -93,8 +98,8 @@
       padding: 0px 10px;
 
       .open {
-          // padding: 20px 0;
-          display: flex;
+        // padding: 20px 0;
+        display: flex;
       }
 
       .icon {
@@ -104,7 +109,6 @@
     }
 
     .answer-open {
-
       .answer {
         padding: 2rem 1rem 3rem 1rem;
       }
