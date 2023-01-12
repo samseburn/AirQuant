@@ -43,3 +43,52 @@
         }
     }
 }
+
+// 반응형 768px
+@include responsive(T) {
+    .AirTable__container {
+        .AirTable__Contents{
+            font-size: 2rem;
+        }
+
+        .AirTable__Table_In {
+            width: 80%;
+
+            .AirTable__Thead__tr {
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+}
+
+
+// 반응형 576px
+@include responsive(M) {
+    .AirTable__container {
+        .AirTable__Contents{
+            font-size: 1.5rem;
+        }
+
+        .AirTable__Table_In {
+        th {
+            font-size: 1rem;
+        }
+
+        .AirTable__hidden {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    }
+}
+
+
+// 반응형 375px 아이폰se
+// 브라우저 사이즈 375px 이하일때
+// @media (max-width: 375px){
+//     .AirTable__hidden {
+//         display: none;
+//         visibility: hidden;
+//     }
+// }

@@ -1,4 +1,6 @@
 .CompanyIntro {
+  word-break: keep-all;
+
   height: 80vh;
 
   &-TopHr {
@@ -23,9 +25,7 @@
   }
 
   &-Contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox;
 
     max-width: 80%;
     margin: auto;
@@ -39,9 +39,6 @@
     }
 
     &-Text {
-      display: flex;
-      flex-direction: column;
-
       &-Top {
         font-size: $font-size-18;
 
@@ -76,5 +73,39 @@
 
     margin: auto;
     margin-top: 30px;
+  }
+
+  @include responsive(T) {
+    &-Contents {
+      @include column-flexbox;
+
+      &-Img {
+        margin-right: 0px;
+      }
+
+      &-Text {
+        @include flexbox;
+
+        margin-top: 40px;
+
+        &-Bottom {
+          margin-top: 0px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  @include responsive(M) {
+    &-Contents {
+      &-Text {
+        flex-direction: column;
+
+        &-Bottom {
+          margin-top: 40px;
+          margin-left: 0px;
+        }
+      }
+    }
   }
 }

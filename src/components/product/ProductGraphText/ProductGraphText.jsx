@@ -11,6 +11,7 @@ const ProductGraphText = () => {
   }, []);
 
   return (
+    <div className='Product__'>
     <div className="Product__Graph__Main" data-aos="fade-up">
       <p className="Product__p_text_Main">
         인구 1 만명당 환경성 질환 진료 실인원 추이
@@ -27,6 +28,7 @@ const ProductGraphText = () => {
         건강에 미치는 악영향은 실제로 나타나는 중
       </span>
       <ProductYoutubeSecond />
+    </div>
     </div>
   );
 };

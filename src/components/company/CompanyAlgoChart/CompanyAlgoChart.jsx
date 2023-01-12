@@ -63,7 +63,7 @@ const data = [
 const CompanyAlgoChart = () => {
   return (
     <LineChart
-      width={700}
+      width={600}
       height={400}
       data={data}
       margin={{

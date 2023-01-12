@@ -1,0 +1,55 @@
+.Tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 200px;
+
+  &-title {
+    border-bottom: 2px solid $blue_main;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  &-wrapper {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  &-header {
+    width: 100%;
+    .menu-list {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid $border;
+      transition: all 350ms ease-in-out;
+
+      &.is-active {
+        border-bottom: 2px solid $blue-main;
+        button {
+          color: black;
+          font-weight: bold;
+        }
+      }
+      button {
+        display: block;
+        font-size: 18px;
+        color: $border;
+        padding: 20px;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    min-height: 500px;
+    padding: 100px 0;
+  }
+}

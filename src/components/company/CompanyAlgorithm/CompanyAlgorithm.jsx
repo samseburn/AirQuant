@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const CompanyAlgorithm = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (
