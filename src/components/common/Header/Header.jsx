@@ -47,7 +47,7 @@ const Header = () => {
         <h1 className="logo">
           <Link to={'./'}>AirQuant</Link>
         </h1>
-        <div className="sm-hidden">
+        <div className="lg-only">
           <ol>
             <li>
               <Link to={'./'}>제품소개</Link>
@@ -66,7 +66,7 @@ const Header = () => {
             </li>
           </ol>
         </div>
-        <div className="menu-icon sm-only">
+        <div className="menu-icon lg-hidden">
           <VscMenu onClick={toggleSidebar} />
         </div>
       </div>

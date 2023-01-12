@@ -1,24 +1,27 @@
+.faqBox {
 
-.questionBox {
-    position: relative;
-    z-index: 10;
-    border-top: 1px solid #C7C7C7;
+
+  
+  .questionBox {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    height: 120px;
-    padding: 0 20px;
-    line-height: 40px;
+    border-top: 1px solid #C7C7C7;
+    height: 100px;
+    padding: 0px 20px;
 
-    font-size: 26px;
+    line-height: 40px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
     cursor: pointer;
+
     &:hover {
       color: #1b76ff;
     }
+
     .question {
       word-break: keep-all;
     }
@@ -27,7 +30,7 @@
     }
 
     .icon {
-      font-size: 40px;
+      font-size: 35px;
       padding: 0 20px;
       transform: rotate(0deg);
       transition: transform 500ms ease-in-out;
@@ -37,23 +40,25 @@
       transform: rotate(180deg);
     }
   }
-    .answer-open {
-      overflow: hidden;
-      transition: height ease 0.5s;
-    
-      .answer {
-       padding: 2rem 4rem 6rem 4rem;
-      }
-   }
 
+  .answer-open {
+    overflow: hidden;
+    transition: height ease 0.5s;
+  
+    .answer {
+      padding: 2rem 4rem 6rem 4rem;
+      word-break: keep-all;
+    }
+  }
 
   @include responsive(T) {
     // 768 ~ 1200
-
     .questionBox {
+      font-size: 18px;
+      height: 90px;
+      line-height: 30px;
 
-
-    .question {
+      .question {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -61,24 +66,48 @@
         -webkit-box-orient: vertical;
 
         .open {
-          // padding: 30px 0;
-          // height: none;
-          // // overflow: visible;
-          // text-overflow:clip;
-          // display: block;
+          display: block;
         }
+      }
+
+      .icon {
+        font-size: 30px;
+        padding: 0 10px;
+      }
+    }
+
+    .answer-open {
+
+      .answer {
+        padding: 2rem 2rem 3rem 2rem;
+      }
     }
   }
-    .icon {
-    font-size: 35px;
-    padding: 0 30px;
+
+  @include responsive(M) {
+    // 576~768
+    .questionBox {
+      font-size: 16px;
+      line-height: 1.6rem;
+      height: 80px;
+      padding: 0px 10px;
+
+      .open {
+          // padding: 20px 0;
+          display: flex;
+      }
+
+      .icon {
+        font-size: 25px;
+        // padding: 0;
+      }
     }
 
+    .answer-open {
+
+      .answer {
+        padding: 2rem 1rem 3rem 1rem;
+      }
+    }
+  }
 }
-
-@include responsive(M) {
-  // 576~768
-}
-
-  
-
