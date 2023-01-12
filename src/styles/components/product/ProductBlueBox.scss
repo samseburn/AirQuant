@@ -23,7 +23,7 @@
       font-size: 2rem;
       text-align: center;
       line-height: 85px;
-      transition: 1.25s;
+      transition: 1s;
 
       .ProductBlueBox_bold {
         //   text-decoration: underline;
@@ -68,5 +68,50 @@
     // 이벤트 사라지는 시간
     transition: 1.5s;
     animation-duration: 5s;
+  }
+}
+
+// 반응형
+@include responsive(T) {
+  .ProductBlueBox {
+    // 스크롤 시 배경
+    &_backGround {
+      // 스크롤 시 내용
+      &_Scrolledcontent {
+        font-size: 1.5rem;
+        .ProductBlueBox_bold {
+          font-size: 45px;
+        }
+      }
+      //스크롤 전 내용
+      &_content {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// 반응형 2
+@include responsive(M) {
+  .ProductBlueBox {
+    // 스크롤 시 배경
+    &_backGround {
+      // 스크롤 시 내용
+      &_Scrolledcontent {
+        font-size: 1.5rem;
+        .ProductBlueBox_bold {
+          font-size: 1.8rem;
+        }
+      }
+      //스크롤 전 내용
+      &_content {
+        font-size: 1.5rem;
+
+        &_br {
+          display: block;
+          line-height: 1.3;
+        }
+      }
+    }
   }
 }

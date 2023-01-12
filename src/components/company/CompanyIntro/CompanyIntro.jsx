@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const CompanyIntro = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (

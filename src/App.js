@@ -1,7 +1,16 @@
 // import './App.css';
 import React, { createContext } from 'react';
-import { Container } from 'components';
-import { Case, CaseItem, Company, Product, Service, Tech, Root } from 'pages';
+import { Container, TableItem } from 'components';
+import {
+  Case,
+  CaseItem,
+  Company,
+  Product,
+  Service,
+  ServiceNotice,
+  Tech,
+  Root,
+} from 'pages';
 import { case_01, case_02, case_03, case_04, case_05, case_06 } from 'images';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/main.scss';
@@ -67,7 +76,26 @@ function App() {
           path: '/case/:caseId',
           element: <Container content={<CaseItem />} />,
         },
-        { path: '/service', element: <Container content={<Service />} /> },
+        {
+          path: '/service',
+          element: <Container content={<Service />} />,
+        },
+        {
+          path: '/service/faq',
+          element: <Container content={<Service index={0} />} />,
+        },
+        {
+          path: '/service/notice',
+          element: <Container content={<Service index={1} />} />,
+        },
+        {
+          path: '/service/qna',
+          element: <Container content={<Service index={2} />} />,
+        },
+        {
+          path: '/service/notice/:noticeId',
+          element: <Container content={<ServiceNotice />} />,
+        },
       ],
     },
   ]);

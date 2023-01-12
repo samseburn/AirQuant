@@ -52,10 +52,11 @@ export default () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      {/* 지수님.. 이친구는 우리와 함께할수가없어요..
       <div className="button-group">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      </div>
+      </div> */}
     </div>
   );
 };
