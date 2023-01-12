@@ -45,4 +45,39 @@
   .blue2 {
     background: #deebff;
   }
+
+  @include responsive(T) {
+    .Piquant_num1 {
+      font-size: 23px;
+    }
+    .Piquant_num2 {
+      font-size: 20px;
+    }
+    .Piquant_container_spot2 {
+      font-size: 130px;
+      font-family: cursive;
+      color: $blue_light;
+      display: inline;
+      position: relative;
+      left: 30%;
+      bottom: 5%;
+    }
+  }
+  @include responsive(M) {
+    .Piquant_num1 {
+      font-size: 19px;
+    }
+    .Piquant_num2 {
+      font-size: 15px;
+    }
+    .Piquant_container_spot2 {
+      font-size: 130px;
+      font-family: cursive;
+      color: $blue_light;
+      display: inline;
+      position: relative;
+      left: 40%;
+      bottom: 5%;
+    }
+  }
 }
