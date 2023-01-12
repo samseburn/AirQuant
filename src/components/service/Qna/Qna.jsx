@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { db } from '../../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import { Button } from 'components/module/Button';
 
 const Qna = () => {
   const infoCollection = collection(db, 'information');
@@ -205,7 +206,7 @@ const Qna = () => {
             ''
           )}
         </div>
-        <button>문의하기</button>
+        <Button text="문의하기" />
       </form>
     </div>
   );
