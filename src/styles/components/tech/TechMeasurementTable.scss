@@ -43,21 +43,33 @@
   }
   &_explain {
     font-size: 15px;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
   }
-  &_spec {
-    font-size: 20px;
-    padding-bottom: 40vh;
-    padding-right: 20%;
 
-    &_title {
-      font-weight: 700;
-      color: $blue_main;
-      width: 40%;
-      padding-bottom: 15px;
-    }
-    &_content {
-      line-height: 1.5;
+  &_spec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_graybox {
+      display: flex;
+      justify-content: space-evenly;
+      width: 800px;
+      height: 150px;
+
+      background-color: rgb(249, 249, 249);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      &_section1 {
+        color: #1b76ff;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+      &_section2,
+      &_section3 {
+        line-height: 25px;
+      }
     }
   }
 }
