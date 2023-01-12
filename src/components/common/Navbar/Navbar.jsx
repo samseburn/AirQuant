@@ -5,7 +5,7 @@ import { TfiClose } from 'react-icons/tfi';
 const Navbar = (props) => {
   const { open, toggle } = props;
   return (
-    <aside className={`navbar ${open ? 'is-active' : ''}`}>
+    <aside className={`navbar lg-hidden ${open ? 'is-active' : ''}`}>
       <header className="navbar-header">
         <h1 className="logo">
           <Link tp={'/'}>AirQuant</Link>

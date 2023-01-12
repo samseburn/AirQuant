@@ -50,7 +50,7 @@
 }
 
 // 반응형
-@include responsive(T) {
+@include responsive(M) {
   .TechConvenience {
     &_content {
       flex-direction: column;

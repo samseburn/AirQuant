@@ -1,14 +1,10 @@
-import { Contact, Faq, Notice } from 'components';
+import { Contact, Faq, Notice, Tab } from 'components';
 import React from 'react';
 
 const Service = () => {
   return (
     <div>
-      <Notice />
-
-      <Faq />
-
-      <Contact />
+      <Tab />
     </div>
   );
 };
