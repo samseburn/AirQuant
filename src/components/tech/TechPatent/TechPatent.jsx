@@ -59,11 +59,6 @@ export default () => {
         </Swiper>
       </div>
       <div class="swiper-button-next"></div>
-      {/* 지수님.. 이친구는 우리와 함께할수가없어요..
-      <div className="button-group">
-        
-       
-      </div> */}
     </div>
   );
 };
