@@ -4,3 +4,23 @@
         height: 140px;
     }
 }
+
+
+
+// 반응형
+@include responsive(T) {
+}
+
+@include responsive(M) {
+    .TechCustomersMap__container{
+    .TechCustomers__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+}
+
+  // 반응형 375
+@include responsive(M) {
+
+}

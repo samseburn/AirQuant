@@ -4,6 +4,7 @@ import {
   TechExplanation,
   TechMain,
   TechMeasurementTable,
+  TechMiddleTitle,
   TechPatent,
 } from 'components';
 import React from 'react';
@@ -13,6 +14,7 @@ const Tech = () => {
     <div>
       <TechMain />
       <TechMeasurementTable />
+      {/* <TechMiddleTitle/> */}
       <TechExplanation />
       <TechConTitle />
       <TechCustomers />

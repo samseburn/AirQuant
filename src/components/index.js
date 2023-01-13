@@ -34,6 +34,7 @@ export { TechMeasurement } from './tech/TechMeasurement';
 export { TechMeasurementTable } from './tech/TechMeasurementTable';
 export { TechPatent } from './tech/TechPatent';
 export { TechConTitle } from './tech/TechConTitle';
+export { TechMiddleTitle } from './tech/TechMiddleTitle';
 
 // company
 export { CompanyTech } from './company/CompanyTech';
@@ -51,5 +52,4 @@ export { FaqBox } from './service/FaqBox';
 export { Notice } from './service/Notice';
 export { NoticeList } from './service/NoticeList';
 export { NoticeItem } from './service/NoticeItem';
-export { Contact } from './service/Contact';
 export { Qna } from './service/Qna';

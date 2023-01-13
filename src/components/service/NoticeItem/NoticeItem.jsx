@@ -1,6 +1,6 @@
 import { noticeData } from 'components/service/NoticeList/NoticeList';
 import React, { useEffect, useState } from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NoticeItem = ({ params }) => {
   useEffect(() => {
@@ -29,14 +29,22 @@ const NoticeItem = ({ params }) => {
       <Link className="back" to={'/service/notice'}>
         ⇤ 뒤로 가기
       </Link>
-      <div className="TableItem-info">
-        <div className="text-group">
-          <div className="TableItem-title">
-            <h1>{caseItem.title}</h1>
-            <span className="date">{caseItem.date}</span>
-          </div>
-          <p className="TableItem-desc">{caseItem.description}</p>
+      <div className="TableItem-title">
+        <div
+          className="TableItem-title"
+          style={{
+            borderTop: '1px solid gray',
+            borderBottom: '1px solid gray',
+            display: 'flex',
+            justifyContent: 'space-between',
+            padding: 20,
+            marginBottom: 100,
+          }}
+        >
+          <h1>{caseItem.title}</h1>
+          <span className="date">{caseItem.date}</span>
         </div>
+        <p className="TableItem-desc">{caseItem.description}</p>
       </div>
       <div className="TableItem-pagination">
         <div className="pagination prev">

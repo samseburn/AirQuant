@@ -1,3 +1,4 @@
+import { CaseItem } from 'pages';
 import React, { useRef, useState } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
 
@@ -8,7 +9,6 @@ const FaqBox = (props) => {
   //아이콘 클릭시 open의 boolean 값을 변경(사라지고 생기고)하는 이벤트 함수
   const toggle = () => {
     setOpen(!open);
-    console.log('클릭');
   };
 
   //div 태그에 접근해서 div의 전체 height를 사용하기 위해
@@ -16,11 +16,8 @@ const FaqBox = (props) => {
 
   return (
     <div className="faqBox">
-      <div className="questionBox" onClick={toggle}>
-        <div className={`question ${open ? 'open' : 'close'}`}>
-          {props.question}
-        </div>
-
+      <div className="questionBox" onClick={toggle} idx={props.idx}>
+        <p className={`question ${open ? 'open' : ''}`}>{props.question}</p>
         <div className={`icon ${open ? 'upIcon' : 'downIcon'}`}>
           <FiChevronDown />
         </div>
@@ -37,7 +34,7 @@ const FaqBox = (props) => {
             : { height: '0px' }
         }
       >
-        <div className="answer">{props.answer}</div>
+        <p className="answer">{props.answer}</p>
       </div>
     </div>
   );

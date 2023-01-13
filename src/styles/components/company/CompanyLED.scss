@@ -4,6 +4,7 @@
   flex-direction: column;
   &-title {
     height: 10vh;
+    text-align: center;
   }
   &-charts {
     @include flexbox;
