@@ -7,14 +7,18 @@
   gap: 50px;
 
   .back {
-    padding: 10px 20px 10px 0;
+    padding: 20px;
     font-weight: 600;
+
+    &:hover,
+    &:active {
+      background-color: $background-banner;
+    }
   }
 
   &-info {
-    @include flexbox(start, center);
+    @include flexbox(start, end);
     column-gap: 50px;
-    min-height: 500px;
 
     .image-box {
       display: block;
@@ -32,11 +36,31 @@
       }
     }
 
-    .text-group {
-      @include column-flexbox(between, between);
+    .text-info {
+      @include column-flexbox(between, start);
+      flex-grow: 0;
 
-      h1 {
-        font-size: 20px;
+      &-title {
+        margin-bottom: 50px;
+
+        h1 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+
+      &-date {
+        font-size: 14px;
+        color: $border;
+      }
+
+      &-desc {
+        font-size: 16px;
+        line-height: 1.625;
+        word-break: keep-all;
+        margin-bottom: 20px;
       }
     }
   }
@@ -44,31 +68,71 @@
   &-pagination {
     @include column-flexbox(start, start);
     width: 100%;
-    border-top: 1px solid gray;
-    border-bottom: 1.5px solid gray;
+    // border-top: 1px solid gray;
+    // border-bottom: 1.5px solid gray;
 
-    .pagination {
+    .page-item {
       @include flexbox(start);
       width: 100%;
       padding: 0 20px;
       font-size: 15px;
+      background-color: $background-banner;
+      border-radius: 12px;
+      margin-bottom: 10px;
 
       &:first-child {
-        border-bottom: 1px solid #aaa;
+        // border-bottom: 1px solid #aaa;
       }
 
       span {
         display: block;
+        min-width: 30px;
         margin-right: 20px;
         font-weight: 700;
       }
 
       a {
         display: block;
-        margin: 30px 0;
+        width: 100%;
+        padding: 30px 0;
         transition: all 350ms ease-in-out;
-        &:hover {
-          font-weight: bold;
+      }
+    }
+
+    .disabled {
+      color: $border;
+      pointer-events: none;
+    }
+  }
+
+  @include responsive(T) {
+    gap: 0;
+    .back {
+      margin-bottom: 30px;
+    }
+
+    &-info {
+      flex-direction: column;
+      height: auto;
+
+      .image-box {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      .text-info {
+        @include column-flexbox(between, between);
+
+        &-title {
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+
+        &-date {
+        }
+
+        &-desc {
+          margin-bottom: 50px;
         }
       }
     }
