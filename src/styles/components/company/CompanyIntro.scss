@@ -1,12 +1,6 @@
 .CompanyIntro {
   word-break: keep-all;
 
-<<<<<<< HEAD
-  height: 90vh;
-=======
-  // height: 80vh;
->>>>>>> 494a5bdb2a3faffc9f25c44e66fde7aacec9918b
-
   &-TopHr {
     width: 70px;
 
@@ -31,7 +25,7 @@
   &-Contents {
     @include flexbox;
 
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     margin-top: 40px;
 
@@ -39,15 +33,12 @@
       width: 500px;
       height: 350px;
 
-      margin-right: 150px;
-
-      border-radius: 10px;
+      margin-right: 200px;
     }
 
     &-Text {
       &-Top {
         font-size: $font-size-18;
-        line-height: $line-height-18;
 
         &-Large {
           font-size: $font-size-24;
@@ -76,7 +67,7 @@
   }
 
   &-BottomHr {
-    max-width: 90%;
+    max-width: 80%;
 
     margin: auto;
     margin-top: 30px;
@@ -114,7 +105,6 @@
         }
       }
       &-Img {
-        // width: 375px;
         width: 100%;
       }
     }

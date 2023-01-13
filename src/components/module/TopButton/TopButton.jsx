@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
 
-function ToTheTop() {
+function TopButton() {
   const [ScrollY, setScrollY] = useState(0);
   const [BtnStatus, setBtnStatus] = useState(false); // 버튼 상태
 
@@ -48,4 +48,4 @@ function ToTheTop() {
   );
 }
 
-export default ToTheTop;
+export default TopButton;
