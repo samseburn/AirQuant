@@ -71,4 +71,7 @@ export { default as case_04 } from './Case/case_04.jpg';
 export { default as case_05 } from './Case/case_05.jpeg';
 export { default as case_06 } from './Case/case_06.jpg';
 
-// Contact
+// Footer (icon)
+export { default as instargram } from './Footer/instargram.png';
+export { default as facebook } from './Footer/facebook.png';
+export { default as blog } from './Footer/blog.png';

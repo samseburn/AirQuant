@@ -44,6 +44,7 @@ export { CompanyIcon } from './company/CompanyIcon';
 export { CompanyLED } from './company/CompanyLED';
 export { CompanyIntro } from './company/CompanyIntro';
 export { CompanyAlgoChart } from './company/CompanyAlgoChart';
+export { CompanyLEDChart } from './company/CompanyLEDChart';
 
 // case
 

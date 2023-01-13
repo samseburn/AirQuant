@@ -1,0 +1,24 @@
+.CompanyLEDChart {
+  @include flexbox;
+  gap: 50px;
+
+  &-left,
+  &-right {
+    width: 40vw;
+    height: 30vw;
+  }
+
+  @include responsive(T) {
+    gap: 20px;
+  }
+
+  @include responsive(M) {
+    flex-direction: column;
+    gap: 10px;
+    &-left,
+    &-right {
+      width: 80vw;
+      height: 200px;
+    }
+  }
+}
