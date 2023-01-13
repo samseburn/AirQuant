@@ -1,29 +1,31 @@
 .CompanyLED {
+  word-break: keep-all;
   width: 100%;
+  gap: 50px;
   @include flexbox;
   flex-direction: column;
   &-title {
     height: 10vh;
-    text-align: center;
-  }
-  &-charts {
     @include flexbox;
-    &-left,
-    &-right {
-      margin: 20px;
-    }
   }
 
   &-content {
-    margin-top: 30px;
     text-align: center;
-    word-break: keep-all;
     font-size: $font-size-18;
-    height: 50vh;
+    margin-bottom: 50%;
+  }
+  @include responsive(T) {
   }
   @include responsive(M) {
+    &-title {
+      font-size: $font-size-18;
+      margin-bottom: 100px;
+    }
     &-charts {
-      flex-direction: column;
+      margin-bottom: 100px;
+    }
+    &-content {
+      font-size: $font-size-14;
     }
   }
 }
