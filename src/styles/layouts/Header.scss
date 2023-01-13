@@ -7,14 +7,14 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: white;
+  // background-color: white;
   // transform: translate3d(0, -60px, 0);
   transition: transform 350ms ease-in-out;
 
   color: $blue-main;
   z-index: 10;
 
-  border-bottom: 1px solid $border;
+  // border-bottom: 1px solid $border;
 
   .gnb {
     @include flexbox(between, center);
@@ -55,7 +55,7 @@
       @include flexbox();
       width: 32px;
       height: 32px;
-      color: $blue-main;
+      color: $border;
       font-size: 20px;
       font-weight: 700;
       cursor: pointer;
@@ -63,14 +63,11 @@
   }
   //
   &.blue {
-    background-color: transparent;
-    backdrop-filter: blur(50px);
+    background-color: white;
+    // backdrop-filter: blur(50px);
     color: $blue-main;
+    border-bottom: 1px solid $border;
     // transform: translate3d(0, 0, 0);
-
-    .menu-icon {
-      color: $blue-main;
-    }
   }
 
   @include responsive(T) {

@@ -33,7 +33,7 @@
     justify-content: center;
     text-align: center;
 
-    width: 700px;
+    width: 80%;
     margin-top: 50px;
 
     font-size: 2.5rem;
@@ -52,5 +52,28 @@
       font-size: 1rem;
       // margin-left: 300px;
     }
+    &div_text_health {
+      font-size: 1.75rem;
+    }
   }
+}
+
+// 반응형 768px 이하일때
+@include responsive(M) {
+  .Product__ {
+    &p_text_Main {
+      font-size: 1.5rem;
+      // margin-left: 300px;
+    }
+    &div_text_health {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+
+// 반응형 375px 아이폰se
+// 브라우저 사이즈 375px 이하일때
+@media (max-width: 375px){
+
 }

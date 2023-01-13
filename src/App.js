@@ -72,6 +72,7 @@ function App() {
         { path: '/tech', element: <Tech /> },
         { path: '/company', element: <Container content={<Company />} /> },
         { path: '/case', element: <Container content={<Case />} /> },
+
         {
           path: '/case/:caseId',
           element: <Container content={<CaseItem />} />,
@@ -79,22 +80,26 @@ function App() {
         {
           path: '/service',
           element: <Container content={<Service />} />,
-        },
-        {
-          path: '/service/faq',
-          element: <Container content={<Service index={0} />} />,
-        },
-        {
-          path: '/service/notice',
-          element: <Container content={<Service index={1} />} />,
-        },
-        {
-          path: '/service/qna',
-          element: <Container content={<Service index={2} />} />,
-        },
-        {
-          path: '/service/notice/:noticeId',
-          element: <Container content={<ServiceNotice />} />,
+          children: [
+            {
+              path: '/service/faq',
+              element: <Container content={<Service index={0} />} />,
+            },
+            {
+              path: '/service/notice',
+              element: <Container content={<Service index={1} />} />,
+              children: [
+                {
+                  path: '/service/notice/:noticeId',
+                  element: <Container content={<ServiceNotice />} />,
+                },
+              ],
+            },
+            {
+              path: '/service/qna',
+              element: <Container content={<Service index={2} />} />,
+            },
+          ],
         },
       ],
     },

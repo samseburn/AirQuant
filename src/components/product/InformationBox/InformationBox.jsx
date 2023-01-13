@@ -56,21 +56,35 @@ const InformationBox = () => {
             <span className="dangerContentFirst_colorChange">
               집중력 저하나 호흡기 질환
             </span>
-            을 유발/악화
+            을 <span className="dangerContentFirst_br">유발/악화</span>
           </div>
           <div className="dangerContentSecond">
-            아토피, 천식, 알레르기 비염 등 각종 환경성 질환의 원인
+            <span className="dangerContentSecond_br">
+              아토피, 천식, 알레르기 비염 등{' '}
+            </span>
+            각종 환경성 질환의 원인
             <br />
-            신체 기관이 발달과정에 영향을 줄 수 있음
+            신체 기관이 발달과정에{' '}
+            <span className="dangerContentSecond_br">영향을 줄 수 있음</span>
           </div>
           <div className="dangerContentThird">
-            특히 알레르기 비염의 경우 유전적 요인과 환경적 요인이 합쳐져 생기는
-            질환으로,
-            <br />
-            최근 실내 위주의 생활이 늘어나면서 발병 빈도가 높아지고 있음
+            <span className="dangerContentThird_br">
+              특히 알레르기 비염의 경우{' '}
+            </span>
+            유전적 요인과 환경적 요인이 합쳐져{' '}
+            <span className="dangerContentThird_br">생기는 질환으로,</span>
+            <span className="dangerContentThird_hide">
+              <br />
+            </span>
+            최근 실내 위주의 생활이 늘어나면서{' '}
+            <span className="dangerContentThird_br">
+              발병 빈도가 높아지고 있음
+            </span>
           </div>
           <div className="dangerContentBottom">
-            심장병이나 암, 호흡기 질환과 같은
+            <span className="dangerContentBottom_br">
+              심장병이나 암, 호흡기 질환과 같은
+            </span>
             <span className="dangerContentBottom_colorChange"> 만성 질환</span>
             이 발생할 가능성 증가
           </div>

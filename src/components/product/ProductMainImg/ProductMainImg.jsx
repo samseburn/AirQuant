@@ -13,7 +13,7 @@ const ProductMainImg = () => {
     <>
       <div className="airQuant_Main">
         <div className="airQuant_Main_Background_Image_main">
-          <img className="airQuant_Main_Background_Image" src={airquant_15} />
+          <img className="airQuant_Main_Background_Image" src={airquant_15} alt="" />
         </div>
         <div className="airQuant_Title" >
           <p className="airQuant_Main_Title" data-aos="fade-up">AirQuant</p>
