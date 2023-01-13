@@ -1,6 +1,6 @@
-import { Section, Tab, TableItem } from 'components';
-import { noticeData } from 'components/service/NoticeList/NoticeList';
-import { useParams } from 'react-router-dom';
+import { Tab } from 'components';
+// import { noticeData } from 'components/service/NoticeList/NoticeList';
+// import { useParams } from 'react-router-dom';
 
 const ServiceNotice = () => {
   return (
