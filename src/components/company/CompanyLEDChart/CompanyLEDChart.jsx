@@ -76,7 +76,7 @@ const CompanyLEDChart = () => {
               <Label value="Code lengh (bit)" position="bottom" />
             </XAxis>
             <YAxis>
-              <Label value="SNR(x10)" angle={-90} position="left" />
+              <Label value="SNR(x10)" angle={-90} position="insideLeft" />
             </YAxis>
             <Tooltip />
             <Legend verticalAlign="top" height={30} />
@@ -96,7 +96,7 @@ const CompanyLEDChart = () => {
               <Label value="Modulation frequency (Hz)" position="bottom" />
             </XAxis>
             <YAxis>
-              <Label value="SNR(x10)" angle={-90} position="left" />
+              <Label value="SNR(x10)" angle={-90} position="insideLeft" />
             </YAxis>
             <Tooltip />
             <Legend verticalAlign="top" height={30} />
