@@ -81,6 +81,8 @@ const Qna = () => {
       return error.ask;
     }
 
+    // Modal 만들 위치
+
     addInfo(data);
 
     setData({
