@@ -31,7 +31,9 @@ const FaqBox = (props) => {
             ? {
                 height: contentRef.current.scrollHeight + 'px',
               }
-            : { height: '0px' }
+            : {
+                height: '0px',
+              }
         }
       >
         <p className="answer">{props.answer}</p>

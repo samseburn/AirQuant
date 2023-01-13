@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Card = ({ title, description, id, image }) => {
-  console.log(image);
   const navigate = useNavigate();
 
   const handleClickCard = () => {
