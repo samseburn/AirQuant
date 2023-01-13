@@ -1,7 +1,7 @@
 .CompanyIntro {
   word-break: keep-all;
 
-  height: 80vh;
+  height: 90vh;
 
   &-TopHr {
     width: 70px;
@@ -27,7 +27,7 @@
   &-Contents {
     @include flexbox;
 
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     margin-top: 40px;
 
@@ -35,12 +35,15 @@
       width: 500px;
       height: 350px;
 
-      margin-right: 200px;
+      margin-right: 150px;
+
+      border-radius: 10px;
     }
 
     &-Text {
       &-Top {
         font-size: $font-size-18;
+        line-height: $line-height-18;
 
         &-Large {
           font-size: $font-size-24;
@@ -69,7 +72,7 @@
   }
 
   &-BottomHr {
-    max-width: 80%;
+    max-width: 90%;
 
     margin: auto;
     margin-top: 30px;
