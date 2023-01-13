@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 50px auto;
+
+    .page {
+        margin: 0 5px;
+
+        .num {
+            padding: 0 5px;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &.active {
+                font-weight: 700;
+                color: $blue_main;
+            }
+        }
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+        border: 1px solid $background;
+        border-radius: 5px;
+        color: $teritiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $background;
+        }
+    }
+}
