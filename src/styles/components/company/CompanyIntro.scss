@@ -1,7 +1,11 @@
 .CompanyIntro {
   word-break: keep-all;
 
+<<<<<<< HEAD
   height: 90vh;
+=======
+  // height: 80vh;
+>>>>>>> 494a5bdb2a3faffc9f25c44e66fde7aacec9918b
 
   &-TopHr {
     width: 70px;
@@ -108,6 +112,10 @@
           margin-top: 40px;
           margin-left: 0px;
         }
+      }
+      &-Img {
+        // width: 375px;
+        width: 100%;
       }
     }
   }

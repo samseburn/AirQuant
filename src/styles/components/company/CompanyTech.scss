@@ -1,19 +1,16 @@
 .CompanyTech {
   word-break: keep-all;
 
-  display: flex;
-  flex-direction: column;
-
   max-width: 80%;
   height: 90vh;
 
   margin: auto;
 
   @include flexbox;
+  flex-direction: column;
 
   &-Title {
     text-align: center;
-
     font-size: $font-size-24;
     font-weight: 700;
     color: $blue_main;
@@ -29,10 +26,14 @@
       font-size: $font-size-18;
     }
   }
-
+  @include responsive(T) {
+    & {
+      height: 110vh;
+    }
+  }
   @include responsive(M) {
-    &-Title {
-      margin-top: 220px;
+    & {
+      height: 100vh;
     }
   }
 }

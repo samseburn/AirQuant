@@ -24,7 +24,7 @@ const TechCustomers = () => {
       </div>
       <div className="TechCustomers__map">
         {customersList.map((customers) => (
-          <TechCustomersMap img={customers.img} />
+          <TechCustomersMap img={customers.img} alt="" />
         ))}
       </div>
     </div>
