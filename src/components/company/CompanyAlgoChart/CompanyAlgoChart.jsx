@@ -65,7 +65,7 @@ const CompanyAlgoChart = () => {
   return (
     <div className="CompanyAlgoChart">
       <div className="CompanyAlgoChart-Container">
-        <ResponsiveContainer width="100%" height={500}>
+        <ResponsiveContainer width="100%">
           <LineChart
             data={data}
             margin={{
