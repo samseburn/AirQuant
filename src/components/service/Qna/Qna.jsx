@@ -212,8 +212,9 @@ const Qna = () => {
             <div className="qna-hidden"></div>
           )}
         </div>
-        <Button text="문의하기" />
+        <Button type={'submit'} text="문의하기" />
       </form>
+      <div></div>
     </div>
   );
 };

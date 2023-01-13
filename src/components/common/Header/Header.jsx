@@ -10,7 +10,6 @@ const Header = () => {
   const [isMain, setIsMain] = useState(false);
   const _header = useRef(null);
   const locationNow = useLocation();
-  console.log(locationNow);
 
   useEffect(() => {
     if (locationNow.pathname === '/' || locationNow.pathname === '/tech') {
@@ -50,7 +49,6 @@ const Header = () => {
     headerChange();
   }, [isMain, scrollPosition]);
 
-  console.log(scrollPosition);
   return (
     <header
       ref={_header}
