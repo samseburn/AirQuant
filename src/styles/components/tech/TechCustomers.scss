@@ -4,10 +4,15 @@
     align-items: center;
 
     width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
     // height 100vh를 주면 맵한번 돌릴때마다 100vh의 값을 주는거같음...
     // 어떻게 해야 맵 돌린거 전부를 하나로 묶고 하나의 div에 100vh값을 줄수있을지...? 
     // 내가 바보였음 ㅡㅡ 클래스이름 똑같이줌 바본가..
-    height: 100vh;
+
+    // height: 100vh;
+
+    background-color: $blue-white;
 
     .TechCustomers__title {
         .TechCustomers__main_title {
@@ -16,6 +21,10 @@
         }
     }
 
-    // .TechCustomers__map {
-    // }
+    .TechCustomers__map {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
