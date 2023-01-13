@@ -1,5 +1,6 @@
 .CompanyAlgoChart {
   width: 80vw;
+  height: 40vw;
 
   &-Container {
     width: 100%;
@@ -9,6 +10,8 @@
 
 @include responsive(T) {
   .CompanyAlgoChart {
+    height: 90vw;
+
     &-Container {
       width: 100%;
       height: 100%;
@@ -18,6 +21,8 @@
 
 @include responsive(M) {
   .CompanyAlgoChart {
+    height: 90vw;
+
     &-Container {
       width: 100%;
       height: 100%;
