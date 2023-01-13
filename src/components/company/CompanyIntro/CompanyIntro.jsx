@@ -25,9 +25,9 @@ const CompanyIntro = () => {
             <br />
             휴대용 분광기술을 통해
             <br />
-            <span className="CompanyIntro-Contents-Text-Large">
+            <span className="CompanyIntro-Contents-Text-Top-Large">
               우리 모두가{' '}
-              <span className="CompanyIntro-Contents-Text-Large-Blue">
+              <span className="CompanyIntro-Contents-Text-Top-Large-Blue">
                 ‘퀀트’
               </span>
               가 되는 세상을 꿈꿉니다.
