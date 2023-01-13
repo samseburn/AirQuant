@@ -1,17 +1,35 @@
 .footer {
   width: 100%;
-  padding: 20px 80px;
-  background-color: #f8f8f8;
+  padding: 20px 80px 30px 80px;
+  background-color: $background-banner;
+  color: $teritiary;
 
-  &-logo {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 700;
-    color: $blue-main;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $blue-main;
-    margin-bottom: 10px;
-  }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid $blue-main;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  
+
+    .logo {
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 700;
+      color: $blue-main;
+      // padding-bottom: 10px;
+
+    }
+
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 3px;
+      }
+
+}
 
   &-information {
     display: flex;
@@ -21,17 +39,19 @@
       font-size: 18px;
       font-weight: 700;
       color: $blue-main;
+      margin: 10px 0;
+      text-transform: uppercase;
     }
 
     &-address {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
       .address-box {
         p {
           font-size: 14px;
           &:first-child {
-            margin-bottom: 10px;
+            margin-bottom: 7px;
           }
         }
       }
@@ -42,8 +62,13 @@
       flex-shrink: 0;
       flex-grow: 0;
 
+
       dl {
         display: flex;
+
+        .piquantUrl {
+          cursor: pointer;
+        }
 
         &:not(:last-child) {
           margin-bottom: 5px;
@@ -75,6 +100,7 @@
 
       &-address {
         justify-content: flex-start;
+        margin-bottom: 7px;
 
         .address-box {
           p {
@@ -106,5 +132,8 @@
   }
 
   @include responsive(M) {
+        padding: 20px 20px 40px 20px;
+
   }
+
 }

@@ -15,7 +15,7 @@ const TechExplanation = () => {
   }, []);
   return (
     <div className="TechExplanation">
-      <div className="FineDust" data-aos="fade-up">
+      {/* <div className="FineDust" data-aos="fade-up">
         <span className="TechExplanation_space">미세먼지(PM10),</span>{' '}
         <span className="TechExplanation_space">
           초미세먼지(PM2.5)를 포함한 <br />
@@ -24,7 +24,7 @@ const TechExplanation = () => {
           <span className="FineDustEleven">총 11가지 </span> 항목을 실시간으로
           측정
         </span>
-      </div>
+      </div> */}
       <div className="TechExplanationPhoneWeb" data-aos="fade-up">
         <div className="TechExplantionPhone">
           <img

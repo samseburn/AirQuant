@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 90px;
+  gap: 50px;
   &-title {
     @include flexbox;
     color: $dark;
@@ -14,7 +14,7 @@
   }
   &-imgs {
     @include flexbox;
-    gap: 150px;
+    gap: 10px;
 
     &-item {
       &.imageLeft,
@@ -59,6 +59,7 @@
     span {
       margin: 8px;
     }
+    margin-bottom: 100px;
   }
 
   @include responsive(M) {

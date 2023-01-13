@@ -2,7 +2,7 @@
   cursor: pointer;
   @include flexbox;
   width: 150px;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid $blue_main;
   border-radius: 10px;
   font-weight: 900;
@@ -16,7 +16,9 @@
   }
   @include responsive(M) {
     & {
-      padding: 15px;
+      width: 100px;
+      padding: 10px;
+      font-size: $font-size-14;
     }
   }
 }

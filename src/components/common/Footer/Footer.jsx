@@ -1,11 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { instargram, facebook, blog } from 'images';
 
 const Footer = () => {
   const piQuantURL = 'http://www.piquant.asia';
   return (
     <footer className="footer">
-      <h1 className="footer-logo">PiQuant</h1>
+      <div className="footer-top">
+        <h1 className="logo">PiQuant</h1>
+        <div className="icon">
+          <a href="https://blog.naver.com/piquant_asia" target="_blank">
+            <img src={blog} alt="위의 이미지를 누르면 연결됩니다." />
+          </a>
+          <a href="https://www.facebook.com/piquant.tech" target="_blank">
+            <img src={facebook} alt="위의 이미지를 누르면 연결됩니다." />
+          </a>
+          <a href="https://blog.naver.com/piquant_asia" target="_blank">
+            <img src={instargram} alt="위의 이미지를 누르면 연결됩니다." />
+          </a>
+        </div>
+      </div>
       <ol className="footer-information">
         <li className="footer-information-address">
           <h1 className="address-title">Address</h1>
@@ -19,22 +33,31 @@ const Footer = () => {
         </li>
         <li className="footer-information-contact">
           <h1 className="contact-title">Contact</h1>
-          <dl>
-            <dt>대표전화</dt>
-            <dd>
-              <Link to="tel:02-2088-8765">02-2088-8765</Link>
-            </dd>
-          </dl>
-          <dl>
-            <dt>사이트</dt>
-            <dd onClick={() => window.open(piQuantURL)}>www.piquant.asia</dd>
-          </dl>
-          <dl>
-            <dt>E-Mail</dt>
-            <dd>
-              <Link to="mailto:contact@piquant.asia">contact@piquant.asia</Link>
-            </dd>
-          </dl>
+          <div className="contact-box">
+            <dl>
+              <dt>대표전화</dt>
+              <dd>
+                <Link to="tel:02-2088-8765">02-2088-8765</Link>
+              </dd>
+            </dl>
+            <dl>
+              <dt>사이트</dt>
+              <dd
+                className="piquantUrl"
+                onClick={() => window.open(piQuantURL)}
+              >
+                www.piquant.asia
+              </dd>
+            </dl>
+            <dl>
+              <dt>E-Mail</dt>
+              <dd>
+                <Link to="mailto:contact@piquant.asia">
+                  contact@piquant.asia
+                </Link>
+              </dd>
+            </dl>
+          </div>
         </li>
       </ol>
     </footer>
