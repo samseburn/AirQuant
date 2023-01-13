@@ -15,7 +15,7 @@ const TechExplanation = () => {
   }, []);
   return (
     <div className="TechExplanation">
-      <div className="FineDust" data-aos="fade-up">
+      {/* <div className="FineDust" data-aos="fade-up">
         <span className="TechExplanation_space">미세먼지(PM10),</span>{' '}
         <span className="TechExplanation_space">
           초미세먼지(PM2.5)를 포함한 <br />
@@ -24,7 +24,7 @@ const TechExplanation = () => {
           <span className="FineDustEleven">총 11가지 </span> 항목을 실시간으로
           측정
         </span>
-      </div>
+      </div> */}
       <div className="TechExplanationPhoneWeb" data-aos="fade-up">
         <div className="TechExplantionPhone">
           <img
@@ -35,17 +35,14 @@ const TechExplanation = () => {
         </div>
         <div className="TechExplanationWeb">
           <div className="TechExplanationWeb1">
-            <span className="TechExplanation_space">
-              웹/모바일 어플리케이션과 <br />
-            </span>
+            웹/모바일 어플리케이션과 <br />
             연동하여 이상징후 알림
-          </div>
-          <div className="TechExplanationWeb2">
-            실내 공기질을 측정 및 기록하고
-            <br />
-            웹/모바일 어플리케이션과 연동하여
-            <br />
-            실내 공기질 유지 기준 초과 시 알림이 울립니다.
+            <div className="TechExplanationWeb2">
+              실내 공기질을 측정 및 기록하고 <br />
+              웹/모바일 어플리케이션과 연동하여 <br />
+              실내 공기질 유지 기준 초과 시 <br />
+              알림이 울립니다.
+            </div>
           </div>
         </div>
       </div>
@@ -64,13 +61,12 @@ const TechExplanation = () => {
             실시간 실내 공기질 현황을 공유합니다.
           </div>
         </div>
-        <div className="TechExplanationDigital">
-          <img
-            className="TechExplanationDigital1"
-            src={explanation_weather0}
-            alt=""
-          />
-        </div>
+
+        <img
+          className="TechExplanationDigital1"
+          src={explanation_weather0}
+          alt=""
+        />
       </div>
       <div className="Airquantquality" data-aos="fade-up">
         <div className="Airquant">
@@ -79,19 +75,15 @@ const TechExplanation = () => {
         </div>
         <div className="AirQuality">
           <div className="AirQuality1">
-            <span className="TechExplanation_space">공기조화 시스템</span>
-            <span className="TechExplanation_space">
-              (HVAC 시스템)과 <br />
-            </span>
-            <span className="TechExplanation_space">연동하여</span>{' '}
-            <span className="TechExplanation_space">실내 환경 자동 제어</span>
+            공기조화 시스템 <br />
+            (HVAC 시스템)과 <br />
+            연동하여 실내환경 <br />
+            자동제어
           </div>
           <div className="AirQuality2">
-            실내 공기질 유지 기준에 맞춰
-            <br />
-            실내 공기질 측정 결과를 기반으로
-            <br />
-            공기조화 시스템(HVAC 시스템)을 제어합니다.
+            실내 공기질 측정 결과를 <br />
+            기반으로 공기조화 시스템 <br />
+            (HVAC 시스템)을 제어합니다.
           </div>
         </div>
       </div>

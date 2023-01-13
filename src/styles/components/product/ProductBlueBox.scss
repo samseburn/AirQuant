@@ -78,15 +78,18 @@
     &_backGround {
       // 스크롤 시 내용
       &_Scrolledcontent {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        word-break: keep-all;
+
         .ProductBlueBox_bold {
-          font-size: 45px;
+          font-size: 40px;
+          word-break: keep-all;
           box-shadow: inset 0 -3.5px 0 $white;
         }
       }
       //스크롤 전 내용
       &_content {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
   }

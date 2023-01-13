@@ -34,8 +34,8 @@ const TableItem = ({ params, data }) => {
 
   return (
     <div className="TableItem">
-      <Link className="back" to={-1}>
-        ⇤ 뒤로 가기
+      <Link className="back" to={'/case'}>
+        목록으로
       </Link>
       <div className="TableItem-info">
         {caseItem.image && (
@@ -43,29 +43,41 @@ const TableItem = ({ params, data }) => {
             <img src={caseItem.image} alt="" />
           </div>
         )}
-        <div className="text-group">
-          <div className="TableItem-title">
+        <div className="text-info">
+          <div className="text-info-title">
             <h1>{caseItem.title}</h1>
-            <span className="date">2023-01-01</span>
+            <span className="text-info-date">2023-01-01</span>
           </div>
-          <p className="TableItem-desc">{caseItem.description}</p>
+          <p className="text-info-desc">{caseItem.description}</p>
         </div>
       </div>
       <div className="TableItem-pagination">
-        <div className="pagination prev">
-          <span>이전</span>
+        <div className="page-item prev">
           {prevItem ? (
-            <Link to={`/case/${parseInt(params) - 1}`}>{prevItem.title}</Link>
+            <>
+              <span>이전</span>
+              <Link to={`/case/${parseInt(params) - 1}`}>{prevItem.title}</Link>
+            </>
           ) : (
-            <Link to={'/case'}>없음</Link>
+            <>
+              <span className="disabled">이전</span>
+              <Link to={'/case'} className={'disabled'}>
+                이전 글이 존재하지 않습니다
+              </Link>
+            </>
           )}
         </div>
-        <div className="pagination next">
-          <span>다음</span>
+        <div className="page-item next">
           {nextItem ? (
-            <Link to={`/case/${parseInt(params) + 1}`}>{nextItem.title}</Link>
+            <>
+              <span>다음</span>
+              <Link to={`/case/${parseInt(params) + 1}`}>{nextItem.title}</Link>
+            </>
           ) : (
-            <Link to={'/case'}>없음</Link>
+            <>
+              <span className="disabled">다음</span>
+              <Link className="disabled">다음 글이 존재하지 않습니다</Link>
+            </>
           )}
         </div>
       </div>

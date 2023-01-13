@@ -8,12 +8,12 @@ SwiperSlideContainer {
 
 .patent_container {
   width: 100%;
-  height: 61vh;
+  height: 75vh;
   position: relative;
 
   .swiper {
     width: 70%;
-    --swiper-theme-color: #1b76ff84;
+    --swiper-theme-color: $blue_main;
   }
 
   .swiper-slide > img {
@@ -33,24 +33,51 @@ SwiperSlideContainer {
   }
   .swiper-button-prev {
     margin-left: 11%;
+    margin-top: 0.5%;
   }
   .swiper-button-next {
     margin-right: 11%;
+    margin-top: 0.5%;
+  }
+  .swiper-button-prev::after {
+    color: $blue_main;
+  }
+  .swiper-button-next::after {
+    color: $blue_main;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $blue_main;
+  }
+  .swiper-button-prev {
+    margin-top: -5%;
+  }
+  .swiper-button-next {
+    margin-top: -5%;
   }
   @include responsive(T) {
     .swiper-button-prev {
       margin-left: 9%;
+      margin-top: -8%;
     }
     .swiper-button-next {
       margin-right: 9%;
+      margin-top: -8%;
     }
   }
   @include responsive(M) {
+    .patent_container1 {
+      height: 70vh;
+    }
     .swiper-button-prev {
       margin-left: 7%;
+      margin-top: -4%;
     }
     .swiper-button-next {
       margin-right: 7%;
+      margin-top: -4%;
+    }
+    .Tech-Patent-space {
+      display: block;
     }
   }
 }
