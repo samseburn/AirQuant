@@ -13,7 +13,7 @@ SwiperSlideContainer {
 
   .swiper {
     width: 70%;
-    --swiper-theme-color: #1b76ff84;
+    --swiper-theme-color: $blue_main;
   }
 
   .swiper-slide > img {
@@ -33,9 +33,20 @@ SwiperSlideContainer {
   }
   .swiper-button-prev {
     margin-left: 11%;
+    margin-top: 0.5%;
   }
   .swiper-button-next {
     margin-right: 11%;
+    margin-top: 0.5%;
+  }
+  .swiper-button-prev::after {
+    color: $blue_main;
+  }
+  .swiper-button-next::after {
+    color: $blue_main;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $blue_main;
   }
   @include responsive(T) {
     .swiper-button-prev {
@@ -48,9 +59,14 @@ SwiperSlideContainer {
   @include responsive(M) {
     .swiper-button-prev {
       margin-left: 7%;
+      margin-top: 13%;
     }
     .swiper-button-next {
       margin-right: 7%;
+      margin-top: 13%;
+    }
+    .Tech-Patent-space {
+      display: block;
     }
   }
 }

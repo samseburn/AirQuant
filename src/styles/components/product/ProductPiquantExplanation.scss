@@ -52,10 +52,10 @@
 
   @include responsive(T) {
     .Piquant_num1 {
-      font-size: 23px;
+      font-size: 19px;
     }
     .Piquant_num2 {
-      font-size: 20px;
+      font-size: 18px;
     }
     .Piquant_container_spot1 {
       font-size: 185px;
@@ -78,10 +78,10 @@
   }
   @include responsive(M) {
     .Piquant_num1 {
-      font-size: 18px;
+      font-size: 12.5px;
     }
     .Piquant_num2 {
-      font-size: 15px;
+      font-size: 11px;
     }
     .Piquant_container_spot1 {
       font-size: 150px;
@@ -98,7 +98,7 @@
       color: $blue_light;
       display: inline;
       position: relative;
-      margin-left: 82%;
+      margin-left: 78%;
       bottom: -2%;
     }
   }
