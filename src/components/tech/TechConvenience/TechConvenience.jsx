@@ -11,23 +11,17 @@ const TechConvenience = ({
   leftChildImg,
 }) => {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1000 });
   });
   return (
     <div className="TechConvenience">
-      <div
-        className="TechConvenience_title"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        {title}
-      </div>
+      <div className="TechConvenience_title">{title}</div>
       <div className="TechConvenience_content">
         {/* 왼쪽 */}
         <div
           className="TechConLeftChild"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="70"
         >
           <img className="TechConLeftChild_Img" src={leftChildImg} />
           <div className="TechConLeftChild_text">{leftChild}</div>
@@ -36,7 +30,7 @@ const TechConvenience = ({
         <div
           className="TechConRightChild"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="70"
         >
           <img className="TechConRightChild_Img" src={rightChildImg} />
           <div className="TechConRightChild_text">{rightChild}</div>
