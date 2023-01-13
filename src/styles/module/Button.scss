@@ -2,16 +2,21 @@
   cursor: pointer;
   @include flexbox;
   width: 150px;
-  height: 40px;
+  padding: 20px;
   border: 2px solid $blue_main;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: $font-size-18;
   background-color: $blue_main;
   color: white;
   transition: all 350ms ease-in-out;
   &:hover {
-    background-color: white;
+    background-color: $white;
     color: $blue_main;
+  }
+  @include responsive(M) {
+    & {
+      padding: 15px;
+    }
   }
 }

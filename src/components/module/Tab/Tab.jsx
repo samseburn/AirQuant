@@ -3,7 +3,7 @@ import { Section, Faq, Notice, Qna } from 'components';
 import { CaseItem } from 'pages';
 import { useNavigate } from 'react-router-dom';
 
-const Tab = ({ children, start = 1 }) => {
+const Tab = ({ children, start = 0 }) => {
   const navigate = useNavigate();
   const tabMenuData = [
     {

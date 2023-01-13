@@ -11,11 +11,11 @@ const CompanyIcon = () => {
 
   return (
     <div className="CompanyIcon">
-      <h1 className="CompanyIcon-title" data-aos="fade-up">
+      <div className="CompanyIcon-title" data-aos="fade-up">
         파이퀀트는 하마쯔사의 소형 분광기 모듈을 사용합니다
         <br />
         &#40;C12666MA&#41;
-      </h1>
+      </div>
       <div className="CompanyIcon-imgs" data-aos="fade-up">
         <div className="CompanyIcon-imgs-item imageLeft">
           <img src={company_product} alt="module" />

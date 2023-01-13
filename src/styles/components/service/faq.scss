@@ -1,7 +1,8 @@
 .faq {
   margin: 0 auto;
-  border-bottom: 1px solid #C7C7C7;
-  width: 90%;
+  // border-bottom: 1px solid #c7c7c7;
+
+  width: 100%;
 
   @include responsive(T) {
     // 768 ~ 1200
