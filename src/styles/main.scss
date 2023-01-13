@@ -25,6 +25,7 @@
 @import './module/Button';
 @import './module/TableItem';
 @import './module/Tab';
+@import './module/TopButton.scss';
 @import './module/Pagination';
 
 // components
@@ -57,7 +58,9 @@
 @import './components/company/CompanyIcon';
 @import './components/company/CompanyIntro';
 @import './components/company/CompanyLED';
+@import './components/company/CompanyLEDChart';
 @import './components/company/CompanyTech';
+@import './components/company/CompanyAlgoChart';
 
 // case
 

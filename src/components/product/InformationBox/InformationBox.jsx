@@ -48,7 +48,7 @@ const InformationBox = () => {
       <div
         className="InformationBox_secondBox"
         data-aos="fade-up"
-        data-aos-delay="700"
+        data-aos-delay="800"
       >
         <div className="InformationBox_title">공기 질 오염의 위험성</div>
         <div className="InformationBox_secondBox_content">

@@ -44,6 +44,16 @@ export { default as patent_02 } from './Tech/patent_02.png';
 export { default as patent_03 } from './Tech/patent_03.png';
 export { default as patent_04 } from './Tech/patent_04.png';
 export { default as patent_05 } from './Tech/patent_05.png';
+export { default as middletitle_01 } from './Tech/middletitle_01.jpg';
+export { default as middletitle_02 } from './Tech/middletitle_02.jpg';
+export { default as Tech_logo_01 } from './Tech/Tech_logo_01.png';
+export { default as Tech_logo_02 } from './Tech/Tech_logo_02.png';
+export { default as Tech_logo_03 } from './Tech/Tech_logo_03.png';
+export { default as Tech_logo_04 } from './Tech/Tech_logo_04.png';
+export { default as Tech_logo_05 } from './Tech/Tech_logo_05.png';
+export { default as Tech_logo_06 } from './Tech/Tech_logo_06.png';
+export { default as Tech_logo_07 } from './Tech/Tech_logo_07.png';
+export { default as Tech_logo_08 } from './Tech/Tech_logo_08.png';
 
 // Company
 export { default as company_icon_01 } from './Company/company_icon_01.png';
@@ -61,4 +71,7 @@ export { default as case_04 } from './Case/case_04.jpg';
 export { default as case_05 } from './Case/case_05.jpeg';
 export { default as case_06 } from './Case/case_06.jpg';
 
-// Contact
+// Footer (icon)
+export { default as instargram } from './Footer/instargram.png';
+export { default as facebook } from './Footer/facebook.png';
+export { default as blog } from './Footer/blog.png';

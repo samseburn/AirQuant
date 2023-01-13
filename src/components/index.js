@@ -11,6 +11,7 @@ export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
 export { Pagination } from './module/Pagination';
 export { Tab } from './module/Tab';
+export { TopButton } from './module/TopButton';
 
 // product
 export { ProductAirquantImg } from './product/ProductAirquantImg';
@@ -43,6 +44,7 @@ export { CompanyIcon } from './company/CompanyIcon';
 export { CompanyLED } from './company/CompanyLED';
 export { CompanyIntro } from './company/CompanyIntro';
 export { CompanyAlgoChart } from './company/CompanyAlgoChart';
+export { CompanyLEDChart } from './company/CompanyLEDChart';
 
 // case
 

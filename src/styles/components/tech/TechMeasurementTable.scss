@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
+  height: 120vh;
   width: 100%;
 
   &_Contents {
@@ -61,6 +61,7 @@
       border-radius: 15px;
       display: flex;
       align-items: center;
+
       &_section1 {
         color: #1b76ff;
         font-weight: 800;
@@ -80,11 +81,16 @@
     &_Contents {
       font-size: 2rem;
     }
+    .TechMTbr {
+      display: block;
+      text-align: right;
+    }
 
     &_Table {
       &_In {
-        width: 600px;
+        width: 550px;
         font-size: 12px;
+
         .TechMTable_br {
           display: block;
         }
@@ -96,13 +102,19 @@
           font-size: 12px;
           height: 65px;
         }
+        .TechAccurate {
+          font-size: 10.3px;
+        }
       }
     }
     &_spec {
       &_graybox {
-        width: 610px;
+        width: 550px;
         &_section1 {
           font-size: 1rem;
+          &_br {
+            display: block;
+          }
         }
         &_section2,
         &_section3 {
@@ -150,6 +162,11 @@
         &_section2,
         &_section3 {
           text-align: center;
+        }
+        &_section1 {
+          &_br {
+            display: inline;
+          }
         }
 
         &_section2 {
