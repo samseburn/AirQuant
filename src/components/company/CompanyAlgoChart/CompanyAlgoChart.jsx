@@ -13,6 +13,7 @@ import {
   // 선의 설명을 나타내는 지표
   Legend,
   Label,
+  ResponsiveContainer,
 } from 'recharts';
 
 const data = [
@@ -62,44 +63,48 @@ const data = [
 
 const CompanyAlgoChart = () => {
   return (
-    <LineChart
-      width={600}
-      height={400}
-      data={data}
-      margin={{
-        top: 40,
-        right: 30,
-        left: 10,
-        bottom: 20,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name">
-        <Label value="Time" position="bottom" />
-      </XAxis>
-      <YAxis>
-        <Label value="Intensity" angle={-90} position="left" />
-      </YAxis>
+    <div className="CompanyAlgoChart">
+      <div className="CompanyAlgoChart-Container">
+        <ResponsiveContainer width="100%">
+          <LineChart
+            data={data}
+            margin={{
+              top: 40,
+              right: 30,
+              left: 10,
+              bottom: 20,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name">
+              <Label value="Time" position="bottom" />
+            </XAxis>
+            <YAxis>
+              <Label value="Intensity" angle={-90} position="left" />
+            </YAxis>
 
-      {/* mouse h:over 시 그래프 상세 정보 */}
-      <Tooltip />
-      <Legend verticalAlign="top" height={40} />
-      {/* dataKey: 표시할 value의 data map key */}
-      <Line
-        type="monotone"
-        dataKey="Algorithm applied"
-        stroke="#1b76ff"
-        activeDot={{ r: 7 }}
-      />
-      <Line
-        type="monotone"
-        dataKey="Algorithm not applied"
-        // 선의 색상
-        stroke="#FB2576"
-        // 그래프에 마우스를 올릴 시 원의 스타일 설정
-        activeDot={{ r: 7 }}
-      />
-    </LineChart>
+            {/* mouse h:over 시 그래프 상세 정보 */}
+            <Tooltip />
+            <Legend verticalAlign="top" height={40} />
+            {/* dataKey: 표시할 value의 data map key */}
+            <Line
+              type="monotone"
+              dataKey="Algorithm applied"
+              stroke="#1b76ff"
+              activeDot={{ r: 7 }}
+            />
+            <Line
+              type="monotone"
+              dataKey="Algorithm not applied"
+              // 선의 색상
+              stroke="#FB2576"
+              // 그래프에 마우스를 올릴 시 원의 스타일 설정
+              activeDot={{ r: 7 }}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
   );
 };
 
