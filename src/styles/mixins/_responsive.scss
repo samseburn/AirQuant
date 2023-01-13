@@ -1,14 +1,14 @@
 @mixin responsive($screen) {
   @if ($screen == 'T') {
-    @media screen and (max-width: $lg-breakpoint) {
-      // 1200 이하일 때
+    @media screen and (max-width: ($lg-breakpoint - 1px)) {
+      // 1199px까지 적용
       @content;
     }
   }
 
   @if ($screen == 'M') {
-    @media screen and (max-width: $md-breakpoint) {
-      // 768 이하일 때
+    @media screen and (max-width: ($sm-breakpoint - 1px)) {
+      // 575px까지 적용
       @content;
     }
   }

@@ -4,13 +4,22 @@ import { VscMenu } from 'react-icons/vsc';
 import { Navbar } from '../Navbar';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isOpen, setIsopen] = useState(false);
+  const [isMain, setIsMain] = useState(false);
   const _header = useRef(null);
-  // const locationNow = useLocation();
+  const locationNow = useLocation();
+  console.log(locationNow);
 
-  // if (locationNow.pathname === '/') return null;
+  useEffect(() => {
+    if (locationNow.pathname === '/' || locationNow.pathname === '/tech') {
+      // main
+      setIsMain(true);
+    } else {
+      setIsMain(false);
+    }
+  }, [isMain, locationNow]);
 
   const toggleSidebar = () => {
     isOpen === true ? setIsopen(false) : setIsopen(true);
@@ -29,12 +38,17 @@ const Header = () => {
 
   useEffect(() => {
     function headerChange() {
-      if (scrollPosition > 35) {
+      if (isMain && scrollPosition > 850) {
         _header.current.classList.add('blue');
       } else _header.current.classList.remove('blue');
+
+      if (!isMain && scrollPosition > 100) {
+        _header.current.classList.add('blue');
+      }
+      // else _header.current.classList.remove('blue');
     }
     headerChange();
-  }, [scrollPosition]);
+  }, [isMain, scrollPosition]);
 
   console.log(scrollPosition);
   return (

@@ -7,6 +7,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from 'recharts';
 
 const data = [
@@ -57,9 +58,12 @@ const data = [
 export default class ProductGraph extends PureComponent {
   render() {
     return (
+      <div className='ProductGraph__hihi'>
+      <div className='ProductGraph__hihicontainer'>
+      <ResponsiveContainer width="100%" height={500}>
       <LineChart
-        width={700}
-        height={500}
+        // width={400}
+        // height={300}
         data={data}
         margin={{
           top: 5,
@@ -78,6 +82,9 @@ export default class ProductGraph extends PureComponent {
         <Line type="monotone" dataKey="천식" stroke="#82ca9d" />
         <Line type="monotone" dataKey="아토피피부염" stroke="#f67c7c" />
       </LineChart>
+      </ResponsiveContainer>
+      </div>
+      </div>
     );
   }
 }

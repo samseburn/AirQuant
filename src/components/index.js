@@ -35,6 +35,7 @@ export { TechMeasurement } from './tech/TechMeasurement';
 export { TechMeasurementTable } from './tech/TechMeasurementTable';
 export { TechPatent } from './tech/TechPatent';
 export { TechConTitle } from './tech/TechConTitle';
+export { TechMiddleTitle } from './tech/TechMiddleTitle';
 
 // company
 export { CompanyTech } from './company/CompanyTech';

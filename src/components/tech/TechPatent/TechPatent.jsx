@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, EffectCoverflow } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,6 +13,9 @@ import { patent_01, patent_02, patent_03, patent_04, patent_05 } from 'images';
 export default () => {
   return (
     <div className="patent_container">
+      <div className="swiper-button-prev-div">
+        <div className="swiper-button-prev"></div>
+      </div>
       <div className="patent_center">
         <div className="patent">에어퀀트 인증 및 특허</div>
         <Swiper
@@ -25,38 +28,37 @@ export default () => {
             1280: { slidesPerView: 5 },
           }}
           loop={true}
-          navigation
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <img src={patent_01} />
+            <img src={patent_01} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_02} />
+            <img src={patent_02} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_03} />
+            <img src={patent_03} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_04} />
+            <img src={patent_04} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_05} />
+            <img src={patent_05} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_01} />
+            <img src={patent_01} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={patent_02} />
+            <img src={patent_02} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>
-      {/* 지수님.. 이친구는 우리와 함께할수가없어요..
-      <div className="button-group">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div> */}
+      <div class="swiper-button-next"></div>
     </div>
   );
 };
