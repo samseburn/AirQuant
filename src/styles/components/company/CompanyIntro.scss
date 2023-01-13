@@ -42,6 +42,10 @@
           &-Blue {
             color: $blue_main;
             font-weight: 700;
+
+            background-color: $blue_bright;
+
+            padding: 2px;
           }
         }
       }
@@ -56,13 +60,13 @@
   &-Button {
     @include flexbox;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   &-BottomHr {
     max-width: 90%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   @include responsive(T) {
@@ -77,7 +81,27 @@
         @include flexbox;
         margin-top: 40px;
 
+        &-Top {
+          font-size: $font-size-14;
+          line-height: $line-height-14;
+
+          &-Large {
+            font-size: $font-size-18;
+
+            &-Blue {
+              color: $blue_main;
+              font-weight: 700;
+
+              background-color: $blue_bright;
+
+              padding: 2px;
+            }
+          }
+        }
+
         &-Bottom {
+          line-height: $line-height-14;
+
           margin-top: 0px;
           margin-left: 30px;
         }

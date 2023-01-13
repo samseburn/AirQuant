@@ -5,6 +5,9 @@
   flex-direction: column;
   text-align: center;
   gap: 50px;
+
+  margin-top: 190px;
+
   &-title {
     @include flexbox;
     color: $dark;
@@ -14,15 +17,15 @@
   }
   &-imgs {
     @include flexbox;
-    gap: 10px;
+    gap: 60px;
 
     &-item {
       &.imageLeft,
       &.imageRight {
         img {
           // 본래 이미지 사이즈가 작아서 px로 주어야 크기가 커져용,,
-          width: 100%;
-          height: 300px;
+          width: 25vw;
+          height: 20vw;
         }
       }
     }
@@ -34,9 +37,19 @@
       flex-direction: column;
       @include flexbox;
       gap: 10px;
+
+      span {
+        b {
+          font-size: $font-size-18;
+
+          background-color: $blue_bright;
+
+          padding: 2px;
+        }
+      }
       &-img {
-        width: 150px;
-        height: 150px;
+        width: 7vw;
+        height: 7vw;
         margin: 10px;
         &.small-icon {
           background-image: url(../../../images/Company/company_icon_02.png);
@@ -59,12 +72,17 @@
     span {
       margin: 8px;
     }
-    margin-bottom: 100px;
+  }
+
+  @include responsive(T) {
+    margin-top: 150px;
   }
 
   @include responsive(M) {
     & {
       gap: 10px;
+
+      margin-top: 120px;
     }
     &-title {
       font-size: $font-size-18;
@@ -76,6 +94,7 @@
           width: 80px;
           height: 80px;
         }
+        gap: 3px;
       }
     }
     &-imgs {
