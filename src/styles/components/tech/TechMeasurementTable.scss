@@ -73,3 +73,89 @@
     }
   }
 }
+
+// 반응형 1
+@include responsive(T) {
+  .TechMeasurementTable {
+    &_Contents {
+      font-size: 2rem;
+    }
+
+    &_Table {
+      &_In {
+        width: 600px;
+        font-size: 12px;
+        .TechMTable_br {
+          display: block;
+        }
+
+        th {
+          font-size: 1rem;
+        }
+        td {
+          font-size: 12px;
+          height: 65px;
+        }
+      }
+    }
+    &_spec {
+      &_graybox {
+        width: 610px;
+        &_section1 {
+          font-size: 1rem;
+        }
+        &_section2,
+        &_section3 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// 반응형 2
+@include responsive(M) {
+  .TechMeasurementTable {
+    &_Contents {
+      font-size: 1.8rem;
+    }
+    .TechMTHide {
+      display: none;
+    }
+    .TechMTbr {
+      display: block;
+    }
+    &_Table {
+      &_In {
+        width: 300px;
+      }
+    }
+    &_explain {
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.5;
+      &_br {
+        display: block;
+      }
+    }
+
+    &_spec {
+      &_graybox {
+        width: 305px;
+        height: 180px;
+        flex-direction: column;
+        justify-content: center;
+
+        &_section1,
+        &_section2,
+        &_section3 {
+          text-align: center;
+        }
+
+        &_section2 {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
