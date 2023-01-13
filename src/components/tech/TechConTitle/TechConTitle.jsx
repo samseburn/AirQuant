@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react';
-
 //이미지 경로
 import {
   convenience_01,
@@ -14,9 +12,6 @@ import {
 } from 'images';
 
 import { TechConvenience } from '../TechConvenience';
-
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const TechConTitle = () => {
   const TechConList = [
@@ -54,12 +49,9 @@ const TechConTitle = () => {
     },
   ];
 
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  });
   return (
     <>
-      <div className="TechConTitle" data-aos="fade-up">
+      <div className="TechConTitle">
         <span className="TechConTitle_br">에어퀀트(AirQuant)의 </span>다양한
         편의기능
       </div>

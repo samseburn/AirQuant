@@ -13,6 +13,7 @@
     font-size: 28px;
     margin-bottom: 10vh;
     font-weight: 700;
+    word-break: keep-all;
   }
   &_title {
     background-color: $blue_middle;
@@ -105,21 +106,21 @@
 @include responsive(T) {
   .InformationBox {
     &_firstBox {
-      width: 600px;
+      width: 550px;
 
       .imgContent {
         &_rightChild {
           font-size: 20px;
-          &_leftChild {
-            height: 80px;
-            width: 80px;
-          }
+        }
+        &_leftChild {
+          height: 100px;
+          width: 100px;
         }
       }
     }
 
     &_secondBox {
-      width: 600px;
+      width: 550px;
       .dangerContentFirst {
         font-size: 20px;
       }
@@ -131,54 +132,11 @@
         font-size: 14px;
       }
       .dangerContentBottom {
-        font-size: 18.5px;
+        font-size: 17px;
       }
     }
   }
 }
-
-// 반응형 2
-// @include responsive(M) {
-//   .InformationBox {
-//     &_bigTitle {
-//       font-size: 24px;
-//     }
-//     &_title {
-//       font-size: 22px;
-//     }
-
-//     &_firstBox {
-//       width: 517px;
-
-//       .imgContent {
-//         &_leftChild {
-//           height: 100px;
-//           width: 100px;
-//         }
-//         &_rightChild {
-//           font-size: 19px;
-//         }
-//       }
-//     }
-
-//     &_secondBox {
-//       width: 517px;
-//       .dangerContentFirst {
-//         font-size: 19px;
-//       }
-//       .dangerContentSecond {
-//         font-size: 16px;
-//       }
-
-//       .dangerContentThird {
-//         font-size: 13.25px;
-//       }
-//       .dangerContentBottom {
-//         font-size: 16.25px;
-//       }
-//     }
-//   }
-// }
 
 // 반응형 375
 @include responsive(M) {

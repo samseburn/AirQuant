@@ -14,7 +14,7 @@ const Tech = () => {
     <div>
       <TechMain />
       <TechMeasurementTable />
-      {/* <TechMiddleTitle/> */}
+      <TechMiddleTitle />
       <TechExplanation />
       <TechConTitle />
       <TechCustomers />

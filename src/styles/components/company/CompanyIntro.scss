@@ -1,44 +1,40 @@
 .CompanyIntro {
   word-break: keep-all;
+  height: 90vh;
 
   &-TopHr {
     width: 70px;
-
     border: 2px solid;
-
     color: $blue_main;
-
     margin: auto;
     margin-top: 100px;
   }
 
   &-Title {
     text-align: center;
-
     font-size: $font-size-24;
     font-weight: 700;
     color: $blue_main;
-
     margin-top: 15px;
   }
 
   &-Contents {
     @include flexbox;
-
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     margin-top: 40px;
 
     &-Img {
       width: 500px;
       height: 350px;
-
-      margin-right: 200px;
+      margin-right: 150px;
+      border-radius: 10px;
     }
 
     &-Text {
       &-Top {
         font-size: $font-size-18;
+        line-height: $line-height-18;
 
         &-Large {
           font-size: $font-size-24;
@@ -52,7 +48,6 @@
 
       &-Bottom {
         margin-top: 40px;
-
         font-size: $font-size-14;
       }
     }
@@ -60,15 +55,12 @@
 
   &-Button {
     @include flexbox;
-
     gap: 30px;
-
     margin-top: 50px;
   }
 
   &-BottomHr {
-    max-width: 80%;
-
+    max-width: 90%;
     margin: auto;
     margin-top: 30px;
   }
@@ -83,7 +75,6 @@
 
       &-Text {
         @include flexbox;
-
         margin-top: 40px;
 
         &-Bottom {
@@ -99,11 +90,14 @@
       &-Text {
         flex-direction: column;
 
+        text-align: center;
+
         &-Bottom {
           margin-top: 40px;
           margin-left: 0px;
         }
       }
+
       &-Img {
         width: 100%;
       }

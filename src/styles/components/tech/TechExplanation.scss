@@ -1,5 +1,6 @@
 .TechExplanation {
   width: 100%;
+  margin-top: 30vh;
   margin-bottom: 500px;
 
   .FineDust {
@@ -18,8 +19,8 @@
   .TechExplantionPhone1 {
     width: 100%;
     height: 100%;
-    width: 408px;
-    height: 650px;
+    width: 308px;
+    height: 550px;
     margin-bottom: 300px;
   }
   .TechExplanationWeb {
@@ -33,9 +34,14 @@
     font-weight: bold;
     margin-top: 280px;
     margin-bottom: 50px;
+    width: 350px;
   }
   .TechExplanationWeb2 {
+    width: 307px;
     font-size: 21px;
+    margin-top: 50px;
+    font-weight: 500;
+    width: 350px;
   }
   .TechExplanationDigitalMonitoring {
     display: flex;
@@ -45,8 +51,8 @@
   .TechExplanationDigital1 {
     width: 100%;
     height: 100%;
-    width: 650px;
-    height: 500px;
+    width: 520px;
+    height: 400px;
     border-radius: 30px 30px 30px 30px;
     margin-left: 120px;
     margin-bottom: 300px;
@@ -66,8 +72,8 @@
   .Airquant1 {
     width: 100%;
     height: 100%;
-    width: 710px;
-    height: 910px;
+    width: 630px;
+    height: 750px;
     margin-left: -50px;
   }
   .Airquant2 {
@@ -88,6 +94,9 @@
     font-size: 21px;
     margin-top: 50px;
   }
+  .TechExplanation_space_desk {
+    display: block;
+  }
   @include responsive(T) {
     .TechExplanation_space {
       display: block;
@@ -100,9 +109,9 @@
     .TechExplantionPhone1 {
       width: 100%;
       height: 100%;
-      width: 300px;
-      height: 550px;
-      margin-bottom: 300px;
+      width: 270px;
+      height: 470px;
+      margin-bottom: 250px;
     }
     .TechExplanationWeb1 {
       font-size: 26px;
@@ -122,6 +131,7 @@
     .TechExplanationMonitoring1 {
       font-size: 26px;
       font-weight: bold;
+      margin-bottom: px;
     }
     .TechExplanationMonitoring2 {
       font-size: 21px;
@@ -131,7 +141,13 @@
       text-align: center;
     }
     .TechExplanationMonitoring {
-      margin-bottom: 300px;
+      margin-bottom: 50px;
+    }
+    .TechExplanationMonitoring1 {
+      font-size: 24px;
+    }
+    .TechExplanationMonitoring2 {
+      font-size: 19px;
     }
     .TechExplanationDigital1 {
       width: 100%;
@@ -143,18 +159,25 @@
     .Airquant1 {
       width: 100%;
       height: 100%;
-      margin-right: -50px;
-      width: 600px;
-      height: 750px;
+      margin-right: px;
+      width: 400px;
+      height: 550px;
+      margin-top: 180px;
     }
-
+    .AirQuality {
+      margin: px px px 100px;
+    }
     .AirQuality1 {
       font-size: 26px;
       font-weight: bold;
+      margin-bottom: 50px;
     }
     .AirQuality2 {
       font-size: 21px;
-      margin-top: 50px;
+      margin-bottom: -100px;
+    }
+    .TechExplanation_space_tablet {
+      display: block;
     }
   }
   @include responsive(M) {
@@ -176,12 +199,24 @@
       margin-right: 50px;
       margin-bottom: 200px;
     }
+    .TechExplanationWeb1 {
+      font-size: 24px;
+    }
+    .TechExplanationWeb2 {
+      font-size: 19px;
+    }
+    .TechExplanationDigitalMonitoring {
+    }
+    .TechExplanationMonitoring {
+      margin-bottom: 180px;
+    }
+
     .TechExplanationDigital1 {
       display: inline;
       width: 100%;
       height: 100%;
-      width: 400px;
-      height: 300px;
+      width: 310px;
+      height: 240px;
     }
     .Airquant1 {
       display: none;
@@ -199,13 +234,24 @@
     .AirQuality {
       margin-right: 100px;
       margin-top: 100px;
+      width: 300px;
     }
 
     .TechExplanation_space {
       display: block;
     }
+    .TechExplanation_space_mobile {
+      display: block;
+    }
     .Airquant1 {
       margin-right: 5px;
+    }
+    .Airquant2 {
+      width: 300px;
+      height: 300px;
+    }
+    .TechExplanation_space_tablet {
+      display: inline;
     }
   }
 }

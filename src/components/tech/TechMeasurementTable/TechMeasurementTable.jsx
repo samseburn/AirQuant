@@ -16,7 +16,7 @@ const TechMeasurementTable = () => {
         <div
           className="TechMeasurementTable_Table"
           data-aos="fade-up"
-          data-aos-delay="700"
+          data-aos-delay="800"
         >
           <table className="TechMeasurementTable_Table_In">
             <thead>
@@ -39,12 +39,24 @@ const TechMeasurementTable = () => {
                   <span className="TechMTable_br">범위</span>
                 </td>
                 <td>0 ~ 1000</td>
-                <td className="TechMTHide">0 ~ 60</td>
-                <td className="TechMTHide">0 ~ 10,000</td>
-                <td className="TechMTHide">0 ~ 20</td>
-                <td className="TechMTHide">0 ~ 1,000</td>
-                <td className="TechMTHide">0 ~ 5</td>
-                <td>-40 ~ 90</td>
+                <td className="TechMTHide">
+                  <span className="TechMTbr">0 ~ </span>60
+                </td>
+                <td className="TechMTHide">
+                  <span className="TechMTbr">0 ~ </span>10,000
+                </td>
+                <td className="TechMTHide">
+                  <span className="TechMTbr">0 ~ </span>20
+                </td>
+                <td className="TechMTHide">
+                  <span className="TechMTbr">0 ~ </span>1,000
+                </td>
+                <td className="TechMTHide">
+                  <span className="TechMTbr">0 ~ </span>5
+                </td>
+                <td>
+                  <span className="TechMTbr">-40 ~ </span>90
+                </td>
                 <td>
                   <span className="TechMTbr">0 ~ </span>100
                 </td>
@@ -62,7 +74,7 @@ const TechMeasurementTable = () => {
               </tr>
 
               <tr>
-                <td>정확도</td>
+                <td className="TechAccurate">정확도</td>
                 <td>±10%</td>
                 <td className="TechMTHide">±5%</td>
                 <td className="TechMTHide">±4%</td>
@@ -75,7 +87,11 @@ const TechMeasurementTable = () => {
             </tbody>
           </table>
         </div>
-        <p className="TechMeasurementTable_explain" data-aos="fade-up">
+        <p
+          className="TechMeasurementTable_explain"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
           <span className="TechMeasurementTable_explain_br">
             SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과{' '}
           </span>
@@ -83,10 +99,17 @@ const TechMeasurementTable = () => {
         </p>
 
         {/* 기술 스펙 */}
-        <div className="TechMeasurementTable_spec" data-aos="fade-up">
+        <div
+          className="TechMeasurementTable_spec"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
           <div className="TechMeasurementTable_spec_graybox">
             <div className="TechMeasurementTable_spec_graybox_section1">
-              기술 스펙
+              기술{' '}
+              <span className="TechMeasurementTable_spec_graybox_section1_br">
+                스펙
+              </span>
             </div>
             <div className="TechMeasurementTable_spec_graybox_section2">
               크기 : 153mm(L) x 153mm(W) x 60mm(H) <br />

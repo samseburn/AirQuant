@@ -7,6 +7,7 @@
         background-size: 100% 100%;
         // margin-top: -60px;
         object-fit: cover;
+        // background-attachment: fixed;
     }
 
 
@@ -25,4 +26,23 @@
 
     }
 
+}
+
+
+// 반응형
+@include responsive(T) {
+    .TechMain__Main{
+    .TechMain__title {
+        font-size: 3rem;
+    }
+}
+}
+
+
+@include responsive(M) {
+    .TechMain__Main{
+        .TechMain__title {
+            font-size: 2.5rem;
+        }
+    }
 }
