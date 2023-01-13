@@ -69,7 +69,6 @@ const CompanyAlgoChart = () => {
           <LineChart
             data={data}
             margin={{
-              top: 40,
               right: 30,
               left: 10,
               bottom: 20,
@@ -80,7 +79,7 @@ const CompanyAlgoChart = () => {
               <Label value="Time" position="bottom" />
             </XAxis>
             <YAxis>
-              <Label value="Intensity" angle={-90} position="left" />
+              <Label value="Intensity" angle={-90} position="insideLeft" />
             </YAxis>
 
             {/* mouse h:over 시 그래프 상세 정보 */}
