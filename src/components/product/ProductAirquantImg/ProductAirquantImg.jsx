@@ -5,6 +5,7 @@ import {
   airquant_09,
   airquant_12,
   airquant_13,
+  airquant_16,
 } from 'images';
 import React, { useEffect } from 'react';
 import Aos from 'aos';
