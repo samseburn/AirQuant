@@ -2,6 +2,9 @@
   word-break: keep-all;
   width: 100%;
   gap: 50px;
+
+  margin-top: 190px;
+
   @include flexbox;
   flex-direction: column;
   &-title {
@@ -12,16 +15,20 @@
   &-content {
     text-align: center;
     font-size: $font-size-18;
-    margin-bottom: 50%;
+    // 마지막 텍스트와 Footer 사이 공간
+    margin-bottom: 300px;
   }
   @include responsive(T) {
+    margin-top: 150px;
   }
   @include responsive(M) {
+    & {
+      margin-top: 120px;
+    }
     &-title {
       font-size: $font-size-18;
     }
-    &-charts {
-    }
+
     &-content {
       font-size: $font-size-14;
     }
