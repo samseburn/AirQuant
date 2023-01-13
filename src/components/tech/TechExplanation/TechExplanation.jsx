@@ -1,4 +1,9 @@
-import { airquant_13, explanation_phone0, explanation_weather0 } from 'images';
+import {
+  airquant_10,
+  airquant_13,
+  explanation_phone0,
+  explanation_weather0,
+} from 'images';
 import React, { useEffect } from 'react';
 
 import Aos from 'aos';
@@ -22,7 +27,11 @@ const TechExplanation = () => {
       </div>
       <div className="TechExplanationPhoneWeb" data-aos="fade-up">
         <div className="TechExplantionPhone">
-          <img className="TechExplantionPhone1" src={explanation_phone0} />
+          <img
+            className="TechExplantionPhone1"
+            src={explanation_phone0}
+            alt=""
+          />
         </div>
         <div className="TechExplanationWeb">
           <div className="TechExplanationWeb1">
@@ -56,17 +65,26 @@ const TechExplanation = () => {
           </div>
         </div>
         <div className="TechExplanationDigital">
-          <img className="TechExplanationDigital1" src={explanation_weather0} />
+          <img
+            className="TechExplanationDigital1"
+            src={explanation_weather0}
+            alt=""
+          />
         </div>
       </div>
       <div className="Airquantquality" data-aos="fade-up">
         <div className="Airquant">
-          <img className="Airquant1" src={airquant_13} />
+          <img className="Airquant1" src={airquant_10} alt="" />
+          <img className="Airquant2" src={airquant_13} alt="" />
         </div>
         <div className="AirQuality">
           <div className="AirQuality1">
-            공기조화 시스템(HVAC 시스템)과 <br />
-            연동하여 실내 환경 자동 제어
+            <span className="TechExplanation_space">공기조화 시스템</span>
+            <span className="TechExplanation_space">
+              (HVAC 시스템)과 <br />
+            </span>
+            <span className="TechExplanation_space">연동하여</span>{' '}
+            <span className="TechExplanation_space">실내 환경 자동 제어</span>
           </div>
           <div className="AirQuality2">
             실내 공기질 유지 기준에 맞춰

@@ -11,6 +11,7 @@ export { Card } from './module/Card';
 export { TableItem } from './module/TableItem';
 export { Pagination } from './module/Pagination';
 export { Tab } from './module/Tab';
+export { TopButton } from './module/TopButton';
 
 // product
 export { ProductAirquantImg } from './product/ProductAirquantImg';

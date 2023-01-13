@@ -29,26 +29,26 @@ const ProductAirquantImg = () => {
         <div className="Airquant_Flex">
           <div className="Airquant_img_first" data-aos="fade-up">
             <div className="Airquant_Main_1">
-              <img className="Airquant_Main1" src={airquant_09} />
+              <img className="Airquant_Main1" src={airquant_09} alt="" />
             </div>
             <div className="Airquant_Main_2">
-              <img className="Airquant_Main2" src={airquant_13} />
+              <img className="Airquant_Main2" src={airquant_13} alt="" />
             </div>
           </div>
           <div className="Airquant_img_second" data-aos="fade-up">
             <div className="Airquant_Main_3">
-              <img className="Airquant_Main3" src={airquant_05} />
+              <img className="Airquant_Main3" src={airquant_05} alt="" />
             </div>
           </div>
           <div className="Airquant_img_third" data-aos="fade-up">
             <div className="Airquant_Main_4">
-              <img className="Airquant_Main4" src={airquant_12} />
+              <img className="Airquant_Main4" src={airquant_12} alt="" />
             </div>
             <div className="Airquant_Main_5">
-              <img className="Airquant_Main5" src={airquant_03} />
+              <img className="Airquant_Main5" src={airquant_03} alt="" />
             </div>
             <div className="Airquant_Main_6">
-              <img className="Airquant_Main6" src={airquant_04} />
+              <img className="Airquant_Main6" src={airquant_04} alt="" />
             </div>
           </div>
         </div>
