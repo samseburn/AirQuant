@@ -19,10 +19,8 @@
   @include responsive(M) {
     &-title {
       font-size: $font-size-18;
-      margin-bottom: 100px;
     }
     &-charts {
-      margin-bottom: 100px;
     }
     &-content {
       font-size: $font-size-14;
