@@ -23,35 +23,40 @@ const TechMeasurementTable = () => {
               <tr className="TechMeasurementTable_Thead__tr">
                 <th> </th>
                 <th>미세먼지</th>
-                <th>TVOC</th>
-                <th>CO2</th>
-                <th>SO2</th>
-                <th>CO</th>
-                <th>NO2</th>
+                <th className="TechMTHide">TVOC</th>
+                <th className="TechMTHide">CO2</th>
+                <th className="TechMTHide">SO2</th>
+                <th className="TechMTHide">CO</th>
+                <th className="TechMTHide">NO2</th>
                 <th>온도</th>
                 <th>습도</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>측정결과범위</td>
+                <td>
+                  <span className="TechMTable_br">측정</span>결과
+                  <span className="TechMTable_br">범위</span>
+                </td>
                 <td>0 ~ 1000</td>
-                <td>0 ~ 60</td>
-                <td>0 ~ 10,000</td>
-                <td>0 ~ 20</td>
-                <td>0 ~ 1,000</td>
-                <td>0 ~ 5</td>
+                <td className="TechMTHide">0 ~ 60</td>
+                <td className="TechMTHide">0 ~ 10,000</td>
+                <td className="TechMTHide">0 ~ 20</td>
+                <td className="TechMTHide">0 ~ 1,000</td>
+                <td className="TechMTHide">0 ~ 5</td>
                 <td>-40 ~ 90</td>
-                <td>0 ~ 100</td>
+                <td>
+                  <span className="TechMTbr">0 ~ </span>100
+                </td>
               </tr>
               <tr className="TechMeasurementTable_Tbody_tr">
                 <td>단위</td>
                 <td>㎍/m³</td>
-                <td>ppm</td>
-                <td>ppm</td>
-                <td>ppm</td>
-                <td>ppm</td>
-                <td>ppm</td>
+                <td className="TechMTHide">ppm</td>
+                <td className="TechMTHide">ppm</td>
+                <td className="TechMTHide">ppm</td>
+                <td className="TechMTHide">ppm</td>
+                <td className="TechMTHide">ppm</td>
                 <td>℃</td>
                 <td>%RH</td>
               </tr>
@@ -59,11 +64,11 @@ const TechMeasurementTable = () => {
               <tr>
                 <td>정확도</td>
                 <td>±10%</td>
-                <td>±5%</td>
-                <td>±4%</td>
-                <td>±3%</td>
-                <td>±2%</td>
-                <td>±5%</td>
+                <td className="TechMTHide">±5%</td>
+                <td className="TechMTHide">±4%</td>
+                <td className="TechMTHide">±3%</td>
+                <td className="TechMTHide">±2%</td>
+                <td className="TechMTHide">±5%</td>
                 <td>±0.3℃</td>
                 <td>±2%RH</td>
               </tr>
@@ -71,7 +76,10 @@ const TechMeasurementTable = () => {
           </table>
         </div>
         <p className="TechMeasurementTable_explain" data-aos="fade-up">
-          SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과 대체가능합니다.
+          <span className="TechMeasurementTable_explain_br">
+            SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과{' '}
+          </span>
+          대체가능합니다.
         </p>
 
         {/* 기술 스펙 */}

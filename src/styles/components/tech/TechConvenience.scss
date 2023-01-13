@@ -75,7 +75,7 @@
   .TechConvenience {
     &_title {
       white-space: pre-wrap;
-      font-size: 22px;
+      font-size: 20px;
     }
     &_content {
       flex-direction: column;
@@ -89,6 +89,9 @@
           width: 300px;
           height: 170px;
         }
+        &_text {
+          font-size: 16px;
+        }
       }
 
       // 오른쪽
@@ -97,6 +100,9 @@
         &_Img {
           width: 300px;
           height: 170px;
+        }
+        &_text {
+          font-size: 16px;
         }
       }
     }

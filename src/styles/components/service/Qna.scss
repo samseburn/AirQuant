@@ -1,0 +1,72 @@
+.qna {
+  &-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 20px;
+      padding-left: 15px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      font-size: $font-size-18;
+      color: $secondary;
+      -webkit-appearance: none; /* 크롬 화살표 없애기 */
+      -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+      appearance: none; /* 화살표 없애기 */
+      &:focus {
+        outline: 1px solid $blue_main;
+        &::-webkit-input-placeholder,
+        &::-webkit-textarea-placeholder {
+          // input태그 포커스 시 placeholder 글자 사라지게 만들기
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      height: 150px;
+      padding-top: 10px;
+    }
+  }
+  label {
+    font-size: $font-size-18;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  // 추가
+  .input-group {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    small {
+      width: 100%;
+      @include flexbox;
+    }
+  }
+  &-error {
+    color: #fb2576;
+    font-size: $font-size-14;
+    width: 100%;
+    text-align: center;
+  }
+  &-hidden {
+    height: 16.09px;
+  }
+
+  @include responsive(M) {
+    &-submit {
+      gap: 5px;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }
+}

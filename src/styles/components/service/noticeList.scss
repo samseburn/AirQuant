@@ -1,18 +1,20 @@
 .noticeList {
   width: 100%;
-  // border-top: 3px solid $teritiary;
+  border-top: 1.5px solid $border;
+
   //표 테두리와 셀 테두리 간격 없애기
   border-collapse: collapse;
   text-align: center;
+  border-radius: 20px;
 
   thead {
     // background-color: $blue_light;
-    border-bottom: 2px solid $secondary;
+    border-bottom: 1.5px solid $border;
   }
 
   tr {
-    border-bottom: 1px solid $teritiary;
-    // height: 70px;
+    border-bottom: 1px solid rgba($border, 0.3);
+    height: 70px;
   }
 
   th,
@@ -26,7 +28,8 @@
     transition: background-color 350ms ease-in-out;
 
     &:hover {
-      background-color: rgba(184, 212, 255, 0.2);
+      // background-color: rgba(184, 212, 255, 0.2);
+      background-color: rgba($background-banner, 1);
     }
     .noticeTitle {
       text-align: left;
@@ -72,5 +75,24 @@
     // 576~768 이하일 때
     // margin: 100px 0;
     width: 100%;
+
+    tr {
+      height: auto;
+    }
+    th,
+    td {
+      height: auto;
+      padding: 20px 10px;
+    }
+
+    .noticeHeader {
+      th:first-child {
+        display: none;
+      }
+    }
+
+    .noticeNo {
+      display: none;
+    }
   }
 }
