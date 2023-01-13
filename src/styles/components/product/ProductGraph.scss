@@ -8,10 +8,10 @@
 }
 
 
-// 반응형 768px
+// 반응형 576~1199px
 @include responsive(T) {
     .ProductGraph__hihi {
-        width: 700px;
+        width: 600px;
         &container {
             width: 100%;
             height: 100%;
@@ -19,7 +19,7 @@
     }
 }
 
-  // 반응형 768px 이하일때
+  // 반응형 1~575px 이하일때d
 @include responsive(M) {
     .ProductGraph__hihi {
         width: 400px;
@@ -31,14 +31,14 @@
 }
 
 
-  // 반응형 375px 아이폰se
-  // 브라우저 사이즈 375px 이하일때
-@media (max-width: 375px){
-    .ProductGraph__hihi {
-        width: 300px;
-        &container {
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
+//   // 반응형 375px 아이폰se
+//   // 브라우저 사이즈 375px 이하일때
+// @media (max-width: 375px){
+//     .ProductGraph__hihi {
+//         width: 300px;
+//         &container {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+// }
