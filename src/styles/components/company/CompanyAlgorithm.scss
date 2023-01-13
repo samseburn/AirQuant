@@ -1,7 +1,7 @@
 .CompanyAlgorithm {
   word-break: keep-all;
 
-  margin-top: 100px;
+  margin-top: 150px;
 
   display: flex;
   flex-direction: column;
@@ -21,5 +21,17 @@
     font-size: $font-size-18;
 
     text-align: center;
+  }
+
+  @include responsive(T) {
+    &-Chart {
+      width: 400px;
+    }
+  }
+
+  @include responsive(M) {
+    &-Chart {
+      width: 200px;
+    }
   }
 }
