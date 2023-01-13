@@ -9,10 +9,10 @@ const ProductPiquantExplanation = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="Piquant_container">
-      <div className="Piquant_container1" data-aos="fade-up">
-        <div className="Piquant_container_spot">
-          <div className="Piquant_container_spot1">"</div>
+    <div className="Piquant_container" data-aos="fade-up">
+      <div className="Piquant_container_spot1">“</div>
+      <div className="Piquant_container_spot">
+        <div className="Piquant_container1">
           <span className="Piquant_num1">
             파이퀀트는 4차 산업의 핵심 기술인 IoT 기술과 빅데이터를 이용해
             <br />
@@ -30,9 +30,9 @@ const ProductPiquantExplanation = () => {
             <span className="blue2">안전하고 쾌적한 실내환경을 조성</span>
             하는 데 기여합니다.
           </div>
-          <div className="Piquant_container_spot2">"</div>
         </div>
       </div>
+      <div className="Piquant_container_spot2">”</div>
     </div>
   );
 };
