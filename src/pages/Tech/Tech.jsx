@@ -1,4 +1,5 @@
 import {
+  TechCardBook,
   TechConTitle,
   TechCustomers,
   TechExplanation,
@@ -16,7 +17,8 @@ const Tech = () => {
       <TechMain />
       <TechMeasurementTable />
       <TechMiddleTitle />
-      <TechExplanation />
+      <TechCardBook />
+      {/* <TechExplanation /> */}
       <TechBackGround />
       <TechConTitle />
       <TechCustomers />
