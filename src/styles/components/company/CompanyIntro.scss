@@ -1,58 +1,95 @@
 .CompanyIntro {
   word-break: keep-all;
-  height: 90vh;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 100px 0;
 
-  &-TopHr {
-    width: 70px;
-    border: 2px solid;
-    color: $blue_main;
-    margin: auto;
-    margin-top: 100px;
-  }
+  &-title {
+    hr {
+      display: block;
+      width: 100px;
+      height: 4px;
+      border: none;
+      border-radius: 4px;
+      background-color: $blue_main;
+      margin: 0 auto 20px;
+    }
 
-  &-Title {
-    text-align: center;
-    font-size: $font-size-24;
-    font-weight: 700;
-    color: $blue_main;
-    margin-top: 15px;
+    h1 {
+      text-align: center;
+      font-size: $font-size-24;
+      font-weight: 900;
+      color: $blue_main;
+    }
   }
 
   &-Contents {
-    @include flexbox;
-    max-width: 90%;
-    margin: auto;
-    margin-top: 40px;
+    @include flexbox(between, end);
+    padding: 100px 0;
+    margin: 0 auto;
+    gap: 60px;
 
     &-Img {
       width: 500px;
       height: 350px;
-      margin-right: 150px;
+      height: auto;
       border-radius: 10px;
     }
 
     &-Text {
+      @include column-flexbox(center, start);
+      gap: 50px;
+
       &-Top {
-        font-size: $font-size-18;
-        line-height: $line-height-18;
+        font-size: 16px;
+        // line-height: $line-height-18;
+        line-height: 1.25;
+
+        p {
+          color: $secondary;
+          margin-bottom: 10px;
+        }
 
         &-Large {
+          display: inline-block;
           font-size: $font-size-24;
+          font-weight: 700;
 
-          &-Blue {
+          strong {
+            display: inline-block;
             color: $blue_main;
-            font-weight: 700;
+            font-weight: 900;
 
+            padding: 5px 5px 0;
+            margin-left: 5px;
+            margin-right: 2.5px;
+            border-radius: 2px;
             background-color: $blue_bright;
-
-            padding: 2px;
           }
         }
       }
 
       &-Bottom {
-        margin-top: 40px;
-        font-size: $font-size-14;
+        width: 100%;
+        background-color: $background-banner;
+        padding: 20px;
+        border-radius: 12px;
+
+        h3 {
+          font-size: $font-size-14;
+          margin-bottom: 10px;
+          color: $teritiary;
+        }
+
+        p {
+          font-size: $font-size-12;
+          line-height: 1.5;
+          color: $border;
+        }
       }
     }
   }
@@ -60,70 +97,92 @@
   &-Button {
     @include flexbox;
     gap: 30px;
-    margin-top: 60px;
-  }
 
-  &-BottomHr {
-    max-width: 90%;
-    margin: auto;
-    margin-top: 60px;
+    button {
+      font-weight: 500;
+      border-width: 1px;
+    }
   }
 
   @include responsive(T) {
     &-Contents {
       @include column-flexbox;
+      margin-bottom: 50px;
+
+      padding: 50px 0;
+      gap: 20px;
 
       &-Img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         margin-right: 0px;
+        border-radius: 0;
       }
 
       &-Text {
         @include flexbox;
-        margin-top: 40px;
+        gap: 10px;
 
         &-Top {
           font-size: $font-size-14;
-          line-height: $line-height-14;
+          margin-bottom: 20px;
 
           &-Large {
-            font-size: $font-size-18;
-
-            &-Blue {
-              color: $blue_main;
-              font-weight: 700;
-
-              background-color: $blue_bright;
-
-              padding: 2px;
-            }
+            font-size: 24px;
           }
         }
 
         &-Bottom {
+          width: 100%;
           line-height: $line-height-14;
 
           margin-top: 0px;
-          margin-left: 30px;
         }
       }
     }
   }
 
   @include responsive(M) {
-    &-Contents {
-      &-Text {
-        flex-direction: column;
-
-        text-align: center;
-
-        &-Bottom {
-          margin-top: 40px;
-          margin-left: 0px;
-        }
+    &-title {
+      hr {
+        width: 60px;
+        height: 2px;
+        margin: 0 auto 15px;
       }
 
-      &-Img {
-        width: 100%;
+      h1 {
+        font-size: 14px;
+      }
+    }
+
+    &-Contents {
+      padding: 40px 0;
+      margin-bottom: 0;
+
+      &-Text {
+        flex-direction: column;
+        text-align: center;
+
+        &-Top {
+          &-Large {
+            font-size: 18px;
+            font-weight: 900;
+          }
+        }
+
+        &-Bottom {
+        }
+      }
+    }
+
+    &-Button {
+      gap: 15px;
+
+      button {
+        font-size: 12px;
+        border-radius: 6px;
+        padding: 12px;
       }
     }
   }
