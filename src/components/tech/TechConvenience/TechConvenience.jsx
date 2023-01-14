@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react';
-
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 
 const TechConvenience = ({
   title,
@@ -10,30 +7,27 @@ const TechConvenience = ({
   rightChildImg,
   leftChildImg,
 }) => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  });
   return (
     <div className="TechConvenience">
       <div className="TechConvenience_title">{title}</div>
       <div className="TechConvenience_content">
         {/* 왼쪽 */}
-        <div
-          className="TechConLeftChild"
-          data-aos="fade-up"
-          data-aos-delay="70"
-        >
-          <img className="TechConLeftChild_Img" src={leftChildImg} />
-          <div className="TechConLeftChild_text">{leftChild}</div>
+        <div className="TechConBoxLeft">
+          <div className="TechConLeftChild">
+            <img className="TechConLeftChild_Img" src={leftChildImg} />
+            <div className="TechConLeftChild_text">
+              <div className="TechConLeftChild_text_content">{leftChild}</div>
+            </div>
+          </div>
         </div>
         {/* 오른쪽 */}
-        <div
-          className="TechConRightChild"
-          data-aos="fade-up"
-          data-aos-delay="70"
-        >
-          <img className="TechConRightChild_Img" src={rightChildImg} />
-          <div className="TechConRightChild_text">{rightChild}</div>
+        <div className="TechConBoxright">
+          <div className="TechConRightChild">
+            <img className="TechConRightChild_Img" src={rightChildImg} />
+            <div className="TechConRightChild_text">
+              <div className="TechConRightChild_text_content">{rightChild}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
