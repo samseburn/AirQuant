@@ -114,7 +114,10 @@
 
       &-Img {
         width: 100%;
+        max-width: 500px;
+        height: auto;
         margin-right: 0px;
+        border-radius: 0;
       }
 
       &-Text {
