@@ -1,0 +1,89 @@
+.TechCardBook__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    
+    &container {
+        &__section1, 
+        &__section2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 10px;
+
+            // background-color: aqua;
+        }
+
+        &__section1 {
+
+            &__text {
+                font-size: 1.4rem;
+                width: 500px;
+                height: 300px;
+                
+                // margin-right: 10px;
+                
+                span {
+                    font-size: 3.2rem;
+                    font-weight: 800;
+                }
+                
+            }
+        }
+        
+        &__section2 {
+            
+            &__section {
+                // margin-right: 10px;
+                
+            }
+        }
+    }
+}
+
+
+@mixin responsive($screen) {
+    @if ($screen == 'T') {
+    @media screen and (max-width: ($lg-breakpoint - 1px)) {
+        // 1199px까지 적용
+        @content;
+        .TechCardBook__ {
+            height: 150vh;
+            &container {
+                &__section1, 
+                &__section2 {
+                    // width: 33%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    padding: 0;
+
+                    // &__text,
+                    // &__section {
+                    //     width: 33%;
+                    // }
+                }
+
+                &__section1 {
+                    &__text{
+                    top: 150px;
+                    position: relative;
+                }
+                }
+            }
+        }
+    }
+    }
+
+    @if ($screen == 'M') {
+    @media screen and (max-width: ($sm-breakpoint - 1px)) {
+        // 575px까지 적용
+        @content;
+    }
+    }
+}
