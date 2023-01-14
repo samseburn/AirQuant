@@ -8,6 +8,7 @@ import {
   TechMiddleTitle,
   TechPatent,
 } from 'components';
+import { TechBackGround } from 'components/tech/TechBackGround';
 import React from 'react';
 
 const Tech = () => {
@@ -16,8 +17,9 @@ const Tech = () => {
       <TechMain />
       <TechMeasurementTable />
       <TechMiddleTitle />
-      <TechCardBook/>
+      <TechCardBook />
       {/* <TechExplanation /> */}
+      <TechBackGround />
       <TechConTitle />
       <TechCustomers />
       <TechPatent />

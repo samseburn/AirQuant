@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120vh;
+  // height: 120vh;
   width: 100%;
 
   &_Contents {
     margin: 15% 0 3% 0;
     font-size: 2.5rem;
     font-weight: 600;
+    padding-bottom: 5vh;
+
+    &_small {
+      font-size: 14px;
+      text-align: center;
+      color: $blue_main;
+      padding-bottom: 22px;
+    }
   }
 
   &_Table {
@@ -129,7 +137,12 @@
 @include responsive(M) {
   .TechMeasurementTable {
     &_Contents {
-      font-size: 1.8rem;
+      font-size: 30px;
+      text-align: center;
+      line-height: 1.5;
+      &_br {
+        display: block;
+      }
     }
     .TechMTHide {
       display: none;
