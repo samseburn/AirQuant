@@ -13,25 +13,25 @@ const CompanyTech = () => {
       <div className="CompanyTech-Title">
         <span>PiQuant의 제품들은&nbsp;</span>
         <div className="CompanyTech-Title-Flex">
-          <div data-aos="fade-up" data-aos-delay="50">
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
             세
           </div>
-          <div data-aos="fade-down" data-aos-delay="70">
+          <div data-aos="fade-down" data-aos-once="true" data-aos-delay="70">
             계
           </div>
-          <div data-aos="fade-up" data-aos-delay="90">
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="90">
             최
           </div>
-          <div data-aos="fade-down" data-aos-delay="110">
+          <div data-aos="fade-down" data-aos-once="true" data-aos-delay="110">
             고
           </div>
-          <div data-aos="fade-up" data-aos-delay="130">
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="130">
             의&nbsp;
           </div>
-          <div data-aos="fade-down" data-aos-delay="150">
+          <div data-aos="fade-down" data-aos-once="true" data-aos-delay="150">
             기
           </div>
-          <div data-aos="fade-up" data-aos-delay="170">
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="170">
             술
           </div>
         </div>

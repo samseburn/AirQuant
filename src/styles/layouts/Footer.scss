@@ -1,43 +1,46 @@
 .footer {
   width: 100%;
-  padding: 20px 80px 30px 80px;
+  padding: 48px;
   background-color: $background-banner;
   color: $teritiary;
 
-  &-top{
+  &-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 2px solid $blue-main;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  
+    border-bottom: 2px solid $blue-light;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 
     .logo {
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 24px;
       font-weight: 700;
       color: $blue-main;
-      // padding-bottom: 10px;
-
     }
 
+    .icon-group {
+      display: flex;
 
-      img {
-        width: 30px;
-        height: 30px;
+      a {
+        display: block;
+        width: 32px;
+        height: 32px;
         margin: 0 3px;
-      }
 
-}
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 
   &-information {
     display: flex;
     justify-content: space-between;
 
     h1 {
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 800;
       color: $blue-main;
       margin: 10px 0;
       text-transform: uppercase;
@@ -46,10 +49,10 @@
     &-address {
       display: flex;
       flex-direction: column;
-      // justify-content: space-between;
+
       .address-box {
         p {
-          font-size: 14px;
+          font-size: 13px;
           &:first-child {
             margin-bottom: 7px;
           }
@@ -62,9 +65,9 @@
       flex-shrink: 0;
       flex-grow: 0;
 
-
       dl {
         display: flex;
+        font-size: 13px;
 
         .piquantUrl {
           cursor: pointer;
@@ -83,7 +86,7 @@
   }
 
   @include responsive(T) {
-    padding: 20px 40px;
+    padding: 40px;
 
     &-logo {
       font-size: 24px;
@@ -100,7 +103,7 @@
 
       &-address {
         justify-content: flex-start;
-        margin-bottom: 7px;
+        margin-bottom: 20px;
 
         .address-box {
           p {
@@ -132,8 +135,24 @@
   }
 
   @include responsive(M) {
-        padding: 20px 20px 40px 20px;
+    padding: 40px 20px;
 
+    &-top {
+      .icon-group a {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &-information {
+      h1 {
+        font-size: 14px;
+      }
+
+      .address-box p,
+      &-contact dl {
+        font-size: 12px;
+      }
+    }
   }
-
 }
