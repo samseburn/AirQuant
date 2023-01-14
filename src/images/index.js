@@ -54,6 +54,7 @@ export { default as Tech_logo_05 } from './Tech/Tech_logo_05.png';
 export { default as Tech_logo_06 } from './Tech/Tech_logo_06.png';
 export { default as Tech_logo_07 } from './Tech/Tech_logo_07.png';
 export { default as Tech_logo_08 } from './Tech/Tech_logo_08.png';
+export { default as Tech_background_01 } from './Tech/Tech_background_01.jpg';
 
 // Company
 export { default as company_icon_01 } from './Company/company_icon_01.png';

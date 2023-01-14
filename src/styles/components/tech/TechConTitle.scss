@@ -1,15 +1,31 @@
 .TechConTitle {
   font-size: 40px;
   text-align: center;
-  font-weight: 700;
-  padding-bottom: 20vh;
+  font-weight: 600;
+  padding-bottom: 15vh;
+  padding-top: 30vh;
+  line-height: 1.5;
+
+  &_small {
+    font-size: 14px;
+    font-weight: 700;
+    color: $blue_main;
+    padding-bottom: 22px;
+  }
 }
 
 // 반응형
+@include responsive(T) {
+  .TechConTitle {
+    font-size: 35px;
+  }
+}
+
+// 반응형 모바일
 @include responsive(M) {
   .TechConTitle {
     font-size: 30px;
-    &_br {
+    .TechConbr {
       display: block;
     }
   }
