@@ -1,7 +1,6 @@
 .CompanyIntro {
   word-break: keep-all;
   width: 100%;
-  // height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +46,6 @@
 
       &-Top {
         font-size: 16px;
-        // line-height: $line-height-18;
         line-height: 1.25;
 
         p {
@@ -106,12 +104,15 @@
   }
 
   @include responsive(T) {
-    & {
-      padding: 30px 0px;
-    }
+    height: calc(100vh - 60px);
+
+    padding-top: 420px;
+
+    margin-bottom: 400px;
+
     &-Contents {
       @include column-flexbox;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
 
       padding: 50px 0;
       gap: 20px;
@@ -148,6 +149,12 @@
   }
 
   @include responsive(M) {
+    height: calc(100vh - 60px);
+
+    padding-top: 100px;
+
+    margin-bottom: 0px;
+
     &-title {
       hr {
         width: 60px;
@@ -173,9 +180,6 @@
             font-size: 18px;
             font-weight: 900;
           }
-        }
-
-        &-Bottom {
         }
       }
     }
