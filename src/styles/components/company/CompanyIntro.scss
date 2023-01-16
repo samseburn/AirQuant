@@ -1,12 +1,13 @@
 .CompanyIntro {
   word-break: keep-all;
   width: 100%;
-  height: calc(100vh - 60px);
+  // height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 100px 0;
+  padding-top: 60px;
+  padding-bottom: 100px;
 
   &-title {
     hr {
@@ -105,6 +106,9 @@
   }
 
   @include responsive(T) {
+    & {
+      padding: 30px 0px;
+    }
     &-Contents {
       @include column-flexbox;
       margin-bottom: 50px;
