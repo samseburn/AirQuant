@@ -2,13 +2,11 @@
   word-break: keep-all;
   background-color: #f9f9f9;
   width: 100%;
-  padding: 150px 0;
+  padding: 150px 20px;
 
   @include flexbox;
   gap: 100px;
   flex-direction: column;
-
-  // line-height: 70px;
 
   &-Title {
     text-align: center;
@@ -67,7 +65,7 @@
     & {
       margin-top: 100px;
       line-height: 60px;
-      padding: 200px 20px;
+
       &-Title {
         font-size: 3.5rem;
 
@@ -105,8 +103,6 @@
 
   @include responsive(M) {
     & {
-      margin-top: 380px;
-
       line-height: 40px;
 
       &-Title {
