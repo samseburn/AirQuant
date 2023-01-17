@@ -39,8 +39,8 @@
     font-size: 2.5rem;
     font-weight: 700;
 
-    color: $white;
-    background-color: $blue_main;
+    color: $blue_main;
+    // background-color: $blue_main;
     height: 50px;
   }
 }
@@ -53,7 +53,7 @@
       // margin-left: 300px;
     }
     &div_text_health {
-      font-size: 1.75rem;
+      font-size: 1.7rem;
     }
   }
 }
@@ -69,11 +69,4 @@
       font-size: 1.25rem;
     }
   }
-}
-
-
-// 반응형 375px 아이폰se
-// 브라우저 사이즈 375px 이하일때
-@media (max-width: 375px){
-
 }
