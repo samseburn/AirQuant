@@ -8,7 +8,12 @@ const CaseItem = () => {
   const { caseId } = useParams();
   return (
     <Section title={'적용사례'}>
-      <TableItem data={caseData} params={caseId} />
+      <TableItem
+        data={caseData}
+        params={caseId}
+        category={'CASE'}
+        page={'/case'}
+      />
     </Section>
   );
 };
