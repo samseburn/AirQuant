@@ -9,17 +9,19 @@ import {
   InformationBox,
   ProductYoutubeFirst,
   ProductYoutubeSecond,
+  ProductSpeechBubble,
 } from 'components';
 
 const Product = () => {
   return (
     <div>
       <ProductMainImg />
-      <ProductPiquantExplanation />
+      {/* <ProductPiquantExplanation /> */}
       <InformationBox />
       <ProductGraphText />
       <ProductBlueBox />
       <ProductAirTable />
+      <ProductSpeechBubble/>
       <ProductAirquantImg />
     </div>
   );
