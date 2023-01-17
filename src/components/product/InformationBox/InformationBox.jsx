@@ -11,12 +11,14 @@ const InformationBox = () => {
   }, []);
   return (
     <div className="InformationBox">
-      <p className="InformationBox_bigTitle" data-aos="fade-up">
+      <div className="InformationBox_bigTitle" data-aos="fade-up">
+        <div className="InformationBox_bigTitle_small">INDOOR AIR QUALITY</div>
         <span className="InformationBox_bigTitle_br">
-          실내 공기질을 왜 정확하게{' '}
+          왜 실내 공기질을 정확하게
+          <br />
         </span>
         모니터링 해야할까요?
-      </p>
+      </div>
 
       {/* 박스1 */}
 
@@ -90,7 +92,7 @@ const InformationBox = () => {
           </div>
         </div>
       </div>
-      <ProductYoutubeFirst />
+      {/* <ProductYoutubeFirst /> */}
     </div>
   );
 };

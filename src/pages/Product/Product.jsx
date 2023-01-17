@@ -11,6 +11,7 @@ import {
   ProductYoutubeSecond,
   ProductSpeechBubble,
 } from 'components';
+import { ProductBackground } from 'components/product/ProductBackground';
 
 const Product = () => {
   return (
@@ -18,11 +19,12 @@ const Product = () => {
       <ProductMainImg />
       {/* <ProductPiquantExplanation /> */}
       <InformationBox />
+      <ProductBackground />
       <ProductGraphText />
       <ProductBlueBox />
       <ProductAirTable />
-      <ProductSpeechBubble/>
-      <ProductAirquantImg />
+      <ProductSpeechBubble />
+      {/* <ProductAirquantImg /> */}
     </div>
   );
 };
