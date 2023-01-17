@@ -1,3 +1,5 @@
+import { Pagination } from 'components/module/Pagination';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export const noticeData = Object.freeze({
@@ -5,7 +7,8 @@ export const noticeData = Object.freeze({
   data: [
     {
       id: 1,
-      title: '홍보관 예약시 주의사항',
+      title: '에어퀀트 제품페이지 01월 29일-30일 서버 증설 작업 안내',
+
       description: `* 홍보관 예약&관람시 주의 사항 전달 드립니다.
       1. 홍보관 예약 후 불참사유 발생시  "예약취소"를 통해  취소해주시기 바랍니다
       2. 홍보관은 30명을 기준으로 운영하고 있으나  30명이상 관람을 희망하실경우  담당자에게 사전요청 하시면 추가인원도 관람 가능합니다
@@ -53,7 +56,7 @@ export const noticeData = Object.freeze({
     },
     {
       id: 6,
-      title: '이용약관, 개인정보 처리방침 변경 안내',
+      title: '정보시스템 접속지연 (1.12(목) 19:00~21:40)',
       description: `개인정보 처리방침
       [변경전]
       1) 수집하는 개인정보의 항목
@@ -91,7 +94,7 @@ export const noticeData = Object.freeze({
     },
     {
       id: 9,
-      title: '파이퀀트 프론트엔드 개발자 모집',
+      title: '파이퀀트 프론트엔드, 백엔드, AOS, IOS 개발자 모집',
       description: `27 February : 2 March 2022
       바르셀로나 / 스페인`,
       date: '2022-12-08',
@@ -114,38 +117,138 @@ export const noticeData = Object.freeze({
       date: '2022-12-02',
       image: '',
     },
+    {
+      id: 12,
+      title: '이용약관, 개인정보 처리방침 변경 안내',
+      description: `27 February : 2 March 2022
+      바르셀로나 / 스페인`,
+      date: '2022-11-08',
+      image: '',
+    },
+    {
+      id: 13,
+      title: '정보시스템 접속지연 (1.12(목) 19:00~21:40)',
+      description: `- 에어퀀트, ‘굿디자인 · 핀업 디자인 어워드’ 최고상 등 수상
+      - 우수디자인 (GD) 상품 선정에서 4개 제품 우수 디자인 선정
+      - 스마트 탑볼 세면기 CL-1600 핀업 디자인 최고상인 베스트 오브 베스트 수상
+      - 에어퀀트, 우수한 제품으로 업계 선도해 나갈 것`,
+      date: '2022-11-03',
+      image: '',
+    },
+    {
+      id: 14,
+      title: '만족도 조사 개편 관련 안내',
+      description: `에어퀀트의 높은 기술적 완성도와 적용성을 인정받아 코로나 백신 접종 센터 내 실내 공기질을 모니터링 하고 있다.
+      접종 센터 방문객은 실내 공기질 현황을 직접 확인할 수 있다.`,
+      date: '2022-11-02',
+      image: '',
+    },
+    {
+      id: 15,
+      title: '사업자등록증 및 세금계산서 발행 안내',
+      description: `개인정보 처리방침
+      [변경전]
+      1) 수집하는 개인정보의 항목
+      가) 필수항목성명, 휴대폰번호, 단말기 정보
+      나) 서비스 이용 또는 사업처리 과정에서 생성/ 수집되는 정보서비스 이용기록(이용시간 또는 서비스 구매내역), 홈페이지/ 모바일 어플리케이션 접속일시, 디바이스 종류, OS종류 및 버전, PUSH용 토큰
+
+      [변경후]
+      1) 수집하는 개인정보의 항목
+      가) 필수항목성명, 휴대폰번호, 단말기 정보
+      나) 서비스 이용 또는 사업처리 과정에서 생성/ 수집되는 정보서비스 이용기록(이용시간 또는 서비스 구매내역), 홈페이지/ 모바일 어플리케이션 접속일시/로그, 쿠키, 접속 IP정보, 디바이스 종류, OS종류 및 버전, PUSH용 토큰`,
+      date: '2022-11-01',
+      image: '',
+    },
+    {
+      id: 16,
+      title: '홍보관 예약시 주의사항',
+      description: `* 홍보관 예약&관람시 주의 사항 전달 드립니다.
+      1. 홍보관 예약 후 불참사유 발생시  "예약취소"를 통해  취소해주시기 바랍니다
+      2. 홍보관은 30명을 기준으로 운영하고 있으나  30명이상 관람을 희망하실경우  담당자에게 사전요청 하시면 추가인원도 관람 가능합니다
+      3. 예약은 1일 3회를 원칙으로 진행하고 있으며 오전10시,오후2시,오후4시 이외 시간을 원하시면 별도로 담당자에게 문의해 주시기 바랍니다
+      자세한 사항은  담당자 (064-729-9913) 으로  연락주시기 바랍니다`,
+      date: '2022-10-26',
+      image: '',
+    },
+    {
+      id: 17,
+      title: `에이전시 순위 정보 산정 방식 일부 변경 사항 공지`,
+      description: `분광학기반 성분 분석 솔루션 개발
+      파이퀀트는 빛을 이용하여 성분 분석 솔루션을 개발하는 회사입니다.
+      휴대용 분광기를 개발하여 언제 어디서든 누구나 원하는 성분을 분석할 수 있도록 도와줍니다.
+      파이퀀트는 세계 최고 수준의 휴대용 분광기 기술력을 인정받아 한국 최초로 빌게이츠가 설립한 Bill%26Melinda Gates Foundation의 GCE파트너로 선정되었습니다.
+      LOREAL를 포함하여 다양한 글로벌 뷰티 회사들과 협업하고 있으며, UNICEF, ARM, WFP, K-WATER, NAMAMI GANGE, LG상사, SK INFOSEC, 더본코리아 등 파트너들과 함께합니다.`,
+      date: '2022-10-16',
+      image: '',
+    },
+    {
+      id: 18,
+      title: '파이퀀트 심사등록과 관련 안내',
+      description: `27 February : 2 March 2022
+      바르셀로나 / 스페인`,
+      date: '2022-10-08',
+      image: '',
+    },
+    {
+      id: 19,
+      title: '서비스 이용에 불편을 드려 죄송합니다.',
+      description: `- 에어퀀트, ‘굿디자인 · 핀업 디자인 어워드’ 최고상 등 수상
+      - 우수디자인 (GD) 상품 선정에서 4개 제품 우수 디자인 선정
+      - 스마트 탑볼 세면기 CL-1600 핀업 디자인 최고상인 베스트 오브 베스트 수상
+      - 에어퀀트, 우수한 제품으로 업계 선도해 나갈 것`,
+      date: '2022-10-03',
+      image: '',
+    },
+    {
+      id: 20,
+      title: '에어퀀트 눈누의 첫 온라인 이벤트',
+      description: `에어퀀트의 높은 기술적 완성도와 적용성을 인정받아 코로나 백신 접종 센터 내 실내 공기질을 모니터링 하고 있다. 접종 센터 방문객은 실내 공기질 현황을 직접 확인할 수 있다.`,
+      date: '2022-10-02',
+      image: '',
+    },
   ],
 });
 
 const NoticeList = () => {
   const navigate = useNavigate();
 
+  const limit = 10; //한 페이지당 게시물 갯수
+  const [page, setPage] = useState(1); //현재 페이지 번호
+  const offset = (page - 1) * limit; //첫 게시물 index
+  const total = noticeData.data.length;
+
   return (
-    <table className="noticeList">
-      <thead>
-        <tr className="noticeHeader">
-          {noticeData.header.map((item) => {
-            return <th>{item}</th>;
+    <div className="noticeListt">
+      <table className="noticeList">
+        <thead>
+          <tr className="noticeHeader">
+            {noticeData.header.map((item) => {
+              return <th>{item}</th>;
+            })}
+          </tr>
+        </thead>
+        <tbody>
+          {noticeData.data.slice(offset, offset + limit).map((item) => {
+            {
+              /* {noticeData.data.map((item) => { */
+            }
+            return (
+              <tr
+                className="noticeData"
+                onClick={() => navigate(`/service/notice/${item.id}`)}
+              >
+                <td className="noticeNo">{item.id}</td>
+                <td className="noticeTitle">
+                  <p className="noticeTitleP">{item.title}</p>
+                </td>
+                <td className="noticeDate">{item.date}</td>
+              </tr>
+            );
           })}
-        </tr>
-      </thead>
-      <tbody>
-        {noticeData.data.map((item) => {
-          return (
-            <tr
-              className="noticeData"
-              onClick={() => navigate(`/service/notice/${item.id}`)}
-            >
-              <td className="noticeNo">{item.id}</td>
-              <td className="noticeTitle">
-                <p className="noticeTitleP">{item.title}</p>
-              </td>
-              <td className="noticeDate">{item.date}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+      <Pagination total={total} limit={limit} page={page} setPage={setPage} />
+    </div>
   );
 };
 
