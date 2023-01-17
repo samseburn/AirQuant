@@ -3,17 +3,17 @@
   margin-bottom: 25vh;
 
   .Airquant_Dots {
-    font-size: 130px;
+    font-size: 18px;
     color: $blue_main;
     position: relative;
-    display: inline;
-    left: 48.95%;
+    text-align: center;
+    margin-left: 36%;
+    margin-right: 35.4%;
   }
   .Airquant_Main_Content1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin-top: -10px;
     margin-bottom: 50px;
   }
   .Airquant_Main_title {
@@ -76,12 +76,13 @@
     .Airquant_Main_Content {
       margin-bottom: -80px;
     }
-    .Airquant_Main_Dots {
-      font-size: 130px;
+    .Airquant_Dots {
+      font-size: 18px;
       color: $blue_main;
       position: relative;
-      display: inline;
-      left: 48.35%;
+      text-align: center;
+      margin-left: 36.5%;
+      margin-right: 35.4%;
     }
     .Airquant_img_third {
       display: flex;
@@ -122,15 +123,19 @@
     }
   }
   @include responsive(M) {
-    .Airquant_Main_Dots {
-      font-size: 130px;
+    .Airquant_Dots {
+      font-size: 13.5px;
       color: $blue_main;
       position: relative;
-      display: inline;
-      left: 47.3%;
+      text-align: center;
+      margin-left: 37.8%;
+      margin-right: 35.4%;
     }
     .Airquant_Main_Content1 {
-      font-size: 1.87rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
     }
     .Airquant_img_second {
       margin-left: 20px;

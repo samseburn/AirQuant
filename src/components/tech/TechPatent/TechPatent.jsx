@@ -14,13 +14,9 @@ const TechPatent = () => {
   return (
     <div className="patent_container">
       <div className="patent_container1">
-        <div className="swiper-button-prev-div">
-          <div className="swiper-button-prev"></div>
-        </div>
+        <div className="swiper-button-prev"></div>
         <div className="patent_center">
-          <div className="patent">
-            에어퀀트 <span className="Tech-Patent-space">인증 및 특허</span>
-          </div>
+          <div className="patent">에어퀀트 인증 및 특허</div>
           <Swiper
             modules={[Pagination, Navigation]}
             pagination={{ clickable: true }}
