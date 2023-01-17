@@ -1,9 +1,10 @@
 .qna {
   display: flex;
   &-submit {
-    width: 50%;
+    width: 100%;
     @include column-flexbox(center, start);
     gap: 30px;
+    margin-right: 20px;
 
     input,
     select,

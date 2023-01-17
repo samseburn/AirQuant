@@ -58,4 +58,5 @@ export { FaqBox } from './service/FaqBox';
 export { Notice } from './service/Notice';
 export { NoticeList } from './service/NoticeList';
 export { NoticeItem } from './service/NoticeItem';
+export { Contact } from './service/Contact';
 export { Qna } from './service/Qna';
