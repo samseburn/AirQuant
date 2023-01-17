@@ -41,7 +41,7 @@ const CompanyTech = () => {
         <div
           className="CompanyTech-Text-Box"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="300"
         >
           <h3 className="CompanyTech-Text-Box-Title">측정 가능 물질 상태</h3>
           <p className="CompanyTech-Text-Box-Content">
@@ -64,7 +64,7 @@ const CompanyTech = () => {
         <div
           className="CompanyTech-Text-Box"
           data-aos="fade-up"
-          data-aos-delay="800"
+          data-aos-delay="900"
         >
           <h3 className="CompanyTech-Text-Box-Title">제품 타입</h3>
           <p className="CompanyTech-Text-Box-Content">

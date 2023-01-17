@@ -10,14 +10,11 @@
 
   &-Title {
     font-size: $font-size-24;
-    // font-weight: 700;
     text-align: center;
 
     strong {
       font-size: 28px;
       font-weight: 900;
-      background-color: $blue_bright;
-      padding: 5px;
     }
   }
 
@@ -31,7 +28,7 @@
 
   @include responsive(M) {
     & {
-      padding: 120px 0;
+      padding: 130px 0;
     }
     &-Title {
       font-size: $font-size-18;
