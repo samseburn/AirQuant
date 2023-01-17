@@ -10,17 +10,19 @@ import {
   ProductYoutubeFirst,
   ProductYoutubeSecond,
 } from 'components';
+import { ProductBackground } from 'components/product/ProductBackground';
 
 const Product = () => {
   return (
     <div>
       <ProductMainImg />
-      <ProductPiquantExplanation />
+      {/* <ProductPiquantExplanation /> */}
       <InformationBox />
+      <ProductBackground />
       <ProductGraphText />
       <ProductBlueBox />
       <ProductAirTable />
-      <ProductAirquantImg />
+      {/* <ProductAirquantImg /> */}
     </div>
   );
 };
