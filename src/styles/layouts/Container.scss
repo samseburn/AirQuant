@@ -1,9 +1,25 @@
 .container {
+  // width: 100%;
+  // max-width: 1280px;
+  // margin: 60px auto 0;
+
+  @include responsive(T) {
+    // padding: 0 20px;
+  }
+}
+
+// Product
+// Tech
+
+// Company
+.Company {
   width: 100%;
-  max-width: 1280px;
   margin: 60px auto 0;
 
   @include responsive(T) {
-    padding: 0 20px;
   }
 }
+
+// Case
+
+// Service

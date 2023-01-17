@@ -11,12 +11,12 @@ const CompanyIcon = () => {
 
   return (
     <div className="CompanyIcon">
-      <div className="CompanyIcon-title" data-aos="fade-up">
+      <div className="CompanyIcon-title">
         파이퀀트는 하마쯔사의 소형 분광기 모듈을 사용합니다
         <br />
         &#40;C12666MA&#41;
       </div>
-      <div className="CompanyIcon-imgs" data-aos="fade-up">
+      <div className="CompanyIcon-imgs">
         <div className="CompanyIcon-imgs-item imageLeft">
           <img src={company_product} alt="module" />
         </div>
@@ -27,13 +27,13 @@ const CompanyIcon = () => {
       <div className="CompanyIcon-icons">
         <div className="CompanyIcon-icons-item small" data-aos="fade-up">
           <div className="CompanyIcon-icons-item-img small-icon"></div>
-          <span>
-            <b>작은 사이즈</b>
-          </span>
-          <span>
-            파이퀀트의 분광 분석 장비는
-            <br /> 한 손으로 들 만큼 작은 사이즈 입니다.
-          </span>
+          <div className="CompanyIcon-icons-item-info">
+            <h3>작은 사이즈</h3>
+            <p>
+              파이퀀트의 분광 분석 장비는
+              <br /> 한 손으로 들 만큼 작은 사이즈 입니다.
+            </p>
+          </div>
         </div>
         <div
           className="CompanyIcon-icons-item price"
@@ -41,14 +41,16 @@ const CompanyIcon = () => {
           data-aos-delay="300"
         >
           <div className="CompanyIcon-icons-item-img price-icon"></div>
-          <span>
-            <b>낮은 가격</b>
-          </span>
-          <span>
-            파이퀀트 분광 분석 장비는
-            <br /> 약 $60,000가 넘는 기존 분광 분석 장비의
-            <br /> 가격보다 저렴합니다.
-          </span>
+          <div className="CompanyIcon-icons-item-info">
+            <h3>낮은 가격</h3>
+            <p>
+              파이퀀트 분광 분석 장비는
+              <br className="md-hidden" /> 약 $60,000가 넘는 기존 분광 분석
+              장비의
+              <br className="md-hidden" />
+              가격보다 저렴합니다.
+            </p>
+          </div>
         </div>
         <div
           className="CompanyIcon-icons-item accuracy"
@@ -56,14 +58,14 @@ const CompanyIcon = () => {
           data-aos-delay="600"
         >
           <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
-          <span>
-            <b>높은 정확도</b>
-          </span>
-          <span>
-            파이퀀트의 분광 분석 장비는 <br />약 $60,000가 넘는 기존 분광 분석
-            장비와
-            <br /> 유사한 성능을 보유하고 있습니다.
-          </span>
+          <div className="CompanyIcon-icons-item-info">
+            <h3>높은 정확도</h3>
+            <p>
+              파이퀀트의 분광 분석 장비는 <br className="md-hidden" />약
+              $60,000가 넘는 기존 분광 분석 장비와
+              <br className="md-hidden" /> 유사한 성능을 보유하고 있습니다.
+            </p>
+          </div>
         </div>
       </div>
     </div>

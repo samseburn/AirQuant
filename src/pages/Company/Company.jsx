@@ -9,7 +9,7 @@ import {
 
 const Company = () => {
   return (
-    <div>
+    <div className="Company">
       <CompanyIntro />
       <CompanyTech />
       <CompanyIcon />

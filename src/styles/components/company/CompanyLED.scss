@@ -2,26 +2,35 @@
   word-break: keep-all;
   width: 100%;
   gap: 50px;
+
+  padding: 150px 0;
+
   @include flexbox;
   flex-direction: column;
+
   &-title {
     height: 10vh;
     @include flexbox;
+
+    font-weight: 900;
   }
 
   &-content {
     text-align: center;
     font-size: $font-size-18;
-    margin-bottom: 50%;
+    // 마지막 텍스트와 Footer 사이 공간
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
+
   @include responsive(T) {
+    padding: 140px 0px;
   }
   @include responsive(M) {
     &-title {
       font-size: $font-size-18;
     }
-    &-charts {
-    }
+
     &-content {
       font-size: $font-size-14;
     }

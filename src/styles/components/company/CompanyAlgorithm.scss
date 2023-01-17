@@ -1,37 +1,45 @@
 .CompanyAlgorithm {
   word-break: keep-all;
 
-  margin-top: 150px;
+  padding: 200px 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 100vh;
+  background-color: $background-banner;
 
   &-Title {
     font-size: $font-size-24;
     text-align: center;
-    height: 10vh;
+
+    strong {
+      font-size: 28px;
+      font-weight: 900;
+    }
   }
 
   &-Text {
-    margin-top: 40px;
+    padding-top: 40px;
 
     font-size: $font-size-18;
 
     text-align: center;
   }
 
-  @include responsive(T) {
-    &-Chart {
-      width: 400px;
-    }
-  }
-
   @include responsive(M) {
-    &-Chart {
-      width: 200px;
+    & {
+      padding: 130px 0;
+    }
+    &-Title {
+      font-size: $font-size-18;
+      text-align: center;
+
+      strong {
+        font-size: 20px;
+      }
+    }
+    &-Text {
+      font-size: $font-size-14;
     }
   }
 }

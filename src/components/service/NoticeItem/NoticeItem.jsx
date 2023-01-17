@@ -25,13 +25,13 @@ const NoticeItem = ({ params }) => {
   }, [params]);
 
   return (
-    <div className="TableItem">
+    <div className="NoticeItem">
       <Link className="back" to={'/service/notice'}>
         ⇤ 뒤로 가기
       </Link>
-      <div className="TableItem-title">
+      <div className="NoticeItem-contents">
         <div
-          className="TableItem-title"
+          className="title"
           style={{
             borderTop: '1px solid gray',
             borderBottom: '1px solid gray',
@@ -44,27 +44,39 @@ const NoticeItem = ({ params }) => {
           <h1>{caseItem.title}</h1>
           <span className="date">{caseItem.date}</span>
         </div>
-        <p className="TableItem-desc">{caseItem.description}</p>
+        <p className="NoticeItem-desc">{caseItem.description}</p>
       </div>
-      <div className="TableItem-pagination">
+      <div className="NoticeItem-pagination">
         <div className="pagination prev">
-          <span>이전</span>
           {prevItem ? (
-            <Link to={`/service/notice/${parseInt(params) - 1}`}>
-              {prevItem.title}
-            </Link>
+            <>
+              <span>이전</span>
+              <Link to={`/service/notice/${parseInt(params) - 1}`}>
+                {prevItem.title}
+              </Link>
+            </>
           ) : (
-            <Link to={'/service/notice'}>없음</Link>
+            <>
+              <span className="disabled">이전</span>
+              <Link to={'/service/notice'} className={'disabled'}>
+                이전 글이 존재하지 않습니다
+              </Link>
+            </>
           )}
         </div>
         <div className="pagination next">
-          <span>다음</span>
           {nextItem ? (
-            <Link to={`/service/notice/${parseInt(params) + 1}`}>
-              {nextItem.title}
-            </Link>
+            <>
+              <span>다음</span>
+              <Link to={`/service/notice/${parseInt(params) + 1}`}>
+                {nextItem.title}
+              </Link>
+            </>
           ) : (
-            <Link to={'/service/notice'}>없음</Link>
+            <>
+              <span className="disabled">다음</span>
+              <Link to={'/service/notice'}>다음 글이 존재하지 않습니다</Link>
+            </>
           )}
         </div>
       </div>

@@ -11,13 +11,13 @@ const TechMeasurementTable = () => {
     <>
       <div className="TechMeasurementTable">
         <p className="TechMeasurementTable_Contents" data-aos="fade-up">
-          측정 항목
+          <div className="TechMeasurementTable_Contents_small">CHECK</div>
+          <span className="TechMeasurementTable_Contents_br">
+            에어퀀트가 측정하는{' '}
+          </span>
+          항목을 확인하세요
         </p>
-        <div
-          className="TechMeasurementTable_Table"
-          data-aos="fade-up"
-          data-aos-delay="800"
-        >
+        <div className="TechMeasurementTable_Table" data-aos="fade-up">
           <table className="TechMeasurementTable_Table_In">
             <thead>
               <tr className="TechMeasurementTable_Thead__tr">
@@ -87,11 +87,7 @@ const TechMeasurementTable = () => {
             </tbody>
           </table>
         </div>
-        <p
-          className="TechMeasurementTable_explain"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
+        <p className="TechMeasurementTable_explain" data-aos="fade-up">
           <span className="TechMeasurementTable_explain_br">
             SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과{' '}
           </span>
@@ -99,11 +95,7 @@ const TechMeasurementTable = () => {
         </p>
 
         {/* 기술 스펙 */}
-        <div
-          className="TechMeasurementTable_spec"
-          data-aos="fade-up"
-          data-aos-delay="800"
-        >
+        <div className="TechMeasurementTable_spec" data-aos="fade-up">
           <div className="TechMeasurementTable_spec_graybox">
             <div className="TechMeasurementTable_spec_graybox_section1">
               기술{' '}

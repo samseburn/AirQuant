@@ -8,15 +8,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <h1 className="logo">PiQuant</h1>
-        <div className="icon">
+        <div className="icon-group">
           <a href="https://blog.naver.com/piquant_asia" target="_blank">
-            <img src={blog} alt="위의 이미지를 누르면 연결됩니다." />
+            <img src={blog} alt="파이퀀트 블로그로 이동" />
           </a>
           <a href="https://www.facebook.com/piquant.tech" target="_blank">
-            <img src={facebook} alt="위의 이미지를 누르면 연결됩니다." />
+            <img src={facebook} alt="파이퀀트 페이스북으로 이동" />
           </a>
           <a href="https://blog.naver.com/piquant_asia" target="_blank">
-            <img src={instargram} alt="위의 이미지를 누르면 연결됩니다." />
+            <img src={instargram} alt="파이퀀트 인스타그램으로 이동" />
           </a>
         </div>
       </div>

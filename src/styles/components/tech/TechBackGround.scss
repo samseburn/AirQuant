@@ -1,0 +1,87 @@
+.TechBackGround {
+  background-image: url('../../../images/Tech/Tech_background_01.jpg');
+  background-position: center;
+  background-position: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  background-attachment: fixed;
+
+  &_box {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 115, 255, 0.468);
+    z-index: 0;
+    position: relative;
+
+    &_text {
+      position: absolute;
+      color: white;
+      font-size: 45px;
+      padding-top: 55vh;
+      padding-left: 15vh;
+      z-index: -10;
+
+      &_title {
+        font-weight: 700;
+        padding-bottom: 30px;
+      }
+      &_content {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+// 반응형
+@include responsive(T) {
+  .TechBackGround {
+    &_box {
+      &_text {
+        padding-left: 60px;
+        padding-top: 60vh;
+        &_title {
+          font-size: 30px;
+        }
+        &_content {
+          font-size: 15px;
+          word-break: break-all;
+          &_br {
+            display: block;
+          }
+          &_hide {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 모바일 반응형
+
+@include responsive(M) {
+  .TechBackGround {
+    &_box {
+      display: flex;
+      align-items: center;
+      &_text {
+        padding-left: 20px;
+        padding-top: 80%;
+        &_title {
+          font-size: 28px;
+          line-height: 1.5;
+          padding-bottom: 0px;
+          &_br {
+            display: block;
+          }
+        }
+        &_content {
+          display: none;
+        }
+      }
+    }
+  }
+}

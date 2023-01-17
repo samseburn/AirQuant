@@ -16,6 +16,10 @@
     }
   }
 
+  &-desc {
+    white-space:pre-line;
+  }
+
   &-info {
     @include flexbox(start, end);
     column-gap: 50px;

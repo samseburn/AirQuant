@@ -1,15 +1,59 @@
 .TechConTitle {
   font-size: 40px;
   text-align: center;
-  font-weight: 700;
-  padding-bottom: 20vh;
+  font-weight: 600;
+  padding-top: 30vh;
+  line-height: 1.5;
+  padding-bottom: 40px;
+
+  &_title {
+    padding-bottom: 60px;
+    &_small {
+      font-size: 14px;
+      font-weight: 700;
+      color: $blue_main;
+      padding-bottom: 22px;
+    }
+  }
+  &_content {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    &_firstimg {
+      width: 1000px;
+      // width: 65%;
+      height: 480px;
+      border-radius: 20px;
+
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
 }
 
 // 반응형
+@include responsive(T) {
+  .TechConTitle {
+    font-size: 35px;
+
+    &_content {
+      &_firstimg {
+        width: 100%;
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+// 반응형 모바일
 @include responsive(M) {
   .TechConTitle {
     font-size: 30px;
-    &_br {
+    .TechConbr {
       display: block;
     }
   }

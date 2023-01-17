@@ -52,6 +52,9 @@
 @import './components/tech/TechConTitle';
 @import './components/tech/TechMiddleTitle';
 @import './components/tech/TechPatent';
+@import './components/tech/TechBackGround';
+@import './components/tech/TechCardBook';
+@import './components/tech/TechCard';
 
 // company
 @import './components/company/CompanyAlgorithm';
@@ -69,3 +72,5 @@
 @import './components/service/Faq';
 @import './components/service/NoticeList';
 @import './components/service/Qna';
+@import './components/service/NoticeItem';
+@import './components/service/Contact';

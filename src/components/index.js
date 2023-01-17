@@ -36,6 +36,10 @@ export { TechMeasurementTable } from './tech/TechMeasurementTable';
 export { TechPatent } from './tech/TechPatent';
 export { TechConTitle } from './tech/TechConTitle';
 export { TechMiddleTitle } from './tech/TechMiddleTitle';
+export { TechCardBook } from './tech/TechCardBook';
+export { TechCardFirst } from './tech/TechCardFirst';
+export { TechCardSecond } from './tech/TechCardSecond';
+export { TechCardThird } from './tech/TechCardThird';
 
 // company
 export { CompanyTech } from './company/CompanyTech';
@@ -54,4 +58,5 @@ export { FaqBox } from './service/FaqBox';
 export { Notice } from './service/Notice';
 export { NoticeList } from './service/NoticeList';
 export { NoticeItem } from './service/NoticeItem';
+export { Contact } from './service/Contact';
 export { Qna } from './service/Qna';
