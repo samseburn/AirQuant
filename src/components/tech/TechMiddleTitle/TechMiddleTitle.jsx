@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { middletitle_02 } from 'images';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const TechMiddleTitle = () => {
   return (
