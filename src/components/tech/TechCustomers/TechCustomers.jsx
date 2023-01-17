@@ -23,6 +23,7 @@ const TechCustomers = () => {
 
   ];
   return (
+    <div className='TechCustomers__'>
     <div className="TechCustomers__container">
       <div className="TechCustomers__title">
         <p className="TechCustomers__main_title">Customers</p>
@@ -32,6 +33,7 @@ const TechCustomers = () => {
           <TechCustomersMap img={customers.img} alt="" />
         ))}
       </div>
+    </div>
     </div>
   );
 };

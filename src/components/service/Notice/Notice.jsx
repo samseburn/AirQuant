@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NoticeItem, NoticeList, Pagination, TableItem } from 'components';
+import { NoticeItem, NoticeList, TableItem } from 'components';
 import { noticeData } from 'components/service/NoticeList/NoticeList';
 import { useParams } from 'react-router-dom';
 
@@ -22,7 +22,6 @@ const Notice = () => {
       ) : (
         <NoticeList />
       )}
-      <Pagination />
     </div>
   );
 };
