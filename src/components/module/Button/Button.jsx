@@ -2,7 +2,7 @@ const Button = ({ url, text }) => {
   // props[functionName(sendData,openWindow),url,text] 받고
 
   const sendData = () => {
-    console.log(`== send data to firebase ==`);
+    alert('정보를 전송했습니다.');
   };
   const openWindow = () => {
     return window.open(`${url}`, '_blank');
