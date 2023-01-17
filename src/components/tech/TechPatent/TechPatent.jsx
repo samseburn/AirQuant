@@ -21,7 +21,7 @@ const TechPatent = () => {
             modules={[Pagination, Navigation]}
             pagination={{ clickable: true }}
             spaceBetween={50}
-            slidesPerView={2}
+            slidesPerView={1}
             breakpoints={{
               768: { slidesPerView: 3 },
               1280: { slidesPerView: 5 },
