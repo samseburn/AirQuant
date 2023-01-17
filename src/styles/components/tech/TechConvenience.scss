@@ -1,6 +1,7 @@
 .TechConvenience {
-  padding-bottom: 15vh;
+  padding-bottom: 10px;
   align-items: center;
+  margin-top: 40px;
 
   // 소제목
   &_title {
@@ -16,6 +17,7 @@
     // 왼쪽
     .TechConBoxLeft {
       padding: 50px;
+
       .TechConLeftChild {
         width: 320px;
         height: 280px;
@@ -23,11 +25,26 @@
         border: 1px solid rgb(221, 221, 221);
         border-radius: 12px;
 
-        &_Img {
-          width: 320px;
-          height: 185px;
-          border-top-right-radius: 12px;
-          border-top-left-radius: 12px;
+        &_gradation {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+
+          background: linear-gradient(
+            180deg,
+            hsla(0, 0%, 100%, 0),
+            hsla(0, 0%, 100%, 0.97)
+          );
+
+          &_Img {
+            position: relative;
+            width: 320px;
+            height: 185px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+            z-index: -5;
+          }
         }
         &_text {
           height: 95px;
@@ -56,11 +73,25 @@
         border: 1px solid rgb(221, 221, 221);
         border-radius: 10px;
 
-        &_Img {
-          width: 320px;
-          height: 185px;
-          border-top-right-radius: 12px;
-          border-top-left-radius: 12px;
+        &_gradation {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+
+          background: linear-gradient(
+            180deg,
+            hsla(0, 0%, 100%, 0),
+            hsla(0, 0%, 100%, 0.97)
+          );
+          &_Img {
+            position: relative;
+            width: 320px;
+            height: 185px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+            z-index: -5;
+          }
         }
         &_text {
           height: 95px;

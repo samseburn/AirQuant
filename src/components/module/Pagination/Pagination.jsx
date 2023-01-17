@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-const Pagination = () => {
-  let data = [1, 2, 3];
+const Pagination = ({ total, limit, page, setPage }) => {
+  //필요한 페이지의 개수(전체/한 페이지 게시물 수(8))
+  const numPages = Math.ceil(total / limit);
+
+  // let data = [1, 2, 3];
 
   let [pageActive, setPageActive] = useState('');
 
@@ -17,7 +20,7 @@ const Pagination = () => {
 
   return (
     <div className="pagination">
-      <div className="icon">
+      {/* <div className="icon">
         <FiChevronLeft />
       </div>
       <div className="page">
@@ -37,7 +40,40 @@ const Pagination = () => {
       </div>
       <div className="icon">
         <FiChevronRight />
-      </div>
+      </div> */}
+      <button
+        onClick={() => setPage(page - 1)}
+        disabled={page === 1}
+        className="icon"
+      >
+        <FiChevronLeft />
+      </button>
+      {Array(numPages)
+        .fill()
+        .map((_, i) => (
+          <button
+            key={i + 1}
+            value={i}
+            onClick={() => setPage(i + 1)}
+            //   setPageActive(() => {
+            //     // console.log(item);
+            //     return e.target.value;
+            //   });
+            // }}
+            // onClick={toggle}
+            aria-current={page === i + 1 ? 'page' : null}
+            // className={'num' + (i == pageActive ? ' active' : '')}
+          >
+            {i + 1}
+          </button>
+        ))}
+      <button
+        onClick={() => setPage(page + 1)}
+        disabled={page === numPages}
+        className="icon"
+      >
+        <FiChevronRight />
+      </button>
     </div>
   );
 };

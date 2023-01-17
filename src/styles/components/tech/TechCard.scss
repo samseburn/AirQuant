@@ -8,6 +8,7 @@
 
         // background-color: aqua;
         border: 1px solid rgb(214, 214, 214);
+        margin: 10px;
 
         &__img {
             // background-color: aqua;
@@ -40,4 +41,41 @@
         }
     }
 
+}
+
+
+// 반응형
+@include responsive(T) {
+    .TechCard__{
+        &container {
+            width: 370px;
+            word-break: keep-all;
+
+            .TechCardBook__container__section2 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+  // 브라우저 사이즈 768px 이하일때
+@media (max-width: 768px){
+    .TechCard__{
+
+        &container {
+            word-break: keep-all;
+            margin: 10px 0 10px 0;
+
+            &__section2 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+  // 모바일 반응형
+
+@include responsive(M) {
 }
