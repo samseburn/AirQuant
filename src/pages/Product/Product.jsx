@@ -9,6 +9,7 @@ import {
   InformationBox,
   ProductYoutubeFirst,
   ProductYoutubeSecond,
+  ProductSpeechBubble,
 } from 'components';
 import { ProductBackground } from 'components/product/ProductBackground';
 
@@ -22,6 +23,7 @@ const Product = () => {
       <ProductGraphText />
       <ProductBlueBox />
       <ProductAirTable />
+      <ProductSpeechBubble />
       {/* <ProductAirquantImg /> */}
     </div>
   );
