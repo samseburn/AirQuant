@@ -24,6 +24,7 @@ export { ProductPiquantExplanation } from './product/ProductPiquantExplanation';
 export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
 export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
 export { InformationBox } from './product/InformationBox';
+export { ProductSpeechBubble } from './product/ProductSpeechBubble';
 
 // tech
 export { TechConvenience } from './tech/TechConvenience';

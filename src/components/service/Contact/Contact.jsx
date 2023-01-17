@@ -9,8 +9,8 @@ const center = {
 const Contact = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'airquant-374805',
-    googleMapsApiKey: 'AIzaSyARPGXzLqUCHAjdKZtGvuYIeQkzxYWr5MU',
-    version: '3.47',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+    version: '3.50',
   });
   return isLoaded ? (
     <div className="Contact sm-hidden">
@@ -20,8 +20,15 @@ const Contact = () => {
         mapContainerClassName="Contact-map"
       ></GoogleMap>
       <div className="Contact-info">
-        <div className="info-company">회사소개</div>
-        <div className="info-">오시는길</div>
+        <div className="Contact-info-company">
+          <span>회사소개</span> <br />
+          PiQuant dreams of a world where everyone becomes "Quant" <br />
+          by offering an affordable, spectroscopy -based component detector.
+        </div>
+        <div classNamen="Contact-info-address">
+          <span>오시는길</span> <br />
+          대한민국 서울특별시 용산구 한강대로 372 C동 2층
+        </div>
       </div>
     </div>
   ) : (

@@ -1,52 +1,49 @@
 .TechCardBook__ {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 100%;
-    height: 100vh;
-    
-    &container {
-        &__section1, 
-        &__section2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+  width: 100%;
+  height: 100vh;
 
-            // margin-bottom: 10px;
+  &container {
+    &__section1,
+    &__section2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
-            // background-color: aqua;
-        }
+      // margin-bottom: 10px;
 
-        &__section1 {
-
-            &__text {
-                font-size: 1.4rem;
-                width: 500px;
-                height: 300px;
-                margin: 10px;
-                
-                // margin-right: 10px;
-                
-                span {
-                    font-size: 3.2rem;
-                    font-weight: 800;
-                }
-                
-            }
-        }
-        
-        // &__section2 {
-            
-        //     &__section {
-        //         // margin-right: 10px;
-                
-        //     }
-        // }
+      // background-color: aqua;
     }
-}
 
+    &__section1 {
+      &__text {
+        font-size: 1.4rem;
+        width: 500px;
+        height: 300px;
+        margin: 10px;
+
+        // margin-right: 10px;
+
+        span {
+          font-size: 3.2rem;
+          font-weight: 800;
+        }
+      }
+    }
+
+    // &__section2 {
+
+    //     &__section {
+    //         // margin-right: 10px;
+
+    //     }
+    // }
+  }
+}
 
 // @mixin responsive($screen) {
 //     @if ($screen == 'T') {
@@ -56,7 +53,7 @@
 //         .TechCardBook__ {
 //             height: 150vh;
 //             &container {
-//                 &__section1, 
+//                 &__section1,
 //                 &__section2 {
 //                     // width: 33%;
 //                     display: flex;
@@ -91,40 +88,40 @@
 
 // 반응형
 @include responsive(T) {
-    .TechCardBook__ {
-        &container {
-            &__section1 {
-                &__text{
-            width: 350px;
+  .TechCardBook__ {
+    &container {
+      &__section1 {
+        &__text {
+          width: 350px;
         }
-        }
-        }
+      }
     }
+  }
 }
 
-  // 브라우저 사이즈 768px 이하일때
-@media (max-width: 830px){
-    .TechCardBook__ {
-        // margin-top: 300px;
-        // margin-bottom: 500px;
-        margin: 300px 0 500px 0;
-        // background-color: red;
-        &container {
-            &__section1, 
-            &__section2 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+// 브라우저 사이즈 768px 이하일때
+@media (max-width: 830px) {
+  .TechCardBook__ {
+    // margin-top: 300px;
+    // margin-bottom: 500px;
+    margin: 300px 0 500px 0;
+    // background-color: red;
+    &container {
+      &__section1,
+      &__section2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
-            &__text {
-                height: 100px;
-            }
+        &__text {
+          height: 100px;
         }
-        }
+      }
     }
+  }
 }
 
-  // 모바일 반응형
+// 모바일 반응형
 
 @include responsive(M) {
 }

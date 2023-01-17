@@ -1,81 +1,77 @@
 .TechCard__ {
+  &container {
+    width: 500px;
+    height: 300px;
 
-    &container {
-        width: 500px;
-        height: 300px;
+    // margin-right: 10px;
 
-        // margin-right: 10px;
+    // background-color: aqua;
+    border: 1px solid rgb(214, 214, 214);
+    margin: 10px;
+    border-radius: 15px;
 
-        // background-color: aqua;
-        border: 1px solid rgb(214, 214, 214);
-        margin: 10px;
+    &__img {
+      // background-color: aqua;
+      height: 100px;
+      margin: 20px 30px 20px 0;
 
-        &__img {
-            // background-color: aqua;
-            height: 100px;
-            margin: 20px 30px 20px 0;
-
-            font-size: 6rem;
-            text-align: right;
-        }
-
-        &__word {
-            padding: 20px;
-
-            &__title {
-                margin-bottom: 10px;
-
-                font-weight: 700;
-                font-size: 1.2rem;
-                color: #1B76FF;
-            }
-
-            &__subtitle {
-                font-size: 1.15rem;
-                font-weight: 400;
-                line-height: 1.7;
-
-                color: rgb(63, 63, 63);
-
-            }
-        }
+      font-size: 6rem;
+      text-align: right;
     }
 
-}
+    &__word {
+      padding: 20px;
 
+      &__title {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #1b76ff;
+      }
+
+      &__subtitle {
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 1.7;
+
+        color: rgb(63, 63, 63);
+      }
+    }
+  }
+}
 
 // 반응형
 @include responsive(T) {
-    .TechCard__{
-        &container {
-            width: 370px;
-            word-break: keep-all;
+  .TechCard__ {
+    &container {
+      width: 370px;
+      word-break: keep-all;
 
-            .TechCardBook__container__section2 {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+      .TechCardBook__container__section2 {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
 }
 
-  // 브라우저 사이즈 768px 이하일때
-@media (max-width: 768px){
-    .TechCard__{
+// 브라우저 사이즈 768px 이하일때
+@media (max-width: 768px) {
+  .TechCard__ {
+    &container {
+      word-break: keep-all;
+      margin: 10px 0 10px 0;
 
-        &container {
-            word-break: keep-all;
-            margin: 10px 0 10px 0;
-
-            &__section2 {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+      &__section2 {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
 }
 
-  // 모바일 반응형
+// 모바일 반응형
 
 @include responsive(M) {
 }
