@@ -10,10 +10,17 @@
 
   &_bigTitle {
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 10vh;
-    font-weight: 700;
-    word-break: keep-all;
+    font-size: 35px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    &_small {
+      font-size: 14px;
+      padding-bottom: 22px;
+      font-weight: 700;
+      color: $blue_main;
+    }
   }
   &_title {
     background-color: $blue_middle;
@@ -25,6 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
   }
 
   &_firstBox {
@@ -32,6 +41,7 @@
     height: 256px;
     border: 1px solid $background;
     margin-bottom: 50px;
+    border-radius: 15px;
 
     .imgContent {
       height: 192px;
@@ -60,6 +70,7 @@
     width: 704px;
     height: 415px;
     border: 1px solid $background;
+    border-radius: 15px;
 
     &_content {
       height: 351px;
@@ -105,6 +116,9 @@
 // 반응형
 @include responsive(T) {
   .InformationBox {
+    &_bigtitle {
+      font-size: 35px;
+    }
     &_firstBox {
       width: 550px;
 
