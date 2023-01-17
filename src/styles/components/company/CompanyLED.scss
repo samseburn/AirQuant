@@ -24,7 +24,7 @@
   }
 
   @include responsive(T) {
-    padding: 140px 0px;
+    padding: 150px 0px;
   }
   @include responsive(M) {
     &-title {

@@ -4,9 +4,16 @@
   flex-direction: column;
   gap: 20;
 
-  &-map {
+  &-map,
+  &-error {
     width: 100%;
     height: 300px;
-    background-color: gray;
+    background: $blue_light;
+    @include flexbox;
+  }
+  &-info {
+    margin: 10px;
+    &-address {
+    }
   }
 }

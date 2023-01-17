@@ -1,14 +1,33 @@
 import React from 'react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
+const center = {
+  // 위도, 경도
+  lat: 37.5506226,
+  lng: 126.973443,
+};
 const Contact = () => {
-  return (
-    <div className="Contact">
-      <div className="Conatact-map">지도</div>
+  const { isLoaded } = useJsApiLoader({
+    id: 'airquant-374805',
+    googleMapsApiKey: 'AIzaSyARPGXzLqUCHAjdKZtGvuYIeQkzxYWr5MU',
+    version: '3.50',
+  });
+  return isLoaded ? (
+    <div className="Contact sm-hidden">
+      <GoogleMap
+        center={center}
+        zoom={20}
+        mapContainerClassName="Contact-map"
+      ></GoogleMap>
       <div className="Contact-info">
-        <div className="info-company">회사소개</div>
-        <div className="info-">오시는길</div>
+        <div className="Contact-info-company">회사소개</div>
+        <div classNamen="Contact-info-address">
+          <span>오시는길</span> 대한민국 서울특별시 용산구 한강대로 372 C동 2층
+        </div>
       </div>
     </div>
+  ) : (
+    <div className="Contact-error">다시 시도하세요</div>
   );
 };
 
