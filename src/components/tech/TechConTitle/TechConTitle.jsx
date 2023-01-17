@@ -9,6 +9,7 @@ import {
   convenience_07,
   convenience_08,
   convenience_09,
+  Tech_background_01,
 } from 'images';
 
 import { TechConvenience } from '../TechConvenience';
@@ -52,9 +53,15 @@ const TechConTitle = () => {
   return (
     <>
       <div className="TechConTitle">
-        <div className="TechConTitle_small">WHY AIRQUANT</div>
-        <div>
+        <div className="TechConTitle_title">
+          <div className="TechConTitle_title_small">WHY AIRQUANT</div>
           <span className="TechConbr">왜 에어퀀트를 </span>선택해야할까요
+        </div>
+        <div className="TechConTitle_content">
+          <img
+            className="TechConTitle_content_firstimg"
+            src={Tech_background_01}
+          />
         </div>
       </div>
 
