@@ -9,14 +9,27 @@ const Card = ({ title, description, id, image }) => {
   };
 
   return (
-    <div className="card" onClick={handleClickCard}>
+    <aritcle className="card" onClick={handleClickCard}>
+      <div className="image-box" style={{ backgroundImage: `url(${image})` }}>
+        {/* <img src={image} alt="" /> */}
+      </div>
       <div
-        className="image-box"
-        style={{ backgroundImage: `url(${image})` }}
-      ></div>
-      <h1 className="card-title">{title}</h1>
-      <p className="card-description">{description}</p>
-    </div>
+        className="card-info"
+        // style={{
+        //   fontSize: '50px',
+        //   display: 'flex',
+        //   justifyContent: 'center',
+        //   alignItems: 'center',
+        //   width: '100%',
+        //   height: '100%',
+        // }}
+      >
+        <div>
+          <span className="case-cate">적용사례 {id}</span>
+          <h1 className="card-title">{title}</h1>
+        </div>
+      </div>
+    </aritcle>
   );
 };
 
