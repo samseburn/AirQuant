@@ -136,35 +136,74 @@
   }
 
   @include responsive(T) {
-    gap: 0;
-    .back {
-      margin-bottom: 30px;
+    &-contents {
+      @include column-flexbox(start, start);
+      column-gap: 50px;
+
+      width: 100%;
+      margin-bottom: 100px;
+
+      .content {
+        &-title-group {
+          .category {
+            font-size: 12px;
+          }
+        }
+
+        &-info {
+          &.image {
+            width: 100%;
+            padding: 0 20px;
+          }
+        }
+      }
     }
 
-    &-info {
-      flex-direction: column;
-      height: auto;
+    gap: 0;
+  }
 
-      .image-box {
-        width: 100%;
-        margin-bottom: 50px;
-      }
+  @include responsive(M) {
+    &-contents {
+      @include column-flexbox(start, start);
+      column-gap: 50px;
 
-      .text-info {
-        @include column-flexbox(between, between);
+      width: 100%;
+      margin-bottom: 100px;
 
-        &-title {
-          font-size: 20px;
-          margin-bottom: 30px;
+      .content {
+        &-header {
+          padding: 15px 20px;
+        }
+
+        &-title-group {
+          .category {
+            font-size: 10px;
+          }
+
+          .title {
+            font-size: 16px;
+          }
         }
 
         &-date {
+          display: none;
+        }
+
+        &-info {
+          padding: 0;
+          &.image {
+            width: 100%;
+            padding: 0;
+          }
         }
 
         &-desc {
-          margin-bottom: 50px;
+          font-size: 14px;
+          line-height: 1.5;
         }
       }
     }
+
+    gap: 0;
   }
 }
