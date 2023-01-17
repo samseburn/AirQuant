@@ -18,9 +18,7 @@ const ProductAirquantImg = () => {
   return (
     <div className="Airquant_Main">
       <div className="Airquant_Main_Content" data-aos="fade-up">
-        <div className="Airquant_Dots">
-          {/* <div className="Airquant_Main_Dots">..</div> */}
-        </div>
+        <div className="Airquant_Dots">●⠀●</div>
         <div className="Airquant_Main_Content1">
           기대 이상의 것도 감지해내는
           <span className="Airquant_Main_title"> 에어퀀트</span>

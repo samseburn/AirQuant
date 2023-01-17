@@ -21,12 +21,17 @@
     margin-bottom: 50px;
 
     .title {
+      @include flexbox(between);
       align-items: center;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding: 20px;
+      margin-bottom: 100px;
     }
   }
 
   &-desc {
-    white-space:pre-line;
+    white-space: pre-line;
     padding: 0 20px;
   }
 
@@ -44,7 +49,7 @@
       font-size: 15px;
       background-color: $background-banner;
       border-radius: 12px;
-      margin : 10px 0;
+      margin: 10px 0;
 
       &:first-child {
         // border-bottom: 1px solid #aaa;
@@ -76,6 +81,5 @@
     .back {
       margin-bottom: 30px;
     }
-
   }
 }
