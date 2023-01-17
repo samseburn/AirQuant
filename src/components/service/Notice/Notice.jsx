@@ -12,9 +12,14 @@ const Notice = () => {
     <div>
       {noticeId ? (
         // console.log(noticeData.data)
-        <NoticeItem data={noticeData.data} params={noticeId} />
+        // <NoticeItem data={noticeData.data} params={noticeId} />
+        <TableItem
+          data={noticeData.data}
+          params={noticeId}
+          category={'NOTICE'}
+          page={'/service/notice'}
+        />
       ) : (
-        // <TableItem data={noticeData.data} params={noticeId} />
         <NoticeList />
       )}
     </div>

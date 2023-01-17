@@ -27,25 +27,15 @@ const NoticeItem = ({ params }) => {
   return (
     <div className="NoticeItem">
       <Link className="back" to={'/service/notice'}>
-        ⇤ 뒤로 가기
+        목록으로
       </Link>
-      <div className="NoticeItem-contents">
-        <div
-          className="title"
-          style={{
-            borderTop: '1px solid gray',
-            borderBottom: '1px solid gray',
-            display: 'flex',
-            justifyContent: 'space-between',
-            padding: 20,
-            marginBottom: 100,
-          }}
-        >
+      <section className="NoticeItem-contents">
+        <header className="title">
           <h1>{caseItem.title}</h1>
           <span className="date">{caseItem.date}</span>
-        </div>
+        </header>
         <p className="NoticeItem-desc">{caseItem.description}</p>
-      </div>
+      </section>
       <div className="NoticeItem-pagination">
         <div className="pagination prev">
           {prevItem ? (
