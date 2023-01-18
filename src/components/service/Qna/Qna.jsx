@@ -212,7 +212,7 @@ const Qna = () => {
             <div className="qna-hidden"></div>
           )}
         </div>
-        <Button type={'submit'} text="문의하기" />
+        <Button type={'submit'} text="문의하기" data={data} />
       </form>
       <Contact />
     </div>
