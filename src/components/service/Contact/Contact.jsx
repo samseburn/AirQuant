@@ -21,11 +21,6 @@ const Contact = () => {
         mapContainerClassName="Contact-map"
       ></GoogleMap>
       <div className="Contact-info">
-        {/* <div className="Contact-info-company">
-          <div className="Contact-info-title">회사소개</div>
-          PiQuant dreams of a world where everyone becomes "Quant" <br />
-          by offering an affordable, spectroscopy -based component detector.
-        </div> */}
         <div className="Contact-info-address">
           <div className="Contact-info-title">오시는길</div>
           대한민국 서울특별시 용산구 한강대로 372 C동 2층
