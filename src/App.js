@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import React, { createContext } from 'react';
 import { Container, TableItem } from 'components';
 import {
@@ -63,6 +63,7 @@ const caseData = [
 
 function App() {
   const router = createBrowserRouter([
+    { basename: '/base' },
     {
       path: '/',
       element: <Root />,
