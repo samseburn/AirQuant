@@ -63,8 +63,8 @@ const caseData = [
 
 function App() {
   const router = createBrowserRouter([
-    { basename: '/AirQuant' },
     {
+      basename: '/AirQuant',
       path: '/',
       element: <Root />,
       errorElement: <div>Page Not Found</div>,
