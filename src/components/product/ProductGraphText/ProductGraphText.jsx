@@ -24,13 +24,13 @@ const ProductGraphText = () => {
         <div className="Product__In_Graph">
           <ProductGraph />
         </div>
-        <span
+        {/* <span
           className="Product__div_text_health"
           data-aos="fade-up"
           data-aos-delay="500"
         >
           건강에 미치는 악영향은 실제로 나타나는 중
-        </span>
+        </span> */}
         {/* <ProductYoutubeSecond className="ProductGraph__LineChart"/> */}
       </div>
     </div>

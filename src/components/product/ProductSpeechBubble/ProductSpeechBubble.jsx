@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { airquant_human1 } from 'images';
+import { airquant_human2 } from 'images';
+import { airquant_human3 } from 'images';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -24,7 +26,7 @@ const ProductSpeechBubble = () => {
                     </div>
                 </section>
                 <section className="Bubble_container_section2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="150">
-                    <img className='Bubble_container_section1_img2' src={airquant_human1} alt="" />
+                    <img className='Bubble_container_section1_img2' src={airquant_human2} alt="" />
                     <div className="Bubble_container_section2_title">
                         <div className="Bubble_container_section2_title_body">
                         <span class="quote-left">“</span>
@@ -35,7 +37,7 @@ const ProductSpeechBubble = () => {
                     </div>
                 </section>
                 <section className="Bubble_container_section3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="150">
-                    <img className='Bubble_container_section1_img' src={airquant_human1} alt="" />
+                    <img className='Bubble_container_section1_img' src={airquant_human3} alt="" />
                     <div className="Bubble_container_section3_title">
                         <div className="Bubble_container_section3_title_body">
                         <span class="quote-left">“</span>
