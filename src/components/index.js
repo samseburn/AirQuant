@@ -12,6 +12,7 @@ export { TableItem } from './module/TableItem';
 export { Pagination } from './module/Pagination';
 export { Tab } from './module/Tab';
 export { TopButton } from './module/TopButton';
+export { TechImgBox } from './module/TechImgBox';
 
 // product
 export { ProductAirquantImg } from './product/ProductAirquantImg';

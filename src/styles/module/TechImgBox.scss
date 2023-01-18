@@ -1,0 +1,61 @@
+.TechImgBox {
+  @include column-flexbox();
+  width: 100%;
+  max-width: 420px;
+  // height: 280px;
+  padding: 20px 0 0;
+
+  overflow: hidden;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  background: rgba(221, 221, 221, 0.35);
+
+  &-gradation {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.1);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0.97)
+      );
+      z-index: 1;
+    }
+
+    .img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      border-radius: 4px;
+      z-index: -1;
+      overflow: hidden;
+    }
+  }
+
+  &-text {
+    @include flexbox();
+
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    flex-grow: 1;
+    color: $secondary;
+  }
+
+  @include responsive(T) {
+    margin-bottom: 30px;
+  }
+}
