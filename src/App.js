@@ -63,7 +63,7 @@ const caseData = [
 
 function App() {
   const router = createBrowserRouter([
-    { basename: 'https://samseburn.github.io/AirQuant' },
+    { basename: '/AirQuant/' },
     {
       path: '/',
       element: <Root />,
