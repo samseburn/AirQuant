@@ -2,7 +2,7 @@
   "name": "airquant",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://samseburn.github.io/AirQuant",
+  "homepage": "https://airquant.vercel.app/",
   "dependencies": {
     "@react-google-maps/api": "^2.17.1",
     "@testing-library/jest-dom": "^5.16.5",
