@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  height: calc(100vh - 60px);
   padding-top: 60px;
   padding-bottom: 100px;
 
@@ -104,9 +105,7 @@
   }
 
   @include responsive(T) {
-    height: calc(100vh - 60px);
-
-    padding-top: 420px;
+    padding-top: 150px;
 
     margin-bottom: 400px;
 
@@ -149,8 +148,6 @@
   }
 
   @include responsive(M) {
-    height: calc(100vh - 60px);
-
     padding-top: 100px;
 
     margin-bottom: 0px;

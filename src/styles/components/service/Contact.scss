@@ -1,8 +1,9 @@
 .Contact {
+  word-break: keep-all;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20;
+  gap: 50px;
 
   &-map,
   &-error {
@@ -11,12 +12,23 @@
     height: 300px;
     background: $blue_light;
     border-radius: 15px;
+    color: white;
   }
   &-info {
-    margin: 10px;
-    line-height: $line-height-14;
-    span {
-      color: $blue_main;
+    line-height: $line-height-13;
+
+    &-address {
+      &-transport {
+        @include flexbox(flex-start);
+        gap: 30px;
+        margin-top: 20px;
+        &-title {
+          font-size: 2.5rem;
+          color: gray;
+        }
+      }
+    }
+    &-title {
       font-weight: bold;
     }
   }
