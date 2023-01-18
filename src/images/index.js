@@ -23,6 +23,9 @@ export { default as Product_background_03 } from './Product/Product_background_0
 export { default as airquant_human1 } from './Product/airquant_human1.png';
 export { default as airquant_human2 } from './Product/airquant_human2.png';
 export { default as airquant_human3 } from './Product/airquant_human3.png';
+export { default as MainImg_bottom_01 } from './Product/MainImg_bottom_01.png';
+export { default as MainImg_bottom_02 } from './Product/MainImg_bottom_02.png';
+export { default as MainImg_bottom_03 } from './Product/MainImg_bottom_03.png';
 
 // Tech
 export { default as convenience_01 } from './Tech/convenience_01.png';
