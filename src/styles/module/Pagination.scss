@@ -5,51 +5,19 @@
     font-size: 16px;
     margin: 50px auto;
 
-   
-        // margin: 0 5px;
+    button {
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        margin: 0;
+        font-size: 1rem;
 
-        .num {
-            padding: 0 5px;
-            margin: 0 5px;
-            cursor: pointer;
-
-            &.active {
-                font-weight: 700;
-                color: $blue_main;
-            }
+        &[aria-current] {
+            font-weight: 700;
+            color: $blue_main;
         }
-
-        button {
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
-  margin: 0;
-  font-size: 1rem;
-
-//   &:hover {
-//     background: tomato;
-//     cursor: pointer;
-//     transform: translateY(-2px);
-//   }
-
-//   &[disabled] {
-//     background: grey;
-//     cursor: revert;
-//     transform: revert;
-//   }
-
-&[aria-current] {
-    // background: deeppink;
-    // font-weight: bold;
-    // cursor: revert;
-    // transform: revert;
-
-    font-weight: 700;
-    color: $blue_main;
-  }
-        }
+    }
     
-
     .icon {
         width: 35px;
         height: 35px;
@@ -63,7 +31,13 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $background;
+            background-color: $background-banner;
         }
     }
+
+    @include responsive(M) {
+        .numBtn {
+            display: none;
+        }
+      }
 }
