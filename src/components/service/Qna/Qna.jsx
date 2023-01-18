@@ -82,6 +82,13 @@ const Qna = () => {
     }
 
     // Modal 만들 위치
+    window.alert(
+      `이메일: ${data.email} 
+   이름: ${data.name} 
+   제목: ${data.title} 
+   도움: ${data.help} 
+   문의: ${data.ask}`
+    );
 
     addInfo(data);
 
@@ -212,7 +219,7 @@ const Qna = () => {
             <div className="qna-hidden"></div>
           )}
         </div>
-        <Button type={'submit'} text="문의하기" />
+        <Button type={'submit'} text="문의하기" data={data} />
       </form>
       <Contact />
     </div>

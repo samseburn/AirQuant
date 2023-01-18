@@ -16,7 +16,7 @@ const Tech = () => {
     <div>
       <TechMain />
       <TechMeasurementTable />
-      <TechMiddleTitle />
+      {/* <TechMiddleTitle /> */}
       <TechCardBook />
       {/* <TechExplanation /> */}
       <TechBackGround />

@@ -33,12 +33,12 @@ SwiperSlideContainer {
   }
   .swiper-button-prev {
     margin-left: 11%;
-    margin-top: -3.5%;
+    margin-top: -75px;
     z-index: 0;
   }
   .swiper-button-next {
     margin-right: 11%;
-    margin-top: -3.5%;
+    margin-top: -75px;
     z-index: 0;
   }
   .swiper-button-prev::after {
@@ -57,11 +57,11 @@ SwiperSlideContainer {
   @include responsive(T) {
     .swiper-button-prev {
       margin-left: 9%;
-      margin-top: -8%;
+      margin-top: -72px;
     }
     .swiper-button-next {
       margin-right: 9%;
-      margin-top: -8%;
+      margin-top: -72px;
     }
   }
   @include responsive(M) {
@@ -73,11 +73,11 @@ SwiperSlideContainer {
     }
     .swiper-button-prev {
       margin-left: 7%;
-      margin-top: -3%;
+      margin-top: -18px;
     }
     .swiper-button-next {
       margin-right: 7%;
-      margin-top: -3%;
+      margin-top: -18px;
     }
     .swiper-slide > img {
       margin-left: 17px;

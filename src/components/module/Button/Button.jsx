@@ -1,13 +1,12 @@
-const Button = ({ url, text }) => {
+const Button = ({ url, text, data }) => {
   // props[functionName(sendData,openWindow),url,text] 받고
 
   const sendData = () => {
-    alert('정보를 전송했습니다.');
+    console.log('==firebase to send data==');
   };
   const openWindow = () => {
     return window.open(`${url}`, '_blank');
   };
-
   return (
     <button
       className="Button"
