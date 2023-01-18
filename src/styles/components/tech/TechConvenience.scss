@@ -1,18 +1,27 @@
 .TechConvenience {
-  padding-bottom: 10px;
   align-items: center;
-  margin-top: 40px;
+  padding: 75px 0;
+
+  &.reverse {
+    .TechConvenience_title {
+      // color: $blue-main;
+    }
+  }
 
   // 소제목
   &_title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 30px;
+    color: $secondary;
   }
 
   &_content {
-    display: flex;
-    justify-content: center;
+    @include flexbox();
+    column-gap: 30px;
+    width: 100%;
+    color: $secondary;
 
     // 왼쪽
     .TechConBoxLeft {
@@ -65,11 +74,10 @@
 
     // 오른쪽
     .TechConBoxright {
-      padding: 50px;
+      // padding: 50px;
       .TechConRightChild {
         width: 320px;
-        height: 280px;
-
+        // height: 280px;
         border: 1px solid rgb(221, 221, 221);
         border-radius: 10px;
 
@@ -116,6 +124,8 @@
 // 반응형
 @include responsive(T) {
   .TechConvenience {
+    padding: 75px 20px;
+
     &_content {
       flex-direction: column;
       text-align: center;
@@ -137,6 +147,8 @@
 // 반응형 2
 @include responsive(M) {
   .TechConvenience {
+    padding: 50px 20px;
+
     &_title {
       white-space: pre-wrap;
       font-size: 20px;

@@ -61,11 +61,12 @@ const TechConTitle = () => {
           <img
             className="TechConTitle_content_firstimg"
             src={Tech_background_01}
+            alt=""
           />
         </div>
       </div>
 
-      {TechConList.map((tech) => (
+      {TechConList.map((tech, idx) => (
         <TechConvenience
           key={tech.id}
           title={tech.title}
@@ -73,6 +74,7 @@ const TechConTitle = () => {
           leftChildImg={tech.leftChildImg}
           rightChild={tech.rightChild}
           rightChildImg={tech.rightChildImg}
+          idx={idx}
         />
       ))}
     </>
