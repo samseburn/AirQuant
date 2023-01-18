@@ -77,10 +77,9 @@ export default class ProductGraph extends PureComponent {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="알레르기비염" stroke="#8884d8" />
-        {/* <Line type="monotone" dataKey="알레르기비염" stroke="#8884d8" activeDot={{ r: 8 }} /> */}
-        <Line type="monotone" dataKey="천식" stroke="#82ca9d" />
-        <Line type="monotone" dataKey="아토피피부염" stroke="#f67c7c" />
+        <Line type="monotone" dataKey="알레르기비염" stroke="#1b76ff" />
+        <Line type="monotone" dataKey="천식" stroke="#fb2576" />
+        <Line type="monotone" dataKey="아토피피부염" stroke="#3ad900" />
       </LineChart>
       </ResponsiveContainer>
       </div>

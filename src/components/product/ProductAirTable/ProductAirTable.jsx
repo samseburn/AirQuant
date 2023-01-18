@@ -31,13 +31,13 @@ const ProductAirTable = () => {
                   등
                 </td>
                 <td className="AirTable__hidden">PM10</td>
-                <td className="AirTable__hidden">150 ug/m3 이하</td>
-                <td>100 ug/m3 이하 (강화)</td>
+                <td className="AirTable__hidden">150㎍/m³ 이하</td>
+                <td>100㎍/m³ 이하 (강화)</td>
               </tr>
               <tr>
                 <td className="AirTable__hidden">PM2.5</td>
                 <td className="AirTable__hidden"> - </td>
-                <td>50 ug/m3 이하 (신설)</td>
+                <td>50㎍/m³ 이하 (신설)</td>
               </tr>
 
               <tr className="AirTable__Tbody_tr">
