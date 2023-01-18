@@ -85,14 +85,14 @@ const TechMeasurementTable = () => {
                 <td>±2%RH</td>
               </tr>
             </tbody>
-          </table>
+          </table>{' '}
+          <div className="TechMeasurementTable_Table_explain">
+            <span className="TechMeasurementTable_Table_explain_br">
+              SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과{' '}
+            </span>
+            대체가능합니다.
+          </div>
         </div>
-        <p className="TechMeasurementTable_explain" data-aos="fade-up">
-          <span className="TechMeasurementTable_explain_br">
-            SO2, CO, NO2는 각각 H2S(황화수소), O3(오존), 에탄올과{' '}
-          </span>
-          대체가능합니다.
-        </p>
 
         {/* 기술 스펙 */}
         <div className="TechMeasurementTable_spec" data-aos="fade-up">

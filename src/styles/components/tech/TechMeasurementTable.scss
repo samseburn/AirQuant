@@ -26,6 +26,7 @@
     // width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     &_In {
       height: 350px;
@@ -50,10 +51,11 @@
         background-color: $blue_bright;
       }
     }
-  }
-  &_explain {
-    font-size: 15px;
-    padding-bottom: 10vh;
+    &_explain {
+      font-size: 15px;
+      padding: 15px 0 100px 0;
+      text-align: center;
+    }
   }
 
   &_spec {
