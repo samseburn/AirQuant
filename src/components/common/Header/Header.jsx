@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { VscMenu } from 'react-icons/vsc';
-import { Navbar } from '../Navbar';
+import { Navbar } from 'components';
 
 const Header = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -41,7 +41,7 @@ const Header = () => {
         _header.current.classList.add('blue');
       } else _header.current.classList.remove('blue');
 
-      if (!isMain && scrollPosition > 100) {
+      if (!isMain && scrollPosition > 25) {
         _header.current.classList.add('blue');
       }
       // else _header.current.classList.remove('blue');
@@ -61,19 +61,39 @@ const Header = () => {
         </h1>
         <div className="lg-only">
           <ol>
-            <li>
+            <li
+              className={`${
+                locationNow.pathname === '/' ? 'active' : undefined
+              }`}
+            >
               <Link to={'./'}>제품소개</Link>
             </li>
-            <li>
+            <li
+              className={`${
+                locationNow.pathname === '/tech' ? 'active' : undefined
+              }`}
+            >
               <Link to={'./tech'}>적용기술</Link>
             </li>
-            <li>
+            <li
+              className={`${
+                locationNow.pathname === '/company' ? 'active' : undefined
+              }`}
+            >
               <Link to={'./company'}>회사소개</Link>
             </li>
-            <li>
+            <li
+              className={`${
+                locationNow.pathname === '/case' ? 'active' : undefined
+              }`}
+            >
               <Link to={'./case'}>적용사례</Link>
             </li>
-            <li>
+            <li
+              className={`${
+                locationNow.pathname.includes('service') ? 'active' : undefined
+              }`}
+            >
               <Link to={'./service'}>고객문의</Link>
             </li>
           </ol>
@@ -82,7 +102,11 @@ const Header = () => {
           <VscMenu onClick={toggleSidebar} />
         </div>
       </div>
-      <Navbar open={isOpen} toggle={toggleSidebar} />
+      <Navbar
+        open={isOpen}
+        toggle={toggleSidebar}
+        pathname={locationNow.pathname}
+      />
     </header>
   );
 };

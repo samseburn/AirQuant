@@ -82,9 +82,11 @@
         color: black;
         width: 100%;
         padding: 20px 0;
+      }
 
-        .is-active {
-          color: pink;
+      &.active {
+        &::after {
+          width: 75px;
         }
       }
 
