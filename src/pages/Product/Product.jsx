@@ -12,6 +12,7 @@ import {
   ProductSpeechBubble,
 } from 'components';
 import { ProductBackground } from 'components/product/ProductBackground';
+import { ProductImgBottom } from 'components/product/ProductImgBottom';
 
 const Product = () => {
   return (
@@ -25,6 +26,7 @@ const Product = () => {
       <ProductAirTable />
       <ProductSpeechBubble />
       {/* <ProductAirquantImg /> */}
+      <ProductImgBottom />
     </div>
   );
 };

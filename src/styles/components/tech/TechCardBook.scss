@@ -4,7 +4,6 @@
   justify-content: center;
 
   width: 100%;
-  // height: 100vh;
 
   padding: 120px 0px 120px 0;
 
@@ -15,16 +14,12 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-
-      // margin-bottom: 10px;
-
-      // background-color: aqua;
     }
 
     &__section1 {
       &__text {
         font-size: 35px;
-        width: 500px;
+        width: 470px;
         height: 300px;
         margin: 10px;
         line-height: 1.4;
@@ -38,70 +33,24 @@
         }
       }
     }
-
-    // &__section2 {
-
-    //     &__section {
-    //         // margin-right: 10px;
-
-    //     }
-    // }
   }
 }
 
-// @mixin responsive($screen) {
-//     @if ($screen == 'T') {
-//     @media screen and (max-width: ($lg-breakpoint - 1px)) {
-//         // 1199px까지 적용
-//         @content;
-//         .TechCardBook__ {
-//             height: 150vh;
-//             &container {
-//                 &__section1,
-//                 &__section2 {
-//                     // width: 33%;
-//                     display: flex;
-//                     flex-direction: column;
-//                     margin: 0;
-//                     padding: 0;
-
-//                     // &__text,
-//                     // &__section {
-//                     //     width: 33%;
-//                     // }
-//                 }
-
-//                 &__section1 {
-//                     &__text{
-//                     top: 150px;
-//                     position: relative;
-//                 }
-//                 }
-//             }
-//         }
-//     }
-//     }
-
-//     @if ($screen == 'M') {
-//     @media screen and (max-width: ($sm-breakpoint - 1px)) {
-//         // 575px까지 적용
-//         @content;
-//     }
-//     }
-// }
 
 // 반응형
+// 1199px까지 적용
 @include responsive(T) {
   .TechCardBook__ {
     &container {
       &__section1 {
         &__text {
-          width: 350px;
+          width: 370px;
         }
       }
     }
   }
 }
+
 
 // 브라우저 사이즈 768px 이하일때
 @media (max-width: 830px) {
@@ -125,7 +74,29 @@
   }
 }
 
-// 모바일 반응형
 
+// 반응형 2
+// 575px까지 적용
 @include responsive(M) {
+.TechCardBook__ {
+  margin: 100px 0 0 0;
+  &container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+    &__seciont1,
+    &__seciont2,
+    &__seciont3 {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__section1 {
+      &__text {
+        margin: 200px 0 15px 0;
+      }
+    }
+  }
+}
 }

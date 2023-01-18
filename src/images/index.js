@@ -23,6 +23,9 @@ export { default as Product_background_03 } from './Product/Product_background_0
 export { default as airquant_human1 } from './Product/airquant_human1.png';
 export { default as airquant_human2 } from './Product/airquant_human2.png';
 export { default as airquant_human3 } from './Product/airquant_human3.png';
+export { default as MainImg_bottom_01 } from './Product/MainImg_bottom_01.png';
+export { default as MainImg_bottom_02 } from './Product/MainImg_bottom_02.png';
+export { default as MainImg_bottom_03 } from './Product/MainImg_bottom_03.png';
 
 // Tech
 export { default as convenience_01 } from './Tech/convenience_01.png';
@@ -59,6 +62,9 @@ export { default as Tech_logo_06 } from './Tech/Tech_logo_06.png';
 export { default as Tech_logo_07 } from './Tech/Tech_logo_07.png';
 export { default as Tech_logo_08 } from './Tech/Tech_logo_08.png';
 export { default as Tech_background_01 } from './Tech/Tech_background_01.jpg';
+export { default as tech_iphone } from './Tech/tech_iphone.png';
+export { default as tech_laptop } from './Tech/tech_laptop.png';
+export { default as tech_tree } from './Tech/tech_tree.png';
 
 // Company
 export { default as company_icon_01 } from './Company/company_icon_01.png';
