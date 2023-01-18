@@ -33,9 +33,11 @@
 
       li {
         border-bottom: 2px solid transparent;
-        transition: border-bottom 350ms ease-in-out;
+        transition: border-bottom 250ms ease-in-out;
         overflow: hidden;
-        &:hover {
+
+        &:hover,
+        &.active {
           border-bottom: 2px solid $blue-main;
           font-weight: 800;
         }
