@@ -8,12 +8,7 @@ const Case = () => {
     <Section title={'적용사례'}>
       <div className="case-wrapper">
         {caseData.map((item) => (
-          <Card
-            title={item.title}
-            description={item.description}
-            id={item.id}
-            image={item.image}
-          />
+          <Card title={item.title} id={item.id} image={item.image} />
         ))}
       </div>
     </Section>
