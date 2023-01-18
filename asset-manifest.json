@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AirQuant/static/css/main.103bff91.css",
-    "main.js": "/AirQuant/static/js/main.e4331cad.js",
+    "main.js": "/AirQuant/static/js/main.4d0a6452.js",
     "static/media/Tech_background_01.jpg": "/AirQuant/static/media/Tech_background_01.b23c1e9bbf0346ec5577.jpg",
     "static/media/middletitle_01.jpg": "/AirQuant/static/media/middletitle_01.36b89766e91ff4e2a60f.jpg",
     "static/media/airquant_15.jpg": "/AirQuant/static/media/airquant_15.6d669c5150c20f7fb527.jpg",
@@ -74,10 +74,10 @@
     "static/media/Tech_logo_03.png": "/AirQuant/static/media/Tech_logo_03.674091184700cc2ed651.png",
     "index.html": "/AirQuant/index.html",
     "main.103bff91.css.map": "/AirQuant/static/css/main.103bff91.css.map",
-    "main.e4331cad.js.map": "/AirQuant/static/js/main.e4331cad.js.map"
+    "main.4d0a6452.js.map": "/AirQuant/static/js/main.4d0a6452.js.map"
   },
   "entrypoints": [
     "static/css/main.103bff91.css",
-    "static/js/main.e4331cad.js"
+    "static/js/main.4d0a6452.js"
   ]
 }
