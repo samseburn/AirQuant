@@ -1,10 +1,13 @@
 import React from 'react';
+import { tech_laptop } from 'images';
 
 const TechCardSecond = () => {
   return (
     <div className="TechCard__">
       <div className="TechCard__container">
-        <div className="TechCard__container__img">💻</div>
+        <div className="TechCard__container__img">
+        <img className='TechCard__container__img__icon' src={tech_laptop} alt="" />
+        </div>
 
         <div className="TechCard__container__word">
           <div className="TechCard__container__word__title">

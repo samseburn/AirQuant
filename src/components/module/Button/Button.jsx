@@ -1,8 +1,14 @@
-const Button = ({ url, text }) => {
+const Button = ({ url, text, data }) => {
   // props[functionName(sendData,openWindow),url,text] 받고
 
   const sendData = () => {
-    alert('정보를 전송했습니다.');
+    return alert(
+      `이메일: ${data.email} 
+   이름: ${data.name} 
+   제목: ${data.title} 
+   도움: ${data.help} 
+   문의: ${data.ask}`
+    );
   };
   const openWindow = () => {
     return window.open(`${url}`, '_blank');
