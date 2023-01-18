@@ -25,7 +25,12 @@ const CompanyIcon = () => {
         </div>
       </div>
       <div className="CompanyIcon-icons">
-        <div className="CompanyIcon-icons-item small" data-aos="fade-up">
+        <div
+          className="CompanyIcon-icons-item small"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+        >
           <div className="CompanyIcon-icons-item-img small-icon"></div>
           <div className="CompanyIcon-icons-item-info">
             <h3>작은 사이즈</h3>
@@ -38,7 +43,9 @@ const CompanyIcon = () => {
         <div
           className="CompanyIcon-icons-item price"
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="200"
         >
           <div className="CompanyIcon-icons-item-img price-icon"></div>
           <div className="CompanyIcon-icons-item-info">
@@ -55,7 +62,9 @@ const CompanyIcon = () => {
         <div
           className="CompanyIcon-icons-item accuracy"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="400"
         >
           <div className="CompanyIcon-icons-item-img accuracy-icon"></div>
           <div className="CompanyIcon-icons-item-info">
